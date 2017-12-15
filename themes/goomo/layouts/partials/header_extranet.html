@@ -1,0 +1,65 @@
+<!-- header -->
+<header class="fnb-header">
+	<nav class="navbar navbar-default nav-extranet">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header mobile-head mobile-flex">
+				<div class="mobile-head__left mobile-flex">
+					<i class="fa fa-bars sideMenu" aria-hidden="true"></i>
+					<img src="{{"img/goomo_logo.png" | absURL}}" class="img-responsive desk-hide" width="80">
+				</div>
+				<div class="mobile-head__right mobile-flex">
+					<a href="" class="login">
+						<i class="fa fa-user-circle user-icon" aria-hidden="true"></i>
+					</a>
+				</div>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse m-side-bar" id="bs-example-navbar-collapse-1">
+				<ul class="mobile-top mobile-flex">
+					<li>
+						<p class="mobile-top__text">Sign in to get a personalised feed!</p>
+					</li>
+					<li>
+						<button type="button" class="fnb-btn outline">Login</button>
+					</li>
+				</ul>
+				<ul class="nav navbar-nav ">
+					<li>
+						<h5 class="dash-title">Extranet</h5>
+					</li>
+					<li>
+						{{ partial "breadcrumb.html" .}}
+					</li>
+				</ul>
+
+				<ul class="nav navbar-nav navbar-right side-section">
+
+					<li class="mobile-hide">
+						<div class="dropdown login user-logged">
+							<i class="fa fa-user-circle user-icon" aria-hidden="true"></i>
+							<button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="drop-trigger">
+								<span class="ellipsis userName">Krish Dsouza</span>
+								<i class="fa fa-angle-down" aria-hidden="true"></i>
+							</button>
+							<ul class="dropdown-menu" aria-labelledby="dLabel">
+								<li>Sign Out</li>
+							</ul>
+						</div>
+
+					</li>
+
+				</ul>
+
+				<div class="desk-hide">
+					{{ partial "sidebar_extranet.html" .}}
+				</div>
+
+
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container-fluid -->
+	</nav>
+</header>
+<!-- header ends -->
