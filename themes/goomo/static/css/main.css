@@ -367,20 +367,14 @@ span {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   padding-top: 0;
 }
 .navbar .login .user-icon {
-  padding-top: 4px;
   font-size: 2em;
-  margin-bottom: -4px;
-  color: white;
-}
-.navbar .login .user-icon:hover {
-  color: #8a8a8a;
 }
 .navbar .login__title {
   padding-top: 2px;
@@ -410,6 +404,10 @@ span {
   .mobile-top {
     display: none;
   }
+}
+.side-section.navbar-nav li a {
+  padding: 10px 15px;
+  font-weight: 600;
 }
 @media screen and (max-width: 768px) {
   .mobile-head__left,
@@ -1648,17 +1646,14 @@ input[type=radio].fnb-radio.bg-aqua:checked:before {
   font-size: 1em;
   font-weight: 500;
   margin-bottom: 0;
-  color: #fff;
-  padding-top: 5px;
   position: relative;
   text-align: left;
-  background-color: transparent;
   border: 0;
   outline: 0;
 }
 .fnb-header .user-logged .drop-trigger .fa {
   font-size: 1.3em;
-  vertical-align: middle;
+  vertical-align: top;
 }
 .fnb-header .user-logged .userName {
   width: 80px;
