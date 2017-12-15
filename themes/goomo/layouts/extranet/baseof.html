@@ -19,40 +19,16 @@
 		<link rel="stylesheet" href="{{"js/bootstrap-daterangepicker/daterangepicker.css" | absURL}}">
 		<link href="{{"css/main.css" | absURL}}" rel="stylesheet">
 	</head>
-	<body class="">
+	<body class="{{ $.Params.overlay }}" >
 
 		{{ partial "header_extranet.html" .}}
 
 		<!-- content -->
-		<div class="container-fluid">
-				<div class="row">
-						<div class="col-xs-12 ">
-
-								<div class=" m-b-10">
-										<div class="row sidebar-row">
-												<div class="col-xs-12 col-sm-3 col-lg-2 dash-sidebar mobile-hide">
-													{{ partial "sidebar_extranet.html" .}}
-												</div>
-												<div class="col-xs-12 col-sm-9 col-lg-10">
-
-													<div class="">
-														<div class="">
-															<div class="tab-content p-t-0  ">
-
-																{{ block "main" . }}
-																	<!-- The part of the page that begins to differ between templates -->
-																{{ end }}
-
-															</div>
-														</div>
-													</div>
-
-												</div>
-										</div>
-								</div>
-
-						</div>
-				</div>
+		<div class="container min-height {{ $.Params.overlayre }}">
+				
+				{{ block "main" . }}
+					<!-- The part of the page that begins to differ between templates -->
+				{{ end }}
 				<div class="site-overlay"></div>
 		</div>
 		<!-- content ends -->
