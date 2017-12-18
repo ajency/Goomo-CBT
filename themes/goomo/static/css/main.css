@@ -12299,6 +12299,9 @@ dl dd {
   position: relative;
   overflow: hidden;
 }
+.login-card.with-password {
+  border: 1px solid #ff8400;
+}
 .forget-password {
   position: absolute;
   top: 0;
