@@ -407,7 +407,7 @@ span {
 }
 .side-section.navbar-nav li a {
   padding: 10px 15px;
-  font-weight: 600;
+  font-weight: 500;
 }
 @media screen and (max-width: 768px) {
   .mobile-head__left,
@@ -1548,7 +1548,6 @@ input[type=radio].fnb-radio.bg-aqua:checked:before {
 }
 .fnb-header .navbar.flight-header .side-section.navbar-nav li a {
   color: #fff;
-  font-weight: 500;
 }
 .fnb-header .navbar.flight-header .userName span {
   color: #fff;
