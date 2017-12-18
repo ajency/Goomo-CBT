@@ -1,5 +1,5 @@
 publishDir = "docs"
-baseURL = "https://ajency.github.io/goomo_2/"
+baseURL = "https://ajency.github.io/Goomo-CBT/"
 languageCode = "en-us"
 title = "Goomo by Ajency"
 theme = "goomo"
