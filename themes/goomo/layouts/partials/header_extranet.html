@@ -1,6 +1,6 @@
 <!-- header -->
 <header class="fnb-header">
-	<nav class="navbar navbar-default nav-extranet">
+	<nav class="navbar navbar-default nav-extranet {{ $.Params.flight }}">
 		<div class="container-fluid">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header mobile-head mobile-flex">
@@ -27,11 +27,15 @@
 				<ul class="nav navbar-nav ">
 					<li>
 						<h5 class="dash-title">
-							<img src="{{"img/ajency-logo.png" | absURL}}" class="img-responsive" width="90">
+
+							<img src="{{"img/ajency-logo.png" | absURL}}" class="img-responsive org-logo-account" width="90">
+
+							<img src="{{"img/wipro-logo.png" | absURL}}" class="img-responsive org-logo-flight" width="60">
+
 						</h5>
 					</li>
 					<li>
-						<p class="flex-row default-size text-lighter">Powered by <img src="{{"img/mobiz.png" | absURL}}" class="img-responsive"></p>
+						<p class="flex-row default-size text-lighter powered-by">Powered by <img src="{{"img/mobiz.png" | absURL}}" class="img-responsive org-logo-account"><img src="{{"img/footer-logo.png" | absURL}}" class="img-responsive org-logo-flight" width="80"></p>
 					</li>
 				</ul>
 
