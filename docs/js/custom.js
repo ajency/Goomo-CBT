@@ -526,7 +526,9 @@ $('.page-sidebar').on('click', '.add-blackout', function(e) {
 
 
 
-
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
 
 
 

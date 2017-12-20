@@ -1732,15 +1732,6 @@
     
     <item>
       <title>Dashboard</title>
-      <link>https://ajency.github.io/Goomo-CBT/account/flight-one-way/</link>
-      <pubDate>Tue, 26 Sep 2017 12:57:20 +0530</pubDate>
-      
-      <guid>https://ajency.github.io/Goomo-CBT/account/flight-one-way/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Dashboard</title>
       <link>https://ajency.github.io/Goomo-CBT/dashboard/casa-candolim/</link>
       <pubDate>Tue, 26 Sep 2017 12:57:20 +0530</pubDate>
       
@@ -1853,6 +1844,15 @@
       <pubDate>Tue, 26 Sep 2017 12:57:20 +0530</pubDate>
       
       <guid>https://ajency.github.io/Goomo-CBT/dashboard/chalston-beach-resort/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Flights-One Way</title>
+      <link>https://ajency.github.io/Goomo-CBT/account/flight-one-way/</link>
+      <pubDate>Tue, 26 Sep 2017 12:57:20 +0530</pubDate>
+      
+      <guid>https://ajency.github.io/Goomo-CBT/account/flight-one-way/</guid>
       <description></description>
     </item>
     

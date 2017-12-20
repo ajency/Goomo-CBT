@@ -374,7 +374,8 @@ span {
   padding-top: 0;
 }
 .navbar .login .user-icon {
-  font-size: 2em;
+  font-size: 2.5em;
+  margin-right: 5px;
 }
 .navbar .login__title {
   padding-top: 2px;
@@ -1563,6 +1564,7 @@ input[type=radio].fnb-radio.bg-aqua:checked:before {
 }
 .fnb-header .navbar.flight-header .powered-by {
   margin-top: 5px;
+  color: #fff;
 }
 .fnb-header .navbar.flight-header .dash-title {
   margin-bottom: 0;
@@ -2653,6 +2655,9 @@ footer {
 .text-decor {
   text-decoration: underline;
 }
+.gray-darker {
+  color: #686565;
+}
 .bat-color {
   color: #000;
 }
@@ -2919,6 +2924,12 @@ footer {
 }
 .white-box {
   background-color: #fff;
+}
+.gray-bg {
+  background-color: #f5f5f5;
+}
+.no-opac {
+  opacity: 0.5;
 }
 .gray-border {
   border: 1px solid #d8d8d8;
@@ -11744,6 +11755,166 @@ i.w-border {
 .mail-section .activate .fnb-btn {
   width: 60%;
   padding: 0.75em 2.5em;
+}
+.flight-detail-header {
+  padding: 0 1em;
+  border-bottom: 4px solid #dadada;
+}
+.flight-detail-header p {
+  margin-bottom: 0;
+}
+.flight-col {
+  padding: 0.8em 1em;
+}
+.flight-col.city {
+  -webkit-flex-basis: 30%;
+      -ms-flex-preferred-size: 30%;
+          flex-basis: 30%;
+  padding-left: 0;
+  border-right: 2px solid #ddd;
+}
+.flight-col.depart {
+  -webkit-flex-basis: 20%;
+      -ms-flex-preferred-size: 20%;
+          flex-basis: 20%;
+}
+.flight-col.fl-class {
+  -webkit-flex-basis: 50%;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+  padding-right: 0;
+  border-left: 2px solid #ddd;
+}
+.flight-filter .border {
+  border-bottom: 1px solid #ddd;
+}
+.flight-filter__body .radio-check .radio-inline {
+  margin: 0;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+.stops-row {
+  border: 2px solid #ddd;
+  border-radius: 4px;
+}
+.stops-row label {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-bottom: 0;
+  font-size: 0.9em;
+  font-weight: 500;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+.stops-row label span {
+  padding: 1em 0;
+  display: block;
+  border-right: 2px solid #ddd;
+}
+.stops-row label:last-child span {
+  border-right: 0;
+}
+.stops-row .radio {
+  position: absolute;
+  opacity: 0;
+  -webkit-appearance: none;
+}
+.stops-row .radio:checked + span {
+  background-color: #024c64;
+  color: #fff;
+}
+.airline-filter-price {
+  position: absolute;
+  right: 0;
+}
+.flight-sort .sort-label {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 29%;
+      -ms-flex: 1 0 29%;
+          flex: 1 0 29%;
+  padding: 0.8em;
+  box-shadow: 0px 0px 3px 0px rgba(142, 142, 142, 0.35);
+  margin-right: 0.3em;
+  background-color: rgba(179, 179, 179, 0.41);
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #676767;
+}
+.flight-sort .sort-label.active {
+  background-color: #fff;
+  color: #024c64;
+  font-weight: 600;
+  box-shadow: none;
+}
+.flight-sort .dropdown {
+  padding: 0.48em 1.2em;
+  box-shadow: 0px 0px 17px 0px rgba(142, 142, 142, 0.35);
+  background-color: rgba(179, 179, 179, 0.41);
+}
+.search-results .head_col {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  padding: 0.5em;
+}
+.search-results__body .separator {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 0.8em 0;
+}
+.search-results__body .separator.no-b-top {
+  border-top: 0;
+}
+.search-results__body .separator.no-b-btm {
+  border-bottom: 0;
+}
+.search-results__body .img-circle {
+  width: 30px;
+  height: 30px;
+}
+.shortlist-row .notification {
+  position: absolute;
+  right: -6px;
+  top: -6px;
+  height: 16px;
+  width: 16px;
+  background-color: #024c64;
+  color: #fff;
+  text-align: center;
+  line-height: 16px;
+  border-radius: 50%;
+  font-size: 0.75em;
+}
+.price-row__separation {
+  border-top: 1px solid #eee;
+  padding-top: 0.5em;
+  margin-top: 0.5em;
+}
+.price-row__separation i {
+  margin-top: 2px;
+}
+.price-row__separation img {
+  opacity: 0.5;
+}
+.price-row__separation input[type="radio"].book-select-radio:before {
+  font-size: 1.35em;
+}
+.book-btn {
+  padding: 0.2em 0.5em;
+  font-size: 0.85em;
+  margin-left: 0.8em;
+}
+input[type="radio"].book-select-radio:before {
+  top: -2px;
+  left: -1px;
+  color: #dcdcdc;
+  font-size: 1.15em;
 }
 .profile-stats {
   color: #fff;
