@@ -11783,7 +11783,7 @@ i.w-border {
           flex-basis: 20%;
 }
 .flight-col.return {
-  border-right: 2px solid #ddd;
+  border-left: 2px solid #ddd;
 }
 .flight-col.fl-class {
   -webkit-flex-basis: 50%;
@@ -11791,6 +11791,11 @@ i.w-border {
           flex-basis: 50%;
   padding-right: 0;
   border-left: 2px solid #ddd;
+}
+.returnway .fl-class {
+  -webkit-flex-basis: 35%;
+      -ms-flex-preferred-size: 35%;
+          flex-basis: 35%;
 }
 .flight-filter .border {
   border-bottom: 1px solid #ddd;
@@ -11881,7 +11886,7 @@ i.w-border {
 .search-results__body .separator.no-b-btm {
   border-bottom: 0;
 }
-.search-results__body .img-circle {
+.img-circle {
   width: 30px;
   height: 30px;
 }
@@ -11922,6 +11927,63 @@ input[type="radio"].book-select-radio:before {
   left: -1px;
   color: #dcdcdc;
   font-size: 1.15em;
+}
+.sticky-book {
+  padding: 1.8em;
+}
+.return-data .search-results {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.return-data .search-results__head {
+  font-size: 0.9em;
+}
+.return-data .search-results__body {
+  font-size: 0.85em;
+}
+.return-data .search-results:first-child .search-results__body {
+  border-right: 1px solid #ddd;
+  font-size: 0.85em;
+}
+.return-data .search-results .head_col {
+  -webkit-flex-basis: 20%;
+      -ms-flex-preferred-size: 20%;
+          flex-basis: 20%;
+}
+.return-data .search-results .head_col.airlines {
+  -webkit-flex-basis: 25%;
+      -ms-flex-preferred-size: 25%;
+          flex-basis: 25%;
+}
+.return-data .search-results .head_col.arrive {
+  -webkit-flex-basis: 15%;
+      -ms-flex-preferred-size: 15%;
+          flex-basis: 15%;
+}
+.return-data .search-results .head_col.price-row {
+  -webkit-flex-basis: 23%;
+      -ms-flex-preferred-size: 23%;
+          flex-basis: 23%;
+  font-size: 0.9em;
+}
+.return-data .search-results .head_col.price-row input[type="radio"].book-select-radio {
+  margin-right: 5px;
+}
+.return-data .search-results .head_col.price-row input[type="radio"].book-select-radio:before {
+  font-size: 1.5em;
+}
+.return-data .search-results .head_col.price-row .price-row__separation input[type="radio"].book-select-radio:before {
+  font-size: 1.6em;
+}
+.return-data .search-results .img-circle {
+  width: 23px;
+  height: 23px;
+}
+.return-data .search-results .wishlist-bar {
+  background-color: #f4f6f5;
+  font-size: 0.9em;
 }
 .profile-stats {
   color: #fff;

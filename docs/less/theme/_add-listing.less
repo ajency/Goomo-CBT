@@ -5096,12 +5096,18 @@ i.w-border{
 		flex-basis: 20%;
 	}
 	&.return{
-		border-right: 2px solid #ddd;
+		border-left: 2px solid #ddd;
 	}
 	&.fl-class{
 		flex-basis: 50%;
     	padding-right: 0;
     	border-left: 2px solid #ddd;
+	}
+}
+
+.returnway{
+	.fl-class{
+		flex-basis: 35%;
 	}
 }
 
@@ -5207,11 +5213,12 @@ i.w-border{
 	    		border-bottom: 0;
 	    	}
 		}
-		.img-circle{
-			width: 30px;
-    		height: 30px;
-		}
 	}
+}
+
+.img-circle{
+	width: 30px;
+	height: 30px;
 }
 
 .shortlist-row{
@@ -5250,7 +5257,6 @@ i.w-border{
 
 }
 
-
 .book-btn{
 	padding: 0.2em 0.5em;
     font-size: 0.85em;
@@ -5265,3 +5271,65 @@ input[type="radio"].book-select-radio{
 	    font-size: 1.15em;
 	}
 }
+
+.sticky-book{
+	padding: 1.8em;
+}
+
+
+// Return way
+
+.return-data{
+	.search-results{
+		&__head{
+			font-size: 0.9em;
+		}
+		&__body{
+			font-size: 0.85em;
+		}
+		flex: 1;
+		&:first-child{
+			.search-results__body{
+				border-right: 1px solid #ddd;
+    			font-size: 0.85em;
+			}
+		}
+		.head_col{
+			flex-basis: 20%;
+			&.airlines{
+				flex-basis: 25%;
+			}
+			&.arrive{
+				flex-basis: 15%;
+			}
+			&.price-row{
+				flex-basis: 23%;
+    			font-size: 0.9em;
+    			input[type="radio"].book-select-radio{
+    				margin-right: 5px;
+    				&:before{
+    					font-size: 1.5em;
+    				}
+    			}
+    			.price-row__separation{
+    				input[type="radio"].book-select-radio{
+    					&:before{
+    						font-size: 1.6em;
+    					}
+    				}
+    			}
+			}
+		}
+		.img-circle{
+			width: 23px;
+			height: 23px;
+		}
+		.wishlist-bar{
+			background-color: #f4f6f5;
+			font-size: 0.9em;
+		}
+	}
+}
+
+
+
