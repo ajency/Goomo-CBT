@@ -374,7 +374,8 @@ span {
   padding-top: 0;
 }
 .navbar .login .user-icon {
-  font-size: 2em;
+  font-size: 2.5em;
+  margin-right: 5px;
 }
 .navbar .login__title {
   padding-top: 2px;
@@ -1563,6 +1564,7 @@ input[type=radio].fnb-radio.bg-aqua:checked:before {
 }
 .fnb-header .navbar.flight-header .powered-by {
   margin-top: 5px;
+  color: #fff;
 }
 .fnb-header .navbar.flight-header .dash-title {
   margin-bottom: 0;
