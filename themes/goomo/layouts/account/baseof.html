@@ -24,12 +24,14 @@
 		{{ partial "header_extranet.html" .}}
 
 		<!-- content -->
-		<div class="container min-height {{ $.Params.overlayre }}">
-				
-				{{ block "main" . }}
-					<!-- The part of the page that begins to differ between templates -->
-				{{ end }}
-				<div class="site-overlay"></div>
+		<div class="{{ $.Params.flightContent }}">
+			<div class="container min-height {{ $.Params.overlayre }}">
+					
+					{{ block "main" . }}
+						<!-- The part of the page that begins to differ between templates -->
+					{{ end }}
+					<div class="site-overlay"></div>
+			</div>
 		</div>
 		<!-- content ends -->
 
