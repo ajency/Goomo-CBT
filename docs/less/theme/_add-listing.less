@@ -5238,6 +5238,7 @@ i.w-border{
 }
 
 .price-row{
+	position: relative;
 	&__separation{
 		border-top: 1px solid #eee;
     	padding-top: 0.5em;
@@ -5260,7 +5261,8 @@ i.w-border{
 .book-btn{
 	padding: 0.2em 0.5em;
     font-size: 0.85em;
-    margin-left: 0.8em;
+    margin-left: 2em;
+    margin-right: 2em;
 }
 
 input[type="radio"].book-select-radio{
@@ -5331,5 +5333,53 @@ input[type="radio"].book-select-radio{
 	}
 }
 
+
+.detail-collapse{
+	font-size: 1.8em;
+	position: absolute;
+	right: 0;
+	transition: all 0.5s ease;
+	&.active{
+		transform: rotate(180deg);
+	}
+}
+
+.collapsed-area{
+	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.17);
+}
+
+.tab-data{
+	padding: 1.5em 0;
+	&__links{
+		border-bottom: 1px solid #eee;
+    	padding-bottom: 0.3em;
+	}
+	li{
+		padding: 0.5em 1em;
+		a{
+			text-decoration: none;
+			&:hover,&:active{
+				text-decoration: none;
+				color: inherit;
+			}
+		}
+		&.active{
+			a{
+				color: @accent-primary;
+			}
+		}
+	}
+	&__content{
+		padding: 1em;
+		.table-striped{
+			font-size: 0.9em;
+    		width: 300px;
+		}
+	}
+}
+
+.mode-border{
+	border-bottom: 1px solid #ddd;
+}
 
 

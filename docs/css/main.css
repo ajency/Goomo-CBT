@@ -2577,6 +2577,12 @@ footer {
       -ms-flex-align: center;
           align-items: center;
 }
+.flex-1 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
 .min-height {
   min-height: calc(100vh - 237px);
 }
@@ -11903,6 +11909,9 @@ i.w-border {
   border-radius: 50%;
   font-size: 0.75em;
 }
+.price-row {
+  position: relative;
+}
 .price-row__separation {
   border-top: 1px solid #eee;
   padding-top: 0.5em;
@@ -11920,7 +11929,8 @@ i.w-border {
 .book-btn {
   padding: 0.2em 0.5em;
   font-size: 0.85em;
-  margin-left: 0.8em;
+  margin-left: 2em;
+  margin-right: 2em;
 }
 input[type="radio"].book-select-radio:before {
   top: -2px;
@@ -11984,6 +11994,52 @@ input[type="radio"].book-select-radio:before {
 .return-data .search-results .wishlist-bar {
   background-color: #f4f6f5;
   font-size: 0.9em;
+}
+.detail-collapse {
+  font-size: 1.8em;
+  position: absolute;
+  right: 0;
+  -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+.detail-collapse.active {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.collapsed-area {
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.17);
+}
+.tab-data {
+  padding: 1.5em 0;
+}
+.tab-data__links {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.3em;
+}
+.tab-data li {
+  padding: 0.5em 1em;
+}
+.tab-data li a {
+  text-decoration: none;
+}
+.tab-data li a:hover,
+.tab-data li a:active {
+  text-decoration: none;
+  color: inherit;
+}
+.tab-data li.active a {
+  color: #ff8400;
+}
+.tab-data__content {
+  padding: 1em;
+}
+.tab-data__content .table-striped {
+  font-size: 0.9em;
+  width: 300px;
+}
+.mode-border {
+  border-bottom: 1px solid #ddd;
 }
 .profile-stats {
   color: #fff;

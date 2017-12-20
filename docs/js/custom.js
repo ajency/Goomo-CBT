@@ -528,6 +528,12 @@ $('.page-sidebar').on('click', '.add-blackout', function(e) {
 
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
+
+  $('.detail-collapse').click(function(){
+  	$(this).toggleClass('active');
+  });
+
+
 })
 
 

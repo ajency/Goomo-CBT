@@ -346,7 +346,7 @@
 				</div>
 			</div>
 			<div>
-				<p class="bat-color text-uppercase default-size flex-row relative m-r-10 shortlist-row m-b-0">Shortlist <img src="https://ajency.github.io/Goomo-CBT/img/Wishlist-selected.png" class="img-responsive m-l-10" width="25">
+				<p class="bat-color text-uppercase default-size flex-row relative m-r-10 shortlist-row m-b-0">Shortlist <img src="https://ajency.github.io/Goomo-CBT/img/Wishlist-selected.png" class="img-responsive m-l-10">
 				<span class="notification text-secondary">2</span>
 				</p>
 			</div>
@@ -399,7 +399,7 @@
 					</div>
 					<div class="head_col text-lighter">
 						<p class="text-color m-b-5">6h</p>
-						<p class="m-b-0 x-small text-lighter">1 Stop</p>
+						<p class="m-b-0 x-small text-lighter">Non Stop</p>
 					</div>
 					<div class="head_col text-lighter price-row flex-row">
 						<div>
@@ -416,7 +416,98 @@
 								</div>
 							</div>
 						</div>
-						<button type="submit" class="btn primary-btn fnb-btn no-radius text-uppercase book-btn">Book</button>
+							<button type="submit" class="btn primary-btn fnb-btn no-radius text-uppercase book-btn">Book</button>
+						<p class="detail-collapse text-color m-b-0 p-l-5 p-r-5 cursor-pointer" data-toggle="collapse" data-target="#flight-data" aria-expanded="false" aria-controls="flight-data"><i class="fa fa-angle-down" aria-hidden="true"></i></p>
+					</div>
+				</div>
+				<div class="collapsed-area collapse" id="flight-data">
+					<div class="tab-data p-t-10 p-b-10"> 
+						<ul class="tab-data__links flex-row">
+							<li class="active"><a href="#flight-detail" class="gray-darker bolder x-small" aria-controls="flight-detail" role="tab" data-toggle="tab">Flight Details</a></li>
+							<li><a href="#price-summary" class="gray-darker bolder x-small" aria-controls="price-summary" role="tab" data-toggle="tab">Price Summary</a></li>
+							<li><a href="#cancel-fee" class="gray-darker bolder x-small" aria-controls="cancel-fee" role="tab" data-toggle="tab">Cancellation Fee</a></li>
+							<li><a href="#re-fee" class="gray-darker bolder x-small" aria-controls="re-fee" role="tab" data-toggle="tab">Rescheduling Fee</a></li>
+							<li><a href="#bag-details" class="gray-darker bolder x-small" aria-controls="bag-details" role="tab" data-toggle="tab">Baggage Details</a></li>
+						</ul>
+						<div class="tab-data__content tab-content">
+							<div role="tabpanel" class="tab-pane active" id="flight-detail">
+								<div class="flex-row space-between align-top">
+									<div class="flex-row">
+										<img src="https://ajency.github.io/Goomo-CBT/img/SG.png" class="img-responsive img-circle">
+										<div class="m-l-10">
+											<p class="m-b-0 lighter default-size">Spice Jet</p>
+											<p class="m-b-0 text-lighter lighter x-small">SJ-643</p>
+										</div>
+									</div>
+									<div class="">
+										<p class="m-b-0 bolder default-size">Goa (GOI)</p>
+										<p class="m-b-0 text-lighter lighter x-small m-t-5">Wed, 20 Dec, 04:30 Dabolim</p>
+									</div>
+									<div class="x-small lighter text-lighter text-center">
+										<div class="mode-border">
+											<p><span>03h 35m</span> <span class="p-l-5 p-r-5">|</span> <span>Non Stop</span><span class="p-l-5 p-r-5">|</span><span class="text-danger">Refundable</span></p>
+										</div>
+										<div class="m-t-5">
+											<p class="m-b-0"><span>Economy Class</span> <span class="p-l-5 p-r-5">|</span> <span>Booking Class: H</span><span class="p-l-5 p-r-5">|</span><span class="">Meals</span></p>
+										</div>
+									</div>
+									<div class="">
+										<p class="m-b-0 bolder default-size">Mumbai (BOM)</p>
+										<p class="m-b-0 text-lighter lighter x-small m-t-5">Wed, 20 Dec, 10:30 Dabolim<br> Chatrapati Shivaji - T-1</p>
+									</div>
+								</div>
+							</div>
+							<div role="tabpanel" class="tab-pane" id="price-summary">
+								<table class="table table-striped"> 
+									<tbody> 
+										<tr> 
+											<td>Base Fare</td>
+											<td>Rs 3000</td> 
+										</tr>
+										<tr> 
+											<td>Taxes</td>
+											<td>Rs 428</td> 
+										</tr>
+										<tr> 
+											<td>Service Charges</td>
+											<td>Rs 0</td> 
+										</tr>
+										<tr> 
+											<td>Rounding Off</td>
+											<td>Rs 0</td> 
+										</tr>
+										<tr> 
+											<td>Transaction Fees</td>
+											<td>Rs 0</td> 
+										</tr>
+										<tr> 
+											<td>You Pay</td>
+											<td>Rs 3248</td> 
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div role="tabpanel" class="tab-pane" id="cancel-fee">
+								<p class="text-lighter default-size">No Penalties on Cancellation for Corporate Fares</p>
+							</div>
+							<div role="tabpanel" class="tab-pane" id="re-fee">
+								<p class="text-lighter default-size">No Penalties on Rescheduling for Corporate Fares</p>
+							</div>
+							<div role="tabpanel" class="tab-pane" id="bag-details">
+								<table class="table table-striped"> 
+									<tbody> 
+										<tr> 
+											<td>Hand Baggage</td>
+											<td>7 kg</td> 
+										</tr>
+										<tr> 
+											<td>Check In Baggage</td>
+											<td>15 kg</td> 
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="flex-row separator align-top no-b-top">
