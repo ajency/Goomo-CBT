@@ -1569,6 +1569,9 @@ input[type=radio].fnb-radio.bg-aqua:checked:before {
 .fnb-header .navbar.flight-header .dash-title {
   margin-bottom: 0;
 }
+.fnb-header .navbar.flight-header + .flight-detail-header {
+  display: block;
+}
 .fnb-header .nav-gap {
   padding: 0 30px;
 }
@@ -11757,6 +11760,7 @@ i.w-border {
   padding: 0.75em 2.5em;
 }
 .flight-detail-header {
+  display: none;
   padding: 0 1em;
   border-bottom: 4px solid #dadada;
 }
@@ -11777,6 +11781,9 @@ i.w-border {
   -webkit-flex-basis: 20%;
       -ms-flex-preferred-size: 20%;
           flex-basis: 20%;
+}
+.flight-col.return {
+  border-right: 2px solid #ddd;
 }
 .flight-col.fl-class {
   -webkit-flex-basis: 50%;
