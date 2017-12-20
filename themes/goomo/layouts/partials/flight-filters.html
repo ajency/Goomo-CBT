@@ -1,0 +1,103 @@
+<div class="flight-filter">
+	<div class="flight-filter__head flex-row space-between p-t-10 p-b-10 border">
+		<p class="bolder text-secondary m-b-0">Filter</p>
+		<p class="gray-darker heavier m-b-0 cursor-pointer">Reset All</p>
+	</div>
+	<div class="flight-filter__body">
+		<div class="p-t-15 p-b-15 border">
+			<h6 class="flex-row space-between bolder label-size cursor-pointer" data-toggle="collapse" data-target="#rates" aria-expanded="false" aria-controls="rates">Fare Category <p class="m-b-0 text-lighter">+</p></h6>
+			<div class="radio-check collapse in" id="rates">
+              <label class="radio-inline dis-block">
+                <input type="radio" name="expressCheck" id="expressCheckYes" value="yes" class="fnb-radio"> <span class="p-l-5">Corporate</span>
+              </label>
+              <label class="radio-inline dis-block">
+                <input type="radio" name="expressCheck" id="expressCheckNo" value="no" class="fnb-radio"> <span class="p-l-5">Regular</span>
+              </label>
+             </div>
+        </div>
+        <div class="p-t-15 m-b-15 p-b-15 border">
+			<h6 class="flex-row space-between bolder label-size cursor-pointer m-t-0" data-toggle="collapse" data-target="#policy" aria-expanded="false" aria-controls="policy">Policy <p class="m-b-0 text-lighter">+</p></h6>
+			<div class="radio-check collapse in" id="policy">
+              <label class="radio-inline dis-block">
+                <input type="radio" name="expressCheck" id="expressCheckYes" value="yes" class="fnb-radio"> <span class="p-l-5">In Policy</span>
+              </label>
+              <label class="radio-inline dis-block">
+                <input type="radio" name="expressCheck" id="expressCheckNo" value="no" class="fnb-radio"> <span class="p-l-5">Out Policy</span>
+              </label>
+             </div>
+        </div>	
+        <div class="p-t-15 m-b-15 p-b-15 border">
+			<h6 class="flex-row space-between bolder label-size cursor-pointer m-t-0" data-toggle="collapse" data-target="#stops" aria-expanded="false" aria-controls="stops">Stops <p class="m-b-0 text-lighter">+</p></h6>
+			<div class="radio-check collapse in" id="stops">
+              <div class="flex-row stops-row m-t-15">
+              	<label><input type="radio" name="stops" class="radio"> <span>Any</span></label>
+              	<label><input type="radio" name="stops" class="radio"> <span>1 Stop</span></label>
+              	<label><input type="radio" name="stops" class="radio"> <span>Non-Stop</span></label>
+              </div>
+            </div>
+        </div>	
+        <div class="p-t-15 m-b-15 p-b-15 border">
+			<h6 class="flex-row space-between bolder label-size cursor-pointer m-t-0" data-toggle="collapse" data-target="#arrival" aria-expanded="false" aria-controls="arrival">Arrival Time <p class="m-b-0 text-lighter">+</p></h6>
+			<div class="radio-check collapse in" id="arrival">
+              <div class="p-t-10 p-b-10">
+              	<img src="{{"img/filter-range.png" | absURL}}" class="img-responsive">
+              </div>
+            </div>
+        </div>
+        <div class="p-t-15 m-b-15 p-b-15 border">
+			<h6 class="flex-row space-between bolder label-size cursor-pointer m-t-0" data-toggle="collapse" data-target="#depart" aria-expanded="false" aria-controls="depart">Departure Time <p class="m-b-0 text-lighter">+</p></h6>
+			<div class="radio-check collapse in" id="depart">
+              <div class="p-t-10 p-b-10">
+              	<img src="{{"img/filter-range.png" | absURL}}" class="img-responsive">
+              </div>
+            </div>
+        </div>
+        <div class="p-t-15 m-b-15 p-b-15 border">
+			<h6 class="flex-row space-between bolder label-size cursor-pointer m-t-0" data-toggle="collapse" data-target="#price" aria-expanded="false" aria-controls="price">Price Range <p class="m-b-0 text-lighter">+</p></h6>
+			<div class="radio-check collapse in" id="price">
+              <div class="p-t-10 p-b-10">
+              	<img src="{{"img/filter-price.png" | absURL}}" class="img-responsive">
+              </div>
+            </div>
+        </div>
+        <div class="p-t-15 m-b-15 p-b-15 border">
+			<h6 class="flex-row space-between bolder label-size cursor-pointer m-t-0" data-toggle="collapse" data-target="#duration" aria-expanded="false" aria-controls="duration">Duration <p class="m-b-0 text-lighter">+</p></h6>
+			<div class="radio-check collapse in" id="duration">
+              <div class="p-t-10 p-b-10">
+              	<img src="{{"img/filter-duration.png" | absURL}}" class="img-responsive">
+              </div>
+            </div>
+        </div>
+        <div class="p-t-15 p-b-15 border">
+			<h6 class="flex-row space-between bolder label-size cursor-pointer" data-toggle="collapse" data-target="#fare" aria-expanded="false" aria-controls="fare">Fare Types <p class="m-b-0 text-lighter">+</p></h6>
+			<div class="radio-check collapse in" id="fare">
+              <label class="radio-inline dis-block">
+                <input type="radio" name="expressCheck" id="expressCheckYes" value="yes" class="fnb-radio"> <span class="p-l-5">Refundable</span>
+              </label>
+              <label class="radio-inline dis-block">
+                <input type="radio" name="expressCheck" id="expressCheckNo" value="no" class="fnb-radio"> <span class="p-l-5">Non Refundable</span>
+              </label>
+             </div>
+        </div>
+        <div class="p-t-15 p-b-15">
+			<h6 class="flex-row space-between bolder label-size cursor-pointer" data-toggle="collapse" data-target="#airline" aria-expanded="false" aria-controls="airline">Airlines <p class="m-b-0 text-lighter">+</p></h6>
+			<div class="radio-check collapse in" id="airline">
+              <label class="radio-inline dis-block">
+                <input type="radio" name="expressCheck" id="expressCheckYes" value="yes" class="fnb-radio"> <span class="p-l-5">IndiGo</span> <span class="x-small text-lighter airline-filter-price"><i class="fa fa-inr" aria-hidden="true"></i>6,000 onwards</span>
+              </label>
+              <label class="radio-inline dis-block">
+                <input type="radio" name="expressCheck" id="expressCheckNo" value="no" class="fnb-radio"> <span class="p-l-5">Air Asia <span class="x-small text-lighter airline-filter-price"><i class="fa fa-inr" aria-hidden="true"></i>6,500 onwards</span></span>
+              </label>
+              <label class="radio-inline dis-block">
+                <input type="radio" name="expressCheck" id="expressCheckNo" value="no" class="fnb-radio"> <span class="p-l-5">Jet Airways <span class="x-small text-lighter airline-filter-price"><i class="fa fa-inr" aria-hidden="true"></i>6,000 onwards</span></span>
+              </label>
+              <label class="radio-inline dis-block">
+                <input type="radio" name="expressCheck" id="expressCheckNo" value="no" class="fnb-radio"> <span class="p-l-5">Spice Jet <span class="x-small text-lighter airline-filter-price"><i class="fa fa-inr" aria-hidden="true"></i>6,500 onwards</span></span>
+              </label>
+              <label class="radio-inline dis-block">
+                <input type="radio" name="expressCheck" id="expressCheckNo" value="no" class="fnb-radio"> <span class="p-l-5">Go Air <span class="x-small text-lighter airline-filter-price"><i class="fa fa-inr" aria-hidden="true"></i>6,000 onwards</span></span>
+              </label>
+             </div>
+        </div>
+	</div>	
+</div>
