@@ -11963,19 +11963,24 @@ input[type="radio"].book-select-radio:before {
           flex-basis: 20%;
 }
 .return-data .search-results .head_col.airlines {
-  -webkit-flex-basis: 25%;
-      -ms-flex-preferred-size: 25%;
-          flex-basis: 25%;
+  -webkit-flex-basis: 23%;
+      -ms-flex-preferred-size: 23%;
+          flex-basis: 23%;
 }
 .return-data .search-results .head_col.arrive {
+  -webkit-flex-basis: 13%;
+      -ms-flex-preferred-size: 13%;
+          flex-basis: 13%;
+}
+.return-data .search-results .head_col.duration {
   -webkit-flex-basis: 15%;
       -ms-flex-preferred-size: 15%;
           flex-basis: 15%;
 }
 .return-data .search-results .head_col.price-row {
-  -webkit-flex-basis: 23%;
-      -ms-flex-preferred-size: 23%;
-          flex-basis: 23%;
+  -webkit-flex-basis: 26%;
+      -ms-flex-preferred-size: 26%;
+          flex-basis: 26%;
   font-size: 0.9em;
 }
 .return-data .search-results .head_col.price-row input[type="radio"].book-select-radio {
