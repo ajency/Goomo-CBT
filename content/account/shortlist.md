@@ -1,13 +1,12 @@
 ---
-title: "Flights-One Way"
+title: "Shortlist"
 date: 2017-09-26T12:57:20+05:30
 draft: false
-layout: flight-one-way
+layout: shortlist
 
 flight : flight-header
 
-flightheader : true
-
 flightContent : gray-bg
+
 
 ---

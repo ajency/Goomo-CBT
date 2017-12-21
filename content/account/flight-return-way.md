@@ -8,6 +8,8 @@ flight : flight-header
 
 flightContent : gray-bg
 
+flightheader : true
+
 returnpage : returnway
 
 returnway : true

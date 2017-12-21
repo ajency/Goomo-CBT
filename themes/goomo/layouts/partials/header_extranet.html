@@ -75,6 +75,7 @@
 		</div>
 		<!-- /.container-fluid -->
 	</nav>
+	{{ if $.Params.flightheader }}
 	<div class="flight-detail-header {{ $.Params.returnpage }}">
 		<div class="container flex-row space-between align-reset">
 			<div class="flight-col city flex-row space-between">
@@ -110,5 +111,6 @@
 			</div>
 		</div>
 	</div>
+	{{ end }}
 </header>
 <!-- header ends -->
