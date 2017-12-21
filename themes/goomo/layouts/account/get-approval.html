@@ -1,0 +1,70 @@
+{{ define "main" }}
+
+
+<div class="row m-t-20 m-b-20">
+	<div class="col-sm-12 m-b-10">
+		<button type="submit" class="btn outline fnb-btn no-radius"><i class="fa fa-angle-left sub-title p-r-5" aria-hidden="true"></i> Back</button>		
+	</div>
+
+	<div class="col-sm-9 search-results shortlist-section">
+		<div class="">
+			<h6 class="bolder m-b-25">Get Approval</h6>
+		</div>
+		<div class="white-box approve-detail">
+			<div class="flex-row space-between m-b-20">
+				<div>
+					<h5 class="text-darker bolder m-b-5">Goa to Mumbai</h5>
+					<p class="lighter text-darker">Wed, 20 Dec | Traveller(s) - 1 Adult</p>
+				</div>
+				<div>
+					<!-- <button type="submit" class="btn outline fnb-btn no-radius s-btn">Reject</button>	 -->
+					<button type="submit" class="btn primary-btn fnb-btn no-radius">Send for Approval</button>	
+				</div>
+			</div>
+			<div class="flex-row space-between">
+				<div>
+					<p class="m-b-5 text-darker default-size">Approver Name</p>
+					<h6 class="m-b-5 text-darker m-t-0 bolder">Valenie Lourenco</h6>
+				</div>
+				<div>
+					<p class="m-b-5 text-darker default-size">Approver Email</p>
+					<h6 class="m-b-5 text-darker m-t-0 bolder">valenie@ajency.in</h6>
+				</div>
+				<div>
+					<p class="m-b-5 text-darker default-size">Travel Category</p>
+					<h6 class="m-b-5 text-darker m-t-0 bolder">Business Trip</h6>
+				</div>
+				<div>
+					<p class="m-b-5 text-darker default-size">Travel Sub Category</p>
+					<h6 class="m-b-5 text-darker m-t-0 bolder">Meetings</h6>
+				</div>
+			</div>
+		</div>
+
+
+		{{ partial "approve-content.html" .}}
+
+
+
+
+
+		
+	</div>
+	<div class="col-sm-3">
+		<div class="m-t-50 white-box padding-one-em">
+			<h6 class="bolder text-darker line-height m-b-15">What happens once the request is sent for approval?</h6>
+			<p class="default-size text-darker m-t-5 flex-row align-top"><i class="fa fa-hand-o-right text-primary m-r-10 m-t-5" aria-hidden="true"></i> You will receive a mail that your request is sent for approval.</p>
+			<p class="default-size text-darker m-t-5 flex-row align-top"><i class="fa fa-hand-o-right text-primary m-r-10 m-t-5" aria-hidden="true"></i> Your approver too will receive a mail that a request has been sent for approval</p>
+			<p class="default-size text-darker m-t-5 flex-row align-top"><i class="fa fa-hand-o-right text-primary m-r-10 m-t-5" aria-hidden="true"></i> Approver will then either Approve or Disapprove the booking</p>
+			<p class="default-size text-darker m-t-5 flex-row align-top"><i class="fa fa-hand-o-right text-primary m-r-10 m-t-5" aria-hidden="true"></i> If the Approver, approves the booking then you receive a mail informing the same. Similarly for disapproval</p>
+			<p class="default-size text-darker m-t-5 flex-row align-top"><i class="fa fa-hand-o-right text-primary m-r-10 m-t-5" aria-hidden="true"></i> Once approved, you can go ahead and issue your ticket/voucher</p>
+		</div>
+		<!-- <div class="m-t-50">
+			<h5 class="bolder text-darker">About Goomo</h5>
+			<p class="sub-title text-darker m-t-20"><a href="#" class="dark-link">Goomo</a> is an omni-channel, travel-tech company that distributes products &amp; services through its website goomo.com, 15 company owned branches and a b2b partner network.</p>
+		</div> -->
+	</div>
+</div>
+<br><br>
+
+{{ end }}

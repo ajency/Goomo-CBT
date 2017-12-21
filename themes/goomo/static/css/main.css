@@ -12293,6 +12293,52 @@ input[type="radio"].book-select-radio:before {
 .f-return-way .flight-label {
   min-width: 65px;
 }
+.approve-detail {
+  padding: 1.5em;
+}
+.approve-detail .fnb-btn.s-btn {
+  color: #024c64;
+}
+.approve-detail .fnb-btn.s-btn:hover,
+.approve-detail .fnb-btn.s-btn:active {
+  background-color: #024c64;
+  color: #fff;
+}
+.reject-modal .fnb-btn.s-btn {
+  color: #024c64;
+}
+.reject-modal .fnb-btn.s-btn:hover,
+.reject-modal .fnb-btn.s-btn:active {
+  background-color: transparent;
+  color: #024c64;
+}
+.padding-one-em {
+  padding: 1em;
+}
+.flight-dt {
+  padding: 1.5em;
+}
+.note-text {
+  border: 1px solid #ddd;
+  padding: 1em;
+  outline: 0;
+}
+.note-text:hover,
+.note-text:focus {
+  outline: 0;
+  border: 1px solid #ddd;
+}
+.tab-row .table {
+  width: 50%;
+}
+.tab-row .table td {
+  padding: 10px 8px !important;
+  border: 1px solid #ddd !important;
+}
+.tab-row .table .total-bg {
+  background-color: #eaf0f0;
+  font-weight: 600;
+}
 .profile-stats {
   color: #fff;
   background: #ff8400;
