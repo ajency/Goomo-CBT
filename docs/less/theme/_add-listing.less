@@ -5224,11 +5224,11 @@ i.w-border{
 .shortlist-row{
 	.notification{
 		position: absolute;
-	    right: -6px;
-	    top: -6px;
+	    right: 1px;
+	    top: 0px;
 	    height: 16px;
 	    width: 16px;
-	    background-color: @accent-secondary;
+	    background-color: @accent-primary;
 	    color: #fff;
 	    text-align: center;
 	    line-height: 16px;
@@ -5402,5 +5402,150 @@ input[type="radio"].book-select-radio{
 .copy-bar{
 	padding: 0.8em;
     border: 1px solid;
+}
+
+
+// Udated search flight design
+
+.search-version{
+	.head_col{
+		flex-basis: 20%;
+	}
+	.search-results__head{
+		.head_col{
+			font-size: 0.85em;
+		}
+		.airline{
+			flex-basis: 10%;
+		}
+		.depart{
+			flex-basis: 10%;
+		}
+		.arrive{
+			flex-basis: 7%;
+			text-align: left;
+		}
+		.duration{
+			flex-basis: 15%;
+			text-align: left;
+		}
+		.policy{
+			flex-basis: 0%;
+		}
+		.price{
+    		flex-basis: 27%;
+    		text-align: left;
+		}
+	}
+	.search-results__body{
+		// .airline{
+		// 	flex-basis: 15%;
+		// }
+		.depart{
+			flex-basis: 10%;
+		}
+		.arrive{
+			flex-basis: 10%;
+		}
+		.duration{
+			flex-basis: 10%;
+		}
+		// .policy{
+		// 	flex-basis: 10%;
+		// }
+		.price-row{
+    		flex-basis: 30%;
+		}
+		.separator{
+			padding: 0.6em 0;
+		}
+	}
+	.price-row{
+		&__separation{
+			border-top: 0;
+    		padding-top: 5px;
+    		margin-bottom: 0;
+    		margin-top: 0;
+		}
+		.fnb-radio{
+			&:checked{
+				&:before{
+					color: #66b659;
+				}
+			}
+		}
+		.check-separator{
+			position: relative;
+			&:before{
+				content: '';
+				display: inline-block;
+				position: absolute;
+			    height: 65%;
+			    width: 1px;
+			    background-color: #ddd;
+			    left: 6px;
+			    top: 15px;
+			}
+			&.no-rate{
+				&:before{
+					display: none;
+				}
+			}
+		}
+	}
+	.book-btn{
+		padding: 0.45em 1.3em;
+    	font-size: 0.95em;
+	}
+	.detail-collapse{
+		position: relative;
+		font-size: 0.8em;
+		i{
+			font-size: 1.4em;
+    		vertical-align: middle;
+    		transition: all 0.5s ease;
+    		&.active{
+				transform: rotate(180deg);
+			}
+		}
+	}
+}
+
+
+
+.shortlist-me{
+	transform: scaleX(-1);
+    font-size: 1.5em;
+    padding-left: 15px;
+    margin-top: 3px;
+    color: #cecece;
+    &.active{
+    	color: @accent-primary;
+    }
+    &.no-click{
+    	color: #000;
+    	padding-right: 10px;
+    	padding-left: 0;
+    	font-size: 2.5em;
+    }
+}
+
+
+.flight-label{
+	padding: 5px 10px;
+    border: 1px solid;
+    font-size: 0.65em;
+    text-transform: uppercase;
+    font-weight: 600;
+    min-width: 80px;
+    &.cheapest{
+    	color: #66b659;
+    }
+    &.fastest{
+    	color: @accent-primary;
+    }
+    &.earliest{
+    	color: #21a1e0;
+    }
 }
 

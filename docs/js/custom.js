@@ -530,9 +530,12 @@ $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 
   $('.detail-collapse').click(function(){
-  	$(this).toggleClass('active');
+  	$(this).find('.fa').toggleClass('active');
   });
 
+	$('.shortlist-me:not(.no-click)').click(function(){
+  		$(this).toggleClass('active');
+  	});
 
 })
 

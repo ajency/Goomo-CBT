@@ -11898,11 +11898,11 @@ i.w-border {
 }
 .shortlist-row .notification {
   position: absolute;
-  right: -6px;
-  top: -6px;
+  right: 1px;
+  top: 0px;
   height: 16px;
   width: 16px;
-  background-color: #024c64;
+  background-color: #ff8400;
   color: #fff;
   text-align: center;
   line-height: 16px;
@@ -12057,6 +12057,149 @@ input[type="radio"].book-select-radio:before {
 .copy-bar {
   padding: 0.8em;
   border: 1px solid;
+}
+.search-version .head_col {
+  -webkit-flex-basis: 20%;
+      -ms-flex-preferred-size: 20%;
+          flex-basis: 20%;
+}
+.search-version .search-results__head .head_col {
+  font-size: 0.85em;
+}
+.search-version .search-results__head .airline {
+  -webkit-flex-basis: 10%;
+      -ms-flex-preferred-size: 10%;
+          flex-basis: 10%;
+}
+.search-version .search-results__head .depart {
+  -webkit-flex-basis: 10%;
+      -ms-flex-preferred-size: 10%;
+          flex-basis: 10%;
+}
+.search-version .search-results__head .arrive {
+  -webkit-flex-basis: 7%;
+      -ms-flex-preferred-size: 7%;
+          flex-basis: 7%;
+  text-align: left;
+}
+.search-version .search-results__head .duration {
+  -webkit-flex-basis: 15%;
+      -ms-flex-preferred-size: 15%;
+          flex-basis: 15%;
+  text-align: left;
+}
+.search-version .search-results__head .policy {
+  -webkit-flex-basis: 0%;
+      -ms-flex-preferred-size: 0%;
+          flex-basis: 0%;
+}
+.search-version .search-results__head .price {
+  -webkit-flex-basis: 27%;
+      -ms-flex-preferred-size: 27%;
+          flex-basis: 27%;
+  text-align: left;
+}
+.search-version .search-results__body .depart {
+  -webkit-flex-basis: 10%;
+      -ms-flex-preferred-size: 10%;
+          flex-basis: 10%;
+}
+.search-version .search-results__body .arrive {
+  -webkit-flex-basis: 10%;
+      -ms-flex-preferred-size: 10%;
+          flex-basis: 10%;
+}
+.search-version .search-results__body .duration {
+  -webkit-flex-basis: 10%;
+      -ms-flex-preferred-size: 10%;
+          flex-basis: 10%;
+}
+.search-version .search-results__body .price-row {
+  -webkit-flex-basis: 30%;
+      -ms-flex-preferred-size: 30%;
+          flex-basis: 30%;
+}
+.search-version .search-results__body .separator {
+  padding: 0.6em 0;
+}
+.search-version .price-row__separation {
+  border-top: 0;
+  padding-top: 5px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.search-version .price-row .fnb-radio:checked:before {
+  color: #66b659;
+}
+.search-version .price-row .check-separator {
+  position: relative;
+}
+.search-version .price-row .check-separator:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  height: 65%;
+  width: 1px;
+  background-color: #ddd;
+  left: 6px;
+  top: 15px;
+}
+.search-version .price-row .check-separator.no-rate:before {
+  display: none;
+}
+.search-version .book-btn {
+  padding: 0.45em 1.3em;
+  font-size: 0.95em;
+}
+.search-version .detail-collapse {
+  position: relative;
+  font-size: 0.8em;
+}
+.search-version .detail-collapse i {
+  font-size: 1.4em;
+  vertical-align: middle;
+  -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+.search-version .detail-collapse i.active {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.shortlist-me {
+  -webkit-transform: scaleX(-1);
+      -ms-transform: scaleX(-1);
+          transform: scaleX(-1);
+  font-size: 1.5em;
+  padding-left: 15px;
+  margin-top: 3px;
+  color: #cecece;
+}
+.shortlist-me.active {
+  color: #ff8400;
+}
+.shortlist-me.no-click {
+  color: #000;
+  padding-right: 10px;
+  padding-left: 0;
+  font-size: 2.5em;
+}
+.flight-label {
+  padding: 5px 10px;
+  border: 1px solid;
+  font-size: 0.65em;
+  text-transform: uppercase;
+  font-weight: 600;
+  min-width: 80px;
+}
+.flight-label.cheapest {
+  color: #66b659;
+}
+.flight-label.fastest {
+  color: #ff8400;
+}
+.flight-label.earliest {
+  color: #21a1e0;
 }
 .profile-stats {
   color: #fff;

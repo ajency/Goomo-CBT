@@ -237,24 +237,17 @@
 		<div class="p-t-15 p-b-15 border">
 			<h6 class="flex-row space-between bolder label-size cursor-pointer" data-toggle="collapse" data-target="#rates" aria-expanded="false" aria-controls="rates">Fare Category <p class="m-b-0 text-lighter">+</p></h6>
 			<div class="radio-check collapse in" id="rates">
-              <label class="radio-inline dis-block">
-                <input type="radio" name="expressCheck" id="expressCheckYes" value="yes" class="fnb-radio"> <span class="p-l-5">Corporate</span>
-              </label>
-              <label class="radio-inline dis-block">
-                <input type="radio" name="expressCheck" id="expressCheckNo" value="no" class="fnb-radio"> <span class="p-l-5">Regular</span>
-              </label>
-             </div>
+              
+             <img src="https://ajency.github.io/Goomo-CBT/img/fare-filter.png" class="img-responsive">
+        </div>
         </div>
         <div class="p-t-15 m-b-15 p-b-15 border">
 			<h6 class="flex-row space-between bolder label-size cursor-pointer m-t-0" data-toggle="collapse" data-target="#policy" aria-expanded="false" aria-controls="policy">Policy <p class="m-b-0 text-lighter">+</p></h6>
 			<div class="radio-check collapse in" id="policy">
-              <label class="radio-inline dis-block">
-                <input type="radio" name="expressCheck" id="expressCheckYes" value="yes" class="fnb-radio"> <span class="p-l-5">In Policy</span>
-              </label>
-              <label class="radio-inline dis-block">
-                <input type="radio" name="expressCheck" id="expressCheckNo" value="no" class="fnb-radio"> <span class="p-l-5">Out Policy</span>
-              </label>
-             </div>
+              
+             
+             <img src="https://ajency.github.io/Goomo-CBT/img/policy-filter.png" class="img-responsive">
+             </div> 
         </div>	
         <div class="p-t-15 m-b-15 p-b-15 border">
 			<h6 class="flex-row space-between bolder label-size cursor-pointer m-t-0" data-toggle="collapse" data-target="#stops" aria-expanded="false" aria-controls="stops">Stops <p class="m-b-0 text-lighter">+</p></h6>
@@ -348,78 +341,91 @@
 				</div>
 			</div>
 			<div>
-				<p class="bat-color text-uppercase default-size flex-row relative m-r-10 shortlist-row m-b-0">Shortlist <a href="/Goomo-CBT/account/shortlist/"><img src="https://ajency.github.io/Goomo-CBT/img/Wishlist-selected.png" class="img-responsive m-l-10"></a>
+				<p class="bat-color text-uppercase default-size flex-row relative m-r-10 shortlist-row m-b-0">Shortlist <a href="/Goomo-CBT/account/shortlist/"><i class="fa fa-thumbs-up shortlist-me no-click active cursor-pointer" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Shortlist"></i></a>
 				<span class="notification text-secondary">2</span>
 				</p>
 			</div>
 		</div>
-		<div class="search-results white-box">
+		<div class="search-results white-box search-version">
 			<div class="search-results__head flex-row m-t-10 p-t-5 p-b-5">
-				<div class="head_col text-lighter">
+				<div class="head_col text-lighter airline">
 					<div class="dis-inline">
 						Airlines
 					</div>
 				</div>
-				<div class="head_col text-lighter">
-					<div class="dis-inline text-left m-r-25">
+				<div class="head_col text-lighter depart">
+					<div class="dis-inline text-left m-l-25">
 						Depart
 					</div>
 				</div>
-				<div class="head_col text-lighter">
-					Arrive
+				<div class="head_col text-lighter arrive">
+					<div class="dis-inline text-left m-l-20">
+						Arrive
+					</div>
 				</div>
-				<div class="head_col text-lighter">
+				<div class="head_col text-lighter duration">
 					Duration
 				</div>
-				<div class="head_col text-lighter">
-					<div class="dis-inline text-left m-r-25">
+				<div class="head_col text-lighter policy">
+					
+				</div>
+				<div class="head_col text-lighter price">
+					<div class="dis-inline text-left m-l-15">
 						Price
 					</div>
 				</div>
 			</div>
 			<div class="search-results__body m-b-30">
 				<div class="flex-row separator align-top">
-					<div class="head_col text-lighter flex-row align-top">
-						<img src="https://ajency.github.io/Goomo-CBT/img/Wishlist-selected.png" class="img-responsive m-r-25 cursor-pointer" width="20" data-toggle="tooltip" data-placement="top" title="Shortlist">
+					<div class="head_col text-lighter flex-row align-top airline">
+						<i class="fa fa-thumbs-up shortlist-me cursor-pointer" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Shortlist"></i>
 						<div>
 							<div class="flex-row">
-								<img src="https://ajency.github.io/Goomo-CBT/img/SG.png" class="img-responsive img-circle">
-								<img src="https://ajency.github.io/Goomo-CBT/img/earliest.png" class="no-opac img-responsive m-l-10 cursor-pointer" width="30" data-toggle="tooltip" data-placement="top" title="Earliest Flight">
-							</div>
-							<p class="m-b-0 text-lighter lighter x-small m-t-5">SJ-643</p>
-						</div>
-					</div>
-					<div class="head_col text-lighter">
-						<div class="dis-inline text-left">
-							<p class="bolder text-color m-b-5">04:30</p>
-							<p class="m-b-0 x-small text-lighter">GOI - BOM</p>
-							<p class="m-b-0 x-small text-lighter">Spice Jet</p>
-						</div>
-					</div>
-					<div class="head_col text-lighter">
-						<p class="text-color m-b-5">10:30</p>
-					</div>
-					<div class="head_col text-lighter">
-						<p class="text-color m-b-5">6h</p>
-						<p class="m-b-0 x-small text-lighter">Non Stop</p>
-					</div>
-					<div class="head_col text-lighter price-row flex-row">
-						<div>
-						 	<div class="flex-row justify-center">
+								<img src="https://ajency.github.io/Goomo-CBT/img/SG.png" class="img-responsive" width="28">
 								
-								<input type="radio" name="book-check-1" id="expressCheckYes" value="yes" class="fnb-radio book-select-radio" checked>
-								<p class="m-b-0 text-color flex-row"><i class="fa fa-inr" aria-hidden="true"></i> <b class="bat-color sub-title">4,995</b> <img src="https://ajency.github.io/Goomo-CBT/img/corporate.png" class="img-responsive m-l-5 cursor-pointer no-opac" width="15" data-toggle="tooltip" data-placement="top" title="Corporate rate"></p>
-							</div>
-							<div class="flex-row justify-center price-row__separation m-r-10">
-								
-								<p class="m-b-0 text-darker x-small flex-row"><input type="radio" name="book-check-1" id="expressCheckYes" value="yes" class="fnb-radio book-select-radio"> </p>
-								<div class="flex-row m-t-5">
-									<i class="fa fa-inr" aria-hidden="true"></i> 5,110 <img src="https://ajency.github.io/Goomo-CBT/img/retail-rate.png" class="img-responsive m-l-5 cursor-pointer" width="18" data-toggle="tooltip" data-placement="top" title="Retail rate">
+								<div class="p-l-10 text-left">
+									<p class="text-lighter lighter x-small m-b-0">Spice Jet</p>
+									<p class="m-b-0 text-lighter lighter x-small">SG454</p>
 								</div>
 							</div>
 						</div>
+					</div>
+					<div class="head_col text-lighter depart">
+						<div class="dis-inline text-left">
+							<p class="bolder text-color m-b-0 sub-title bat-color">04:30</p>
+							<p class="m-b-0 x-small text-lighter lighter">GOI - BOM</p>
+						</div>
+					</div>
+					<div class="head_col text-lighter arrive">
+						<p class="text-color m-b-5 sub-title">10:30</p>
+					</div>
+					<div class="head_col text-lighter duration">
+						<p class="text-color m-b-0 sub-title">1h 15m</p>
+						<p class="m-b-0 x-small text-lighter">Non Stop</p>
+					</div>
+					<div class="head_col text-lighter policy">
+						<p class="m-b-0 x-small text-danger"><i class="fa fa-ban dis-block" aria-hidden="true"></i> out of policy</p>
+					</div>
+					<div class="head_col text-lighter price-row flex-row align-top">
+						<div class="check-separator">
+						 	<div class="flex-row justify-center">
+								
+								<input type="radio" name="book-check-1" id="expressCheckYes" value="yes" class="fnb-radio book-select-radio" checked>
+								<p class="m-b-0 text-color flex-row"><i class="fa fa-inr" aria-hidden="true"></i> <b class="bat-color sub-title">4,995</b> <img src="https://ajency.github.io/Goomo-CBT/img/corporate.png" class="img-responsive m-l-5 cursor-pointer no-opac" width="20" data-toggle="tooltip" data-placement="top" title="Corporate rate"></p>
+							</div>
+							<div class="flex-row justify-center price-row__separation">
+								
+								<p class="m-b-0 text-darker x-small flex-row"><input type="radio" name="book-check-1" id="expressCheckYes" value="yes" class="fnb-radio book-select-radio"> </p>
+								<div class="flex-row m-t-5">
+									<i class="fa fa-inr" aria-hidden="true"></i> 5,110 <div class="p-l-15"><img src="https://ajency.github.io/Goomo-CBT/img/retail-rate.png" class="img-responsive cursor-pointer" width="20" data-toggle="tooltip" data-placement="top" title="Retail rate"></div>
+								</div>
+							</div>
+						</div>
+						<div class="m-l-15">
 							<button type="submit" class="btn primary-btn fnb-btn no-radius text-uppercase book-btn">Book</button>
-						<p class="detail-collapse text-color m-b-0 p-l-5 p-r-5 cursor-pointer" data-toggle="collapse" data-target="#flight-data" aria-expanded="false" aria-controls="flight-data"><i class="fa fa-angle-down" aria-hidden="true"></i></p>
+							<p class="detail-collapse text-color m-b-0 p-l-10 p-r-5 m-t-5 cursor-pointer" data-toggle="collapse" data-target="#flight-data" aria-expanded="false" aria-controls="flight-data">Flight Details<i class="fa fa-angle-down p-l-5" aria-hidden="true"></i></p>
+						</div>
+						
 					</div>
 				</div>
 				<div class="collapsed-area collapse" id="flight-data">
@@ -512,213 +518,166 @@
 						</div>
 					</div>
 				</div>
-				<div class="flex-row separator align-top no-b-top">
-					<div class="head_col text-lighter flex-row align-top">
-						<img src="https://ajency.github.io/Goomo-CBT/img/Wishlist.png" class="img-responsive m-r-25 cursor-pointer" width="20" data-toggle="tooltip" data-placement="top" title="Shortlist">
-						<div class="">
-							<div class="flex-row">
-								<img src="https://ajency.github.io/Goomo-CBT/img/AI.png" class="img-responsive img-circle">
-								<img src="https://ajency.github.io/Goomo-CBT/img/fastest.png" class="no-opac img-responsive m-l-10 cursor-pointer" width="30" data-toggle="tooltip" data-placement="top" title="Fastest Flight">
-							</div>
-							<p class="m-b-0 text-lighter lighter x-small m-t-5">AI-603</p>
-						</div>
-					</div>
-					<div class="head_col text-lighter">
-						<div class="dis-inline text-left">
-							<p class="bolder text-color m-b-5">04:30</p>
-							<p class="m-b-0 x-small text-lighter">GOI - BOM</p>
-							<p class="m-b-0 x-small text-lighter">Air India</p>
-						</div>
-					</div>
-					<div class="head_col text-lighter">
-						<p class="text-color m-b-5">10:30</p>
-					</div>
-					<div class="head_col text-lighter">
-						<p class="text-color m-b-5">2h</p>
-						<p class="m-b-0 x-small text-lighter">nonstop</p>
-						<p class="m-b-0 x-small text-danger"><i class="fa fa-ban" aria-hidden="true"></i> out of policy</p>
-					</div>
-					<div class="head_col text-lighter price-row flex-row">
+				<div class="flex-row separator align-top">
+					<div class="head_col text-lighter flex-row align-top airline">
+						<i class="fa fa-thumbs-up shortlist-me cursor-pointer active" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Shortlist"></i>
 						<div>
-							<div class="flex-row justify-center">
+							<div class="flex-row">
+								<img src="https://ajency.github.io/Goomo-CBT/img/AI.png" class="img-responsive" width="28">
+								
+								<div class="p-l-10 text-left">
+									<p class="text-lighter lighter x-small m-b-0">Air India</p>
+									<p class="m-b-0 text-lighter lighter x-small">AI454</p>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+					<div class="head_col text-lighter depart">
+						<div class="dis-inline text-left">
+							<p class="bolder text-color m-b-0 sub-title bat-color">04:30</p>
+							<p class="m-b-0 x-small text-lighter lighter">GOI - BOM</p>
+						</div>
+					</div>
+					<div class="head_col text-lighter arrive">
+						<p class="text-color m-b-5 sub-title">10:30</p>
+					</div>
+					<div class="head_col text-lighter duration">
+						<p class="text-color m-b-0 sub-title">1h 15m</p>
+						<p class="m-b-0 x-small text-lighter">Non Stop</p>
+					</div>
+					<div class="head_col text-lighter policy">
+						
+						<div class="flight-label cheapest dis-inline">
+							Cheapest
+						</div>
+					</div>
+					<div class="head_col text-lighter price-row flex-row align-top">
+						<div class="check-separator">
+						 	<div class="flex-row justify-center">
 								
 								<input type="radio" name="book-check-2" id="expressCheckYes" value="yes" class="fnb-radio book-select-radio" checked>
-								<p class="m-b-0 text-color flex-row"><i class="fa fa-inr" aria-hidden="true"></i> <b class="bat-color sub-title">4,000</b> <img src="https://ajency.github.io/Goomo-CBT/img/retail-rate.png" class="img-responsive m-l-5 cursor-pointer no-opac" width="15" data-toggle="tooltip" data-placement="top" title="Retail rate"></p>
-								
+								<p class="m-b-0 text-color flex-row"><i class="fa fa-inr" aria-hidden="true"></i> <b class="bat-color sub-title">4,995</b> <img src="https://ajency.github.io/Goomo-CBT/img/corporate.png" class="img-responsive m-l-5 cursor-pointer no-opac" width="20" data-toggle="tooltip" data-placement="top" title="Corporate rate"></p>
 							</div>
-							<div class="flex-row justify-center price-row__separation m-r-10">
+							<div class="flex-row justify-center price-row__separation">
 								
 								<p class="m-b-0 text-darker x-small flex-row"><input type="radio" name="book-check-2" id="expressCheckYes" value="yes" class="fnb-radio book-select-radio"> </p>
 								<div class="flex-row m-t-5">
-									<i class="fa fa-inr" aria-hidden="true"></i> 4,990 <img src="https://ajency.github.io/Goomo-CBT/img/corporate.png" class="img-responsive m-l-5 cursor-pointer" width="18" data-toggle="tooltip" data-placement="top" title="Corporate rate"> 
+									<i class="fa fa-inr" aria-hidden="true"></i> 5,110 <div class="p-l-15"><img src="https://ajency.github.io/Goomo-CBT/img/retail-rate.png" class="img-responsive cursor-pointer" width="20" data-toggle="tooltip" data-placement="top" title="Retail rate"></div>
 								</div>
 							</div>
 						</div>
-						<button type="submit" class="btn primary-btn fnb-btn no-radius text-uppercase book-btn">Book</button>
+						<div class="m-l-15">
+							<button type="submit" class="btn primary-btn fnb-btn no-radius text-uppercase book-btn">Book</button>
+							
+						</div>
+						
 					</div>
 				</div>
 				<div class="flex-row separator align-top">
-					<div class="head_col text-lighter flex-row align-top">
-						<img src="https://ajency.github.io/Goomo-CBT/img/Wishlist-selected.png" class="img-responsive m-r-25 cursor-pointer" width="20" data-toggle="tooltip" data-placement="top" title="Shortlist">
+					<div class="head_col text-lighter flex-row align-top airline">
+						<i class="fa fa-thumbs-up shortlist-me cursor-pointer" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Shortlist"></i>
 						<div>
 							<div class="flex-row">
-								<img src="https://ajency.github.io/Goomo-CBT/img/SG.png" class="img-responsive img-circle">
-								<img src="https://ajency.github.io/Goomo-CBT/img/earliest.png" class="no-opac img-responsive m-l-10 cursor-pointer" width="30" data-toggle="tooltip" data-placement="top" title="Earliest Flight">
-							</div>
-							<p class="m-b-0 text-lighter lighter x-small m-t-5">SJ-643</p>
-						</div>
-					</div>
-					<div class="head_col text-lighter">
-						<div class="dis-inline text-left">
-							<p class="bolder text-color m-b-5">04:30</p>
-							<p class="m-b-0 x-small text-lighter">GOI - BOM</p>
-							<p class="m-b-0 x-small text-lighter">Spice Jet</p>
-						</div>
-					</div>
-					<div class="head_col text-lighter">
-						<p class="text-color m-b-5">10:30</p>
-					</div>
-					<div class="head_col text-lighter">
-						<p class="text-color m-b-5">6h</p>
-						<p class="m-b-0 x-small text-lighter">1 Stop</p>
-					</div>
-					<div class="head_col text-lighter price-row flex-row">
-						<div>
-						 	<div class="flex-row justify-center">
+								<img src="https://ajency.github.io/Goomo-CBT/img/SG.png" class="img-responsive" width="28">
 								
-								<input type="radio" name="book-check-3" id="expressCheckYes" value="yes" class="fnb-radio book-select-radio" checked>
-								<p class="m-b-0 text-color flex-row"><i class="fa fa-inr" aria-hidden="true"></i> <b class="bat-color sub-title">4,995</b> <img src="https://ajency.github.io/Goomo-CBT/img/corporate.png" class="img-responsive m-l-5 cursor-pointer no-opac" width="15" data-toggle="tooltip" data-placement="top" title="Corporate rate"></p>
-							</div>
-							<div class="flex-row justify-center price-row__separation m-r-10">
-								
-								<p class="m-b-0 text-darker x-small flex-row"><input type="radio" name="book-check-3" id="expressCheckYes" value="yes" class="fnb-radio book-select-radio"> </p>
-								<div class="flex-row m-t-5">
-									<i class="fa fa-inr" aria-hidden="true"></i> 5,110 <img src="https://ajency.github.io/Goomo-CBT/img/retail-rate.png" class="img-responsive m-l-5 cursor-pointer" width="18" data-toggle="tooltip" data-placement="top" title="Retail rate">
+								<div class="p-l-10 text-left">
+									<p class="text-lighter lighter x-small m-b-0">Spice Jet</p>
+									<p class="m-b-0 text-lighter lighter x-small">SG454</p>
 								</div>
 							</div>
 						</div>
-						<button type="submit" class="btn primary-btn fnb-btn no-radius text-uppercase book-btn">Book</button>
+					</div>
+					<div class="head_col text-lighter depart">
+						<div class="dis-inline text-left">
+							<p class="bolder text-color m-b-0 sub-title bat-color">04:30</p>
+							<p class="m-b-0 x-small text-lighter lighter">GOI - BOM</p>
+						</div>
+					</div>
+					<div class="head_col text-lighter arrive">
+						<p class="text-color m-b-5 sub-title">10:30</p>
+					</div>
+					<div class="head_col text-lighter duration">
+						<p class="text-color m-b-0 sub-title">1h 15m</p>
+						<p class="m-b-0 x-small text-lighter">Non Stop</p>
+					</div>
+					<div class="head_col text-lighter policy">
+						
+					</div>
+					<div class="head_col text-lighter price-row flex-row align-top">
+						<div class="check-separator no-rate">
+						 	<div class="flex-row justify-center">
+								<input type="radio" name="book-check-3" id="expressCheckYes" value="yes" class="fnb-radio book-select-radio" checked>
+								<p class="m-b-0 text-color flex-row"><i class="fa fa-inr" aria-hidden="true"></i> <b class="bat-color sub-title">4,995</b> <img src="https://ajency.github.io/Goomo-CBT/img/retail-rate.png" class="img-responsive m-l-5 cursor-pointer no-opac" width="20" data-toggle="tooltip" data-placement="top" title="Retail rate"></p>
+							</div>
+							
+						</div>
+						<div class="m-l-15">
+							<button type="submit" class="btn primary-btn fnb-btn no-radius text-uppercase book-btn">Book</button>
+							
+						</div>
+						
 					</div>
 				</div>
-				<div class="flex-row separator align-top no-b-top">
-					<div class="head_col text-lighter flex-row align-top">
-						<img src="https://ajency.github.io/Goomo-CBT/img/Wishlist.png" class="img-responsive m-r-25 cursor-pointer" width="20" data-toggle="tooltip" data-placement="top" title="Shortlist">
-						<div class="">
-							<div class="flex-row">
-								<img src="https://ajency.github.io/Goomo-CBT/img/AI.png" class="img-responsive img-circle">
-								<img src="https://ajency.github.io/Goomo-CBT/img/fastest.png" class="no-opac img-responsive m-l-10 cursor-pointer" width="30" data-toggle="tooltip" data-placement="top" title="Fastest Flight">
-							</div>
-							<p class="m-b-0 text-lighter lighter x-small m-t-5">AI-603</p>
-						</div>
-					</div>
-					<div class="head_col text-lighter">
-						<div class="dis-inline text-left">
-							<p class="bolder text-color m-b-5">04:30</p>
-							<p class="m-b-0 x-small text-lighter">GOI - BOM</p>
-							<p class="m-b-0 x-small text-lighter">Air India</p>
-						</div>
-					</div>
-					<div class="head_col text-lighter">
-						<p class="text-color m-b-5">10:30</p>
-					</div>
-					<div class="head_col text-lighter">
-						<p class="text-color m-b-5">2h</p>
-						<p class="m-b-0 x-small text-lighter">nonstop</p>
-						<p class="m-b-0 x-small text-danger"><i class="fa fa-ban" aria-hidden="true"></i> out of policy</p>
-					</div>
-					<div class="head_col text-lighter price-row flex-row">
+				<div class="flex-row separator align-top">
+					<div class="head_col text-lighter flex-row align-top airline">
+						<i class="fa fa-thumbs-up shortlist-me cursor-pointer active" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Shortlist"></i>
 						<div>
-							<div class="flex-row justify-center">
+							<div class="flex-row">
+								<img src="https://ajency.github.io/Goomo-CBT/img/AI.png" class="img-responsive" width="32">
+								
+								<div class="p-l-10 text-left">
+									<p class="text-lighter lighter x-small m-b-0">Air India</p>
+									<p class="m-b-0 text-lighter lighter x-small">AI454</p>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+					<div class="head_col text-lighter depart">
+						<div class="dis-inline text-left">
+							<p class="bolder text-color m-b-0 sub-title bat-color">04:30</p>
+							<p class="m-b-0 x-small text-lighter lighter">GOI - BOM</p>
+						</div>
+					</div>
+					<div class="head_col text-lighter arrive">
+						<p class="text-color m-b-5 sub-title">10:30</p>
+					</div>
+					<div class="head_col text-lighter duration">
+						<p class="text-color m-b-0 sub-title">1h 15m</p>
+						<p class="m-b-0 x-small text-lighter">Non Stop</p>
+					</div>
+					<div class="head_col text-lighter policy">
+						
+						<div class="m-b-5">
+							<div class="flight-label fastest dis-inline">
+								Fastest
+							</div>
+						</div>
+						<div class="flight-label earliest dis-inline">
+							Earliest
+						</div>
+					</div>
+					<div class="head_col text-lighter price-row flex-row align-top">
+						<div class="check-separator">
+						 	<div class="flex-row justify-center">
 								
 								<input type="radio" name="book-check-4" id="expressCheckYes" value="yes" class="fnb-radio book-select-radio" checked>
-								<p class="m-b-0 text-color flex-row"><i class="fa fa-inr" aria-hidden="true"></i> <b class="bat-color sub-title">4,000</b> <img src="https://ajency.github.io/Goomo-CBT/img/retail-rate.png" class="img-responsive m-l-5 cursor-pointer no-opac" width="15" data-toggle="tooltip" data-placement="top" title="Retail rate"></p>
-								
+								<p class="m-b-0 text-color flex-row"><i class="fa fa-inr" aria-hidden="true"></i> <b class="bat-color sub-title">5,100</b> <img src="https://ajency.github.io/Goomo-CBT/img/retail-rate.png" class="img-responsive m-l-5 cursor-pointer no-opac" width="20" data-toggle="tooltip" data-placement="top" title="Retail rate"></p>
 							</div>
-							
-						</div>
-						<button type="submit" class="btn primary-btn fnb-btn no-radius text-uppercase book-btn">Book</button>
-					</div>
-				</div>
-				<div class="flex-row separator align-top">
-					<div class="head_col text-lighter flex-row align-top">
-						<img src="https://ajency.github.io/Goomo-CBT/img/Wishlist-selected.png" class="img-responsive m-r-25 cursor-pointer" width="20" data-toggle="tooltip" data-placement="top" title="Shortlist">
-						<div>
-							<div class="flex-row">
-								<img src="https://ajency.github.io/Goomo-CBT/img/SG.png" class="img-responsive img-circle">
-								<img src="https://ajency.github.io/Goomo-CBT/img/earliest.png" class="no-opac img-responsive m-l-10 cursor-pointer" width="30" data-toggle="tooltip" data-placement="top" title="Earliest Flight">
-							</div>
-							<p class="m-b-0 text-lighter lighter x-small m-t-5">SJ-643</p>
-						</div>
-					</div>
-					<div class="head_col text-lighter">
-						<div class="dis-inline text-left">
-							<p class="bolder text-color m-b-5">04:30</p>
-							<p class="m-b-0 x-small text-lighter">GOI - BOM</p>
-							<p class="m-b-0 x-small text-lighter">Spice Jet</p>
-						</div>
-					</div>
-					<div class="head_col text-lighter">
-						<p class="text-color m-b-5">10:30</p>
-					</div>
-					<div class="head_col text-lighter">
-						<p class="text-color m-b-5">6h</p>
-						<p class="m-b-0 x-small text-lighter">1 Stop</p>
-					</div>
-					<div class="head_col text-lighter price-row flex-row">
-						<div>
-						 	<div class="flex-row justify-center">
+							<div class="flex-row justify-center price-row__separation">
 								
-								<input type="radio" name="book-check-5" id="expressCheckYes" value="yes" class="fnb-radio book-select-radio" checked>
-								<p class="m-b-0 text-color flex-row"><i class="fa fa-inr" aria-hidden="true"></i> <b class="bat-color sub-title">4,995</b> <img src="https://ajency.github.io/Goomo-CBT/img/corporate.png" class="img-responsive m-l-5 cursor-pointer no-opac" width="15" data-toggle="tooltip" data-placement="top" title="Corporate rate"></p>
-							</div>
-							
-						</div>
-						<button type="submit" class="btn primary-btn fnb-btn no-radius text-uppercase book-btn">Book</button>
-					</div>
-				</div>
-				<div class="flex-row separator align-top no-b-top">
-					<div class="head_col text-lighter flex-row align-top">
-						<img src="https://ajency.github.io/Goomo-CBT/img/Wishlist.png" class="img-responsive m-r-25 cursor-pointer" width="20" data-toggle="tooltip" data-placement="top" title="Shortlist">
-						<div class="">
-							<div class="flex-row">
-								<img src="https://ajency.github.io/Goomo-CBT/img/AI.png" class="img-responsive img-circle">
-								<img src="https://ajency.github.io/Goomo-CBT/img/fastest.png" class="no-opac img-responsive m-l-10 cursor-pointer" width="30" data-toggle="tooltip" data-placement="top" title="Fastest Flight">
-							</div>
-							<p class="m-b-0 text-lighter lighter x-small m-t-5">AI-603</p>
-						</div>
-					</div>
-					<div class="head_col text-lighter">
-						<div class="dis-inline text-left">
-							<p class="bolder text-color m-b-5">04:30</p>
-							<p class="m-b-0 x-small text-lighter">GOI - BOM</p>
-							<p class="m-b-0 x-small text-lighter">Air India</p>
-						</div>
-					</div>
-					<div class="head_col text-lighter">
-						<p class="text-color m-b-5">10:30</p>
-					</div>
-					<div class="head_col text-lighter">
-						<p class="text-color m-b-5">2h</p>
-						<p class="m-b-0 x-small text-lighter">nonstop</p>
-						<p class="m-b-0 x-small text-danger"><i class="fa fa-ban" aria-hidden="true"></i> out of policy</p>
-					</div>
-					<div class="head_col text-lighter price-row flex-row">
-						<div>
-							<div class="flex-row justify-center">
-								
-								<input type="radio" name="book-check-6" id="expressCheckYes" value="yes" class="fnb-radio book-select-radio" checked>
-								<p class="m-b-0 text-color flex-row"><i class="fa fa-inr" aria-hidden="true"></i> <b class="bat-color sub-title">4,000</b> <img src="https://ajency.github.io/Goomo-CBT/img/retail-rate.png" class="img-responsive m-l-5 cursor-pointer no-opac" width="15" data-toggle="tooltip" data-placement="top" title="Retail rate"></p>
-								
-							</div>
-							<div class="flex-row justify-center price-row__separation m-r-10">
-								
-								<p class="m-b-0 text-darker x-small flex-row"><input type="radio" name="book-check-6" id="expressCheckYes" value="yes" class="fnb-radio book-select-radio"> </p>
+								<p class="m-b-0 text-darker x-small flex-row"><input type="radio" name="book-check-4" id="expressCheckYes" value="yes" class="fnb-radio book-select-radio"> </p>
 								<div class="flex-row m-t-5">
-									<i class="fa fa-inr" aria-hidden="true"></i> 4,990 <img src="https://ajency.github.io/Goomo-CBT/img/corporate.png" class="img-responsive m-l-5 cursor-pointer" width="18" data-toggle="tooltip" data-placement="top" title="Corporate rate"> 
+									<i class="fa fa-inr" aria-hidden="true"></i> 5,330 <div class="p-l-15"><img src="https://ajency.github.io/Goomo-CBT/img/corporate.png" class="img-responsive cursor-pointer" width="20" data-toggle="tooltip" data-placement="top" title="Corporate rate"></div>
 								</div>
 							</div>
 						</div>
-						<button type="submit" class="btn primary-btn fnb-btn no-radius text-uppercase book-btn">Book</button>
+						<div class="m-l-15">
+							<button type="submit" class="btn primary-btn fnb-btn no-radius text-uppercase book-btn">Book</button>
+							
+						</div>
+						
 					</div>
 				</div>
 			</div>
