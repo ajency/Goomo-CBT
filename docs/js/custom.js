@@ -537,6 +537,19 @@ $(function () {
   		$(this).toggleClass('active');
   	});
 
+  	var stickyTop = $('#sticky-book').offset().top;
+  	var getwidth = $('.col-width').innerWidth();
+  	var finalwidth = getwidth - 30;
+	$(window).on( 'scroll', function(){
+        if ($(window).scrollTop() >= stickyTop) {
+            $('.sticky-book').addClass('active')
+            $('.sticky-book').css('width',finalwidth);
+        } else {
+            $('.sticky-book').removeClass('active')
+            $('.sticky-book').css('width','100%');
+        }
+    });
+
 })
 
 

@@ -11941,6 +11941,14 @@ input[type="radio"].book-select-radio:before {
 .sticky-book {
   padding: 1.8em;
 }
+.sticky-book.active {
+  position: fixed;
+  top: 0;
+  margin-top: 0;
+  background-color: #fff;
+  z-index: 1;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.17);
+}
 .return-data .search-results {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -12252,6 +12260,38 @@ input[type="radio"].book-select-radio:before {
 .profile-view .img-circle {
   width: 50px;
   height: 50px;
+}
+.f-return-way .check-separator {
+  position: relative;
+}
+.f-return-way .check-separator:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  height: 65%;
+  width: 1px;
+  background-color: #ddd;
+  left: 6px;
+  top: 15px;
+}
+.f-return-way .check-separator.no-rate:before {
+  display: none;
+}
+.f-return-way .check-separator .fnb-radio:checked:before {
+  color: #66b659;
+}
+.f-return-way .separator {
+  padding: 0.6em 0;
+  min-height: 95px;
+}
+.f-return-way .price-row__separation {
+  border-top: 0;
+  padding-top: 5px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.f-return-way .flight-label {
+  min-width: 65px;
 }
 .profile-stats {
   color: #fff;

@@ -5,7 +5,7 @@
 	<div class="col-sm-3 white-box m-b-30">
 		{{ partial "flight-filters.html" .}}
 	</div>
-	<div class="col-sm-9">
+	<div class="col-sm-9 col-width">
 		<div class="flight-sort flex-row">
 			<div class="sort-label earliest active">Earliest</div>
 			<div class="sort-label fastest">Fastest</div>
@@ -13,7 +13,7 @@
 			<div class="dropdown element-title"><i class="fa fa-angle-down"></i></div>
 		</div>
 		<!-- Sticky book  -->
-		<div class="sticky-book white-box m-t-10 m-b-10 flex-row space-between">
+		<div class="sticky-book white-box m-t-10 m-b-10 flex-row space-between" id="sticky-book">
 			<div class="depart sticky-book__col flex-row align-top">
 				<img src="{{"img/AI.png" | absURL}}" class="img-responsive img-circle m-r-10">
 				<div>
@@ -78,16 +78,19 @@
 						</div>
 					</div>
 				</div>
-				<div class="search-results__body">
+				<div class="search-results__body f-return-way">
 					<div class="flex-row separator align-top">
 						<div class="head_col text-lighter flex-row align-top airlines">
-							<img src="{{"img/Wishlist-selected.png" | absURL}}" class="img-responsive m-r-10 cursor-pointer" width="16" data-toggle="tooltip" data-placement="top" title="Shortlist">
+							<i class="fa fa-thumbs-up shortlist-me cursor-pointer" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Shortlist"></i>
 							<div>
 								<div class="flex-row">
-									<img src="{{"img/SG.png" | absURL}}" class="img-responsive img-circle">
-									<img src="{{"img/earliest.png" | absURL}}" class="no-opac img-responsive m-l-5 cursor-pointer" width="25" data-toggle="tooltip" data-placement="top" title="Earliest Flight">
+									<img src="{{"img/SG.png" | absURL}}" class="img-responsive">
+									<!-- <img src="{{"img/earliest.png" | absURL}}" class="no-opac img-responsive m-l-10 cursor-pointer" width="30" data-toggle="tooltip" data-placement="top" title="Earliest Flight"> -->
 								</div>
-								<p class="m-b-0 text-lighter lighter x-small m-t-5">SJ-643</p>
+								<div class="p-t-5 text-left">
+									<p class="text-lighter lighter x-small m-b-0">Spice Jet</p>
+									<p class="m-b-0 text-lighter lighter x-small">SG454</p>
+								</div>
 							</div>
 						</div>
 						<div class="head_col text-lighter depart">
@@ -103,9 +106,12 @@
 						<div class="head_col text-lighter">
 							<p class="text-color m-b-5">1h 10m</p>
 							<p class="m-b-0 x-small text-lighter">nonstop</p>
+							<div class="flight-label cheapest dis-inline m-t-5">
+								Cheapest
+							</div>
 						</div>
 						<div class="head_col text-lighter price-row flex-row duration">
-							<div>
+							<div class="check-separator">
 							 	<div class="flex-row justify-center">
 									<!-- <img src="{{"img/Wishlist-selected.png" | absURL}}" class="img-responsive m-r-5 cursor-pointer" width="20" data-toggle="tooltip" data-placement="top" title="Shortlist"> -->
 									<input type="radio" name="book-check-1" id="expressCheckYes" value="yes" class="fnb-radio book-select-radio" checked>
@@ -219,13 +225,16 @@
 					</div>
 					<div class="flex-row separator align-top">
 						<div class="head_col text-lighter flex-row align-top airlines">
-							<img src="{{"img/Wishlist.png" | absURL}}" class="img-responsive m-r-10 cursor-pointer" width="16" data-toggle="tooltip" data-placement="top" title="Shortlist">
+							<i class="fa fa-thumbs-up shortlist-me cursor-pointer active" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Shortlist"></i>
 							<div>
 								<div class="flex-row">
-									<img src="{{"img/AI.png" | absURL}}" class="img-responsive img-circle">
-									<img src="{{"img/Cheapest.png" | absURL}}" class="no-opac img-responsive m-l-5 cursor-pointer" width="25" data-toggle="tooltip" data-placement="top" title="Cheapest Flight">
+									<img src="{{"img/AI.png" | absURL}}" class="img-responsive">
+									<!-- <img src="{{"img/earliest.png" | absURL}}" class="no-opac img-responsive m-l-10 cursor-pointer" width="30" data-toggle="tooltip" data-placement="top" title="Earliest Flight"> -->
 								</div>
-								<p class="m-b-0 text-lighter lighter x-small m-t-5">AI-643</p>
+								<div class="p-t-5 text-left">
+									<p class="text-lighter lighter x-small m-b-0">Air India</p>
+									<p class="m-b-0 text-lighter lighter x-small">AI454</p>
+								</div>
 							</div>
 						</div>
 						<div class="head_col text-lighter depart">
@@ -243,7 +252,7 @@
 							<p class="m-b-0 x-small text-lighter">nonstop</p>
 						</div>
 						<div class="head_col text-lighter price-row flex-row">
-							<div>
+							<div class="check-separator">
 							 	<div class="flex-row justify-center">
 									<!-- <img src="{{"img/Wishlist-selected.png" | absURL}}" class="img-responsive m-r-5 cursor-pointer" width="20" data-toggle="tooltip" data-placement="top" title="Shortlist"> -->
 									<input type="radio" name="book-check-2" id="expressCheckYes" value="yes" class="fnb-radio book-select-radio">
@@ -262,13 +271,16 @@
 					</div>
 					<div class="flex-row separator align-top">
 						<div class="head_col text-lighter flex-row align-top airlines">
-							<img src="{{"img/Wishlist-selected.png" | absURL}}" class="img-responsive m-r-10 cursor-pointer" width="16" data-toggle="tooltip" data-placement="top" title="Shortlist">
+							<i class="fa fa-thumbs-up shortlist-me cursor-pointer active" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Shortlist"></i>
 							<div>
 								<div class="flex-row">
-									<img src="{{"img/SG.png" | absURL}}" class="img-responsive img-circle">
-									<!-- <img src="{{"img/earliest.png" | absURL}}" class="no-opac img-responsive m-l-5 cursor-pointer" width="25" data-toggle="tooltip" data-placement="top" title="Earliest Flight"> -->
+									<img src="{{"img/SG.png" | absURL}}" class="img-responsive">
+									<!-- <img src="{{"img/earliest.png" | absURL}}" class="no-opac img-responsive m-l-10 cursor-pointer" width="30" data-toggle="tooltip" data-placement="top" title="Earliest Flight"> -->
 								</div>
-								<p class="m-b-0 text-lighter lighter x-small m-t-5">SJ-643</p>
+								<div class="p-t-5 text-left">
+									<p class="text-lighter lighter x-small m-b-0">Spice Jet</p>
+									<p class="m-b-0 text-lighter lighter x-small">SG454</p>
+								</div>
 							</div>
 						</div>
 						<div class="head_col text-lighter depart">
@@ -287,7 +299,7 @@
 							<p class="m-b-0 x-small text-danger"><i class="fa fa-ban" aria-hidden="true"></i> out of policy</p>
 						</div>
 						<div class="head_col text-lighter price-row flex-row">
-							<div>
+							<div class="check-separator">
 							 	<div class="flex-row justify-center">
 									<!-- <img src="{{"img/Wishlist-selected.png" | absURL}}" class="img-responsive m-r-5 cursor-pointer" width="20" data-toggle="tooltip" data-placement="top" title="Shortlist"> -->
 									<input type="radio" name="book-check-3" id="expressCheckYes" value="yes" class="fnb-radio book-select-radio">
@@ -306,13 +318,16 @@
 					</div>
 					<div class="flex-row separator align-top">
 						<div class="head_col text-lighter flex-row align-top airlines">
-							<img src="{{"img/Wishlist.png" | absURL}}" class="img-responsive m-r-10 cursor-pointer" width="16" data-toggle="tooltip" data-placement="top" title="Shortlist">
+							<i class="fa fa-thumbs-up shortlist-me cursor-pointer" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Shortlist"></i>
 							<div>
 								<div class="flex-row">
-									<img src="{{"img/AI.png" | absURL}}" class="img-responsive img-circle">
-									<img src="{{"img/fastest.png" | absURL}}" class="no-opac img-responsive m-l-5 cursor-pointer" width="25" data-toggle="tooltip" data-placement="top" title="Fastest Flight">
+									<img src="{{"img/AI.png" | absURL}}" class="img-responsive">
+									<!-- <img src="{{"img/earliest.png" | absURL}}" class="no-opac img-responsive m-l-10 cursor-pointer" width="30" data-toggle="tooltip" data-placement="top" title="Earliest Flight"> -->
 								</div>
-								<p class="m-b-0 text-lighter lighter x-small m-t-5">AI-643</p>
+								<div class="p-t-5 text-left">
+									<p class="text-lighter lighter x-small m-b-0">Air India</p>
+									<p class="m-b-0 text-lighter lighter x-small">AI655</p>
+								</div>
 							</div>
 						</div>
 						<div class="head_col text-lighter depart">
@@ -328,9 +343,12 @@
 						<div class="head_col text-lighter">
 							<p class="text-color m-b-5">1h 10m</p>
 							<p class="m-b-0 x-small text-lighter">nonstop</p>
+							<div class="flight-label earliest dis-inline m-t-5">
+								Earliest
+							</div>
 						</div>
 						<div class="head_col text-lighter price-row flex-row">
-							<div>
+							<div class="check-separator no-rate">
 							 	<div class="flex-row justify-center">
 									<!-- <img src="{{"img/Wishlist-selected.png" | absURL}}" class="img-responsive m-r-5 cursor-pointer" width="20" data-toggle="tooltip" data-placement="top" title="Shortlist"> -->
 									<input type="radio" name="book-check-4" id="expressCheckYes" value="yes" class="fnb-radio book-select-radio">
@@ -345,94 +363,10 @@
 							</div>
 						</div>
 					</div>
-					<div class="flex-row separator align-top">
-						<div class="head_col text-lighter flex-row align-top airlines">
-							<img src="{{"img/Wishlist-selected.png" | absURL}}" class="img-responsive m-r-10 cursor-pointer" width="16" data-toggle="tooltip" data-placement="top" title="Shortlist">
-							<div>
-								<div class="flex-row">
-									<img src="{{"img/SG.png" | absURL}}" class="img-responsive img-circle">
-									<img src="{{"img/earliest.png" | absURL}}" class="no-opac img-responsive m-l-5 cursor-pointer" width="25" data-toggle="tooltip" data-placement="top" title="Earliest Flight">
-								</div>
-								<p class="m-b-0 text-lighter lighter x-small m-t-5">SJ-643</p>
-							</div>
-						</div>
-						<div class="head_col text-lighter depart">
-							<div class="dis-inline text-left">
-								<p class="bolder bat-color m-b-5">04:30</p>
-								<p class="m-b-0 x-small text-lighter">GOI - BOM</p>
-								<p class="m-b-0 x-small text-lighter">Spice Jet</p>
-							</div>
-						</div>
-						<div class="head_col text-lighter arrive">
-							<p class="text-color m-b-5">05:10</p>
-						</div>
-						<div class="head_col text-lighter">
-							<p class="text-color m-b-5">1h 10m</p>
-							<p class="m-b-0 x-small text-lighter">nonstop</p>
-						</div>
-						<div class="head_col text-lighter price-row flex-row">
-							<div>
-							 	<div class="flex-row justify-center">
-									<!-- <img src="{{"img/Wishlist-selected.png" | absURL}}" class="img-responsive m-r-5 cursor-pointer" width="20" data-toggle="tooltip" data-placement="top" title="Shortlist"> -->
-									<input type="radio" name="book-check-5" id="expressCheckYes" value="yes" class="fnb-radio book-select-radio">
-									<p class="m-b-0 text-color flex-row"><i class="fa fa-inr" aria-hidden="true"></i> <b class="bat-color sub-title">4,995</b> <img src="{{"img/corporate.png" | absURL}}" class="img-responsive m-l-5 cursor-pointer no-opac" width="15" data-toggle="tooltip" data-placement="top" title="Corporate rate"></p>
-								</div>
-								<!-- <div class="flex-row justify-center price-row__separation">
-									<p class="m-b-0 text-darker x-small flex-row"><input type="radio" name="book-check-1" id="expressCheckYes" value="yes" class="fnb-radio book-select-radio"> </p>
-									<div class="flex-row m-t-5">
-										<i class="fa fa-inr p-l-5" aria-hidden="true"></i> 5,110 <img src="{{"img/retail-rate.png" | absURL}}" class="img-responsive m-l-5 cursor-pointer" width="18" data-toggle="tooltip" data-placement="top" title="Retail rate">
-									</div>
-								</div> -->
-							</div>
-						</div>
-					</div>
-					<div class="flex-row separator align-top">
-						<div class="head_col text-lighter flex-row align-top airlines">
-							<img src="{{"img/Wishlist.png" | absURL}}" class="img-responsive m-r-10 cursor-pointer" width="16" data-toggle="tooltip" data-placement="top" title="Shortlist">
-							<div>
-								<div class="flex-row">
-									<img src="{{"img/AI.png" | absURL}}" class="img-responsive img-circle">
-									<img src="{{"img/Cheapest.png" | absURL}}" class="no-opac img-responsive m-l-5 cursor-pointer" width="25" data-toggle="tooltip" data-placement="top" title="Cheapest Flight">
-								</div>
-								<p class="m-b-0 text-lighter lighter x-small m-t-5">AI-643</p>
-							</div>
-						</div>
-						<div class="head_col text-lighter depart">
-							<div class="dis-inline text-left">
-								<p class="bolder text-color m-b-5">04:15</p>
-								<p class="m-b-0 x-small text-lighter">GOI - BOM</p>
-								<p class="m-b-0 x-small text-lighter">Air India</p>
-							</div>
-						</div>
-						<div class="head_col text-lighter arrive">
-							<p class="text-color m-b-5">05:25</p>
-						</div>
-						<div class="head_col text-lighter">
-							<p class="text-color m-b-5">1h 10m</p>
-							<p class="m-b-0 x-small text-lighter">nonstop</p>
-						</div>
-						<div class="head_col text-lighter price-row flex-row">
-							<div>
-							 	<div class="flex-row justify-center">
-									<!-- <img src="{{"img/Wishlist-selected.png" | absURL}}" class="img-responsive m-r-5 cursor-pointer" width="20" data-toggle="tooltip" data-placement="top" title="Shortlist"> -->
-									<input type="radio" name="book-check-6" id="expressCheckYes" value="yes" class="fnb-radio book-select-radio">
-									<p class="m-b-0 text-color flex-row"><i class="fa fa-inr" aria-hidden="true"></i> <b class="bat-color sub-title">5,653</b> <img src="{{"img/retail-rate.png" | absURL}}" class="img-responsive m-l-5 cursor-pointer no-opac" width="15" data-toggle="tooltip" data-placement="top" title="Retail rate"></p>
-								</div>
-								<div class="flex-row justify-center price-row__separation">
-									<!-- <p class="m-b-0 text-darker x-small flex-row"><img src="{{"img/corporate.png" | absURL}}" class="img-responsive m-r-5 cursor-pointer" width="20" data-toggle="tooltip" data-placement="top" title="Corporate rate"> <i class="fa fa-inr" aria-hidden="true"></i> <b class="bat-color sub-title">4,995</b></p>
-									<p class="m-b-0 p-l-5 p-r-5">|</p> -->
-									<p class="m-b-0 text-darker x-small flex-row"><input type="radio" name="book-check-6" id="expressCheckYes" value="yes" class="fnb-radio book-select-radio"> </p>
-									<div class="flex-row m-t-5">
-										<i class="fa fa-inr p-l-5" aria-hidden="true"></i> 5,780 <img src="{{"img/corporate.png" | absURL}}" class="img-responsive m-l-5 cursor-pointer" width="18" data-toggle="tooltip" data-placement="top" title="Corporate rate">
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
 					
 				</div>
 			</div>
-			<div class="search-results white-box m-b-30">
+			<div class="search-results white-box m-b-30 f-return-way">
 				<div class="wishlist-bar flex-row space-between p-t-20 p-b-20">
 					<div class="flex-row">
 						<img src="{{"img/flight.png" | absURL}}" class="img-responsive m-r-5">
@@ -442,7 +376,7 @@
 						</div>
 					</div>
 					<div>
-						<p class="bat-color text-uppercase default-size flex-row relative m-r-10 shortlist-row m-b-0">Shortlist <a href="/Goomo-CBT/account/shortlist/"><img src="{{"img/Wishlist-selected.png" | absURL}}" class="img-responsive m-l-10" ></a>
+						<p class="bat-color text-uppercase default-size flex-row relative m-r-10 shortlist-row m-b-0">Shortlist <a href="/Goomo-CBT/account/shortlist/"><i class="fa fa-thumbs-up shortlist-me no-click active cursor-pointer" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="" data-original-title="Shortlist"></i></a>
 						<span class="notification text-secondary">3</span>
 						</p>
 					</div>
@@ -477,13 +411,16 @@
 				<div class="search-results__body">
 					<div class="flex-row separator align-top">
 						<div class="head_col text-lighter flex-row align-top airlines">
-							<img src="{{"img/Wishlist-selected.png" | absURL}}" class="img-responsive m-r-10 cursor-pointer" width="15" data-toggle="tooltip" data-placement="top" title="Shortlist">
+							<i class="fa fa-thumbs-up shortlist-me cursor-pointer" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Shortlist"></i>
 							<div>
 								<div class="flex-row">
-									<img src="{{"img/AI.png" | absURL}}" class="img-responsive img-circle">
-									<img src="{{"img/earliest.png" | absURL}}" class="no-opac img-responsive m-l-5 cursor-pointer" width="25" data-toggle="tooltip" data-placement="top" title="Earliest Flight">
+									<img src="{{"img/AI.png" | absURL}}" class="img-responsive">
+									<!-- <img src="{{"img/earliest.png" | absURL}}" class="no-opac img-responsive m-l-10 cursor-pointer" width="30" data-toggle="tooltip" data-placement="top" title="Earliest Flight"> -->
 								</div>
-								<p class="m-b-0 text-lighter lighter x-small m-t-5">AI-643</p>
+								<div class="p-t-5 text-left">
+									<p class="text-lighter lighter x-small m-b-0">Air India</p>
+									<p class="m-b-0 text-lighter lighter x-small">AI454</p>
+								</div>
 							</div>
 						</div>
 						<div class="head_col text-lighter depart">
@@ -499,9 +436,12 @@
 						<div class="head_col text-lighter">
 							<p class="text-color m-b-5">1h 10m</p>
 							<p class="m-b-0 x-small text-lighter">nonstop</p>
+							<div class="flight-label fastest dis-inline m-t-5">
+								Fastest
+							</div>
 						</div>
 						<div class="head_col text-lighter price-row flex-row">
-							<div>
+							<div class="check-separator">
 							 	<div class="flex-row justify-center">
 									<!-- <img src="{{"img/Wishlist-selected.png" | absURL}}" class="img-responsive m-r-5 cursor-pointer" width="20" data-toggle="tooltip" data-placement="top" title="Shortlist"> -->
 									<input type="radio" name="book-check-7" id="expressCheckYes" value="yes" class="fnb-radio book-select-radio" checked>
@@ -615,13 +555,16 @@
 					</div>
 					<div class="flex-row separator align-top">
 						<div class="head_col text-lighter flex-row align-top airlines">
-							<img src="{{"img/Wishlist.png" | absURL}}" class="img-responsive m-r-10 cursor-pointer" width="16" data-toggle="tooltip" data-placement="top" title="Shortlist">
+							<i class="fa fa-thumbs-up shortlist-me cursor-pointer" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Shortlist"></i>
 							<div>
 								<div class="flex-row">
-									<img src="{{"img/SG.png" | absURL}}" class="img-responsive img-circle">
-									<img src="{{"img/earliest.png" | absURL}}" class="no-opac img-responsive m-l-5 cursor-pointer" width="25" data-toggle="tooltip" data-placement="top" title="Earliest Flight">
+									<img src="{{"img/SG.png" | absURL}}" class="img-responsive">
+									<!-- <img src="{{"img/earliest.png" | absURL}}" class="no-opac img-responsive m-l-10 cursor-pointer" width="30" data-toggle="tooltip" data-placement="top" title="Earliest Flight"> -->
 								</div>
-								<p class="m-b-0 text-lighter lighter x-small m-t-5">SJ-643</p>
+								<div class="p-t-5 text-left">
+									<p class="text-lighter lighter x-small m-b-0">Spice Jet</p>
+									<p class="m-b-0 text-lighter lighter x-small">SG454</p>
+								</div>
 							</div>
 						</div>
 						<div class="head_col text-lighter depart">
@@ -637,9 +580,12 @@
 						<div class="head_col text-lighter">
 							<p class="text-color m-b-5">1h 10m</p>
 							<p class="m-b-0 x-small text-lighter">nonstop</p>
+							<div class="flight-label earliest dis-inline m-t-5">
+								Earliest
+							</div>
 						</div>
 						<div class="head_col text-lighter price-row flex-row">
-							<div>
+							<div class="check-separator">
 							 	<div class="flex-row justify-center">
 									<!-- <img src="{{"img/Wishlist-selected.png" | absURL}}" class="img-responsive m-r-5 cursor-pointer" width="20" data-toggle="tooltip" data-placement="top" title="Shortlist"> -->
 									<input type="radio" name="book-check-8" id="expressCheckYes" value="yes" class="fnb-radio book-select-radio">
@@ -658,13 +604,16 @@
 					</div>
 					<div class="flex-row separator align-top">
 						<div class="head_col text-lighter flex-row align-top airlines">
-							<img src="{{"img/Wishlist-selected.png" | absURL}}" class="img-responsive m-r-10 cursor-pointer" width="15" data-toggle="tooltip" data-placement="top" title="Shortlist">
+							<i class="fa fa-thumbs-up shortlist-me cursor-pointer" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Shortlist"></i>
 							<div>
 								<div class="flex-row">
-									<img src="{{"img/AI.png" | absURL}}" class="img-responsive img-circle">
-									<!-- <img src="{{"img/earliest.png" | absURL}}" class="no-opac img-responsive m-l-5 cursor-pointer" width="25" data-toggle="tooltip" data-placement="top" title="Earliest Flight"> -->
+									<img src="{{"img/AI.png" | absURL}}" class="img-responsive">
+									<!-- <img src="{{"img/earliest.png" | absURL}}" class="no-opac img-responsive m-l-10 cursor-pointer" width="30" data-toggle="tooltip" data-placement="top" title="Earliest Flight"> -->
 								</div>
-								<p class="m-b-0 text-lighter lighter x-small m-t-5">AI-643</p>
+								<div class="p-t-5 text-left">
+									<p class="text-lighter lighter x-small m-b-0">Air India</p>
+									<p class="m-b-0 text-lighter lighter x-small">AI454</p>
+								</div>
 							</div>
 						</div>
 						<div class="head_col text-lighter depart">
@@ -683,7 +632,7 @@
 							<p class="m-b-0 x-small text-danger"><i class="fa fa-ban" aria-hidden="true"></i> out of policy</p>
 						</div>
 						<div class="head_col text-lighter price-row flex-row">
-							<div>
+							<div class="check-separator">
 							 	<div class="flex-row justify-center">
 									<!-- <img src="{{"img/Wishlist-selected.png" | absURL}}" class="img-responsive m-r-5 cursor-pointer" width="20" data-toggle="tooltip" data-placement="top" title="Shortlist"> -->
 									<input type="radio" name="book-check-9" id="expressCheckYes" value="yes" class="fnb-radio book-select-radio">
@@ -702,13 +651,16 @@
 					</div>
 					<div class="flex-row separator align-top">
 						<div class="head_col text-lighter flex-row align-top airlines">
-							<img src="{{"img/Wishlist.png" | absURL}}" class="img-responsive m-r-10 cursor-pointer" width="16" data-toggle="tooltip" data-placement="top" title="Shortlist">
+							<i class="fa fa-thumbs-up shortlist-me cursor-pointer" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Shortlist"></i>
 							<div>
 								<div class="flex-row">
-									<img src="{{"img/SG.png" | absURL}}" class="img-responsive img-circle">
-									<img src="{{"img/fastest.png" | absURL}}" class="no-opac img-responsive m-l-5 cursor-pointer" width="25" data-toggle="tooltip" data-placement="top" title="Fastest Flight">
+									<img src="{{"img/SG.png" | absURL}}" class="img-responsive">
+									<!-- <img src="{{"img/earliest.png" | absURL}}" class="no-opac img-responsive m-l-10 cursor-pointer" width="30" data-toggle="tooltip" data-placement="top" title="Earliest Flight"> -->
 								</div>
-								<p class="m-b-0 text-lighter lighter x-small m-t-5">SJ-643</p>
+								<div class="p-t-5 text-left">
+									<p class="text-lighter lighter x-small m-b-0">Spice Jet</p>
+									<p class="m-b-0 text-lighter lighter x-small">SG454</p>
+								</div>
 							</div>
 						</div>
 						<div class="head_col text-lighter depart">
@@ -726,7 +678,7 @@
 							<p class="m-b-0 x-small text-lighter">nonstop</p>
 						</div>
 						<div class="head_col text-lighter price-row flex-row">
-							<div>
+							<div class="check-separator">
 							 	<div class="flex-row justify-center">
 									<!-- <img src="{{"img/Wishlist-selected.png" | absURL}}" class="img-responsive m-r-5 cursor-pointer" width="20" data-toggle="tooltip" data-placement="top" title="Shortlist"> -->
 									<input type="radio" name="book-check-10" id="expressCheckYes" value="yes" class="fnb-radio book-select-radio">
@@ -738,90 +690,6 @@
 										<i class="fa fa-inr p-l-5" aria-hidden="true"></i> 5,780 <img src="{{"img/corporate.png" | absURL}}" class="img-responsive m-l-5 cursor-pointer" width="18" data-toggle="tooltip" data-placement="top" title="Retail rate">
 									</div>
 								</div> -->
-							</div>
-						</div>
-					</div>
-					<div class="flex-row separator align-top">
-						<div class="head_col text-lighter flex-row align-top airlines">
-							<img src="{{"img/Wishlist-selected.png" | absURL}}" class="img-responsive m-r-10 cursor-pointer" width="15" data-toggle="tooltip" data-placement="top" title="Shortlist">
-							<div>
-								<div class="flex-row">
-									<img src="{{"img/AI.png" | absURL}}" class="img-responsive img-circle">
-									<img src="{{"img/earliest.png" | absURL}}" class="no-opac img-responsive m-l-5 cursor-pointer" width="25" data-toggle="tooltip" data-placement="top" title="Earliest Flight">
-								</div>
-								<p class="m-b-0 text-lighter lighter x-small m-t-5">AI-643</p>
-							</div>
-						</div>
-						<div class="head_col text-lighter depart">
-							<div class="dis-inline text-left">
-								<p class="bolder bat-color m-b-5">04:00</p>
-								<p class="m-b-0 x-small text-lighter">BOM - GOI</p>
-								<p class="m-b-0 x-small text-lighter">Air India</p>
-							</div>
-						</div>
-						<div class="head_col text-lighter arrive">
-							<p class="text-color m-b-5">05:10</p>
-						</div>
-						<div class="head_col text-lighter">
-							<p class="text-color m-b-5">1h 10m</p>
-							<p class="m-b-0 x-small text-lighter">nonstop</p>
-						</div>
-						<div class="head_col text-lighter price-row flex-row">
-							<div>
-							 	<div class="flex-row justify-center">
-									<!-- <img src="{{"img/Wishlist-selected.png" | absURL}}" class="img-responsive m-r-5 cursor-pointer" width="20" data-toggle="tooltip" data-placement="top" title="Shortlist"> -->
-									<input type="radio" name="book-check-11" id="expressCheckYes" value="yes" class="fnb-radio book-select-radio">
-									<p class="m-b-0 text-color flex-row"><i class="fa fa-inr" aria-hidden="true"></i> <b class="bat-color sub-title">4,995</b> <img src="{{"img/corporate.png" | absURL}}" class="img-responsive m-l-5 cursor-pointer no-opac" width="15" data-toggle="tooltip" data-placement="top" title="Corporate rate"></p>
-								</div>
-								<!-- <div class="flex-row justify-center price-row__separation">
-									<p class="m-b-0 text-darker x-small flex-row"><input type="radio" name="book-check-1" id="expressCheckYes" value="yes" class="fnb-radio book-select-radio"> </p>
-									<div class="flex-row m-t-5">
-										<i class="fa fa-inr p-l-5" aria-hidden="true"></i> 5,110 <img src="{{"img/retail-rate.png" | absURL}}" class="img-responsive m-l-5 cursor-pointer" width="18" data-toggle="tooltip" data-placement="top" title="Retail rate">
-									</div>
-								</div> -->
-							</div>
-						</div>
-					</div>
-					<div class="flex-row separator align-top">
-						<div class="head_col text-lighter flex-row align-top airlines">
-							<img src="{{"img/Wishlist.png" | absURL}}" class="img-responsive m-r-10 cursor-pointer" width="16" data-toggle="tooltip" data-placement="top" title="Shortlist">
-							<div>
-								<div class="flex-row">
-									<img src="{{"img/SG.png" | absURL}}" class="img-responsive img-circle">
-									<img src="{{"img/earliest.png" | absURL}}" class="no-opac img-responsive m-l-5 cursor-pointer" width="25" data-toggle="tooltip" data-placement="top" title="Earliest Flight">
-								</div>
-								<p class="m-b-0 text-lighter lighter x-small m-t-5">SJ-643</p>
-							</div>
-						</div>
-						<div class="head_col text-lighter depart">
-							<div class="dis-inline text-left">
-								<p class="bolder text-color m-b-5">04:15</p>
-								<p class="m-b-0 x-small text-lighter">BOM - GOI</p>
-								<p class="m-b-0 x-small text-lighter">Spice Jet</p>
-							</div>
-						</div>
-						<div class="head_col text-lighter arrive">
-							<p class="text-color m-b-5">05:25</p>
-						</div>
-						<div class="head_col text-lighter">
-							<p class="text-color m-b-5">1h 10m</p>
-							<p class="m-b-0 x-small text-lighter">nonstop</p>
-						</div>
-						<div class="head_col text-lighter price-row flex-row">
-							<div>
-							 	<div class="flex-row justify-center">
-									<!-- <img src="{{"img/Wishlist-selected.png" | absURL}}" class="img-responsive m-r-5 cursor-pointer" width="20" data-toggle="tooltip" data-placement="top" title="Shortlist"> -->
-									<input type="radio" name="book-check-12" id="expressCheckYes" value="yes" class="fnb-radio book-select-radio">
-									<p class="m-b-0 text-color flex-row"><i class="fa fa-inr" aria-hidden="true"></i> <b class="bat-color sub-title">5,653</b> <img src="{{"img/retail-rate.png" | absURL}}" class="img-responsive m-l-5 cursor-pointer no-opac" width="15" data-toggle="tooltip" data-placement="top" title="Retail rate"></p>
-								</div>
-								<div class="flex-row justify-center price-row__separation">
-									<!-- <p class="m-b-0 text-darker x-small flex-row"><img src="{{"img/corporate.png" | absURL}}" class="img-responsive m-r-5 cursor-pointer" width="20" data-toggle="tooltip" data-placement="top" title="Corporate rate"> <i class="fa fa-inr" aria-hidden="true"></i> <b class="bat-color sub-title">4,995</b></p>
-									<p class="m-b-0 p-l-5 p-r-5">|</p> -->
-									<p class="m-b-0 text-darker x-small flex-row"><input type="radio" name="book-check-12" id="expressCheckYes" value="yes" class="fnb-radio book-select-radio"> </p>
-									<div class="flex-row m-t-5">
-										<i class="fa fa-inr p-l-5" aria-hidden="true"></i> 5,780 <img src="{{"img/corporate.png" | absURL}}" class="img-responsive m-l-5 cursor-pointer" width="18" data-toggle="tooltip" data-placement="top" title="Corporate rate">
-									</div>
-								</div>
 							</div>
 						</div>
 					</div>

@@ -5276,6 +5276,14 @@ input[type="radio"].book-select-radio{
 
 .sticky-book{
 	padding: 1.8em;
+	&.active{
+		position: fixed;
+    	top: 0;
+    	margin-top: 0;
+    	background-color: #fff;
+    	z-index: 1;
+    	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.17);
+	}
 }
 
 
@@ -5600,7 +5608,46 @@ input[type="radio"].book-select-radio{
 }
 
 
-
+.f-return-way{
+	.check-separator{
+		position: relative;
+		&:before{
+			content: '';
+			display: inline-block;
+			position: absolute;
+		    height: 65%;
+		    width: 1px;
+		    background-color: #ddd;
+		    left: 6px;
+		    top: 15px;
+		}
+		&.no-rate{
+			&:before{
+				display: none;
+			}
+		}
+		.fnb-radio{
+			&:checked{
+				&:before{
+					color: #66b659;
+				}
+			}
+		}
+	}
+	.separator{
+		padding: 0.6em 0;
+		min-height: 95px;
+	}
+	.price-row__separation{
+		border-top: 0;
+    	padding-top: 5px;
+    	margin-bottom: 0;
+    	margin-top: 0;
+	}
+	.flight-label{
+		min-width: 65px;
+	}
+}
 
 
 
