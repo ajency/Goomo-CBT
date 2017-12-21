@@ -12052,11 +12052,14 @@ input[type="radio"].book-select-radio:before {
 }
 .share-link,
 .send-mail {
-  padding: 0.8em;
+  padding: 0.8em 1em;
 }
 .copy-bar {
-  padding: 0.8em;
+  padding: 0.8em 0.5em;
   border: 1px solid;
+}
+.copy-bar p {
+  font-size: 0.85em;
 }
 .search-version .head_col {
   -webkit-flex-basis: 20%;
@@ -12166,6 +12169,43 @@ input[type="radio"].book-select-radio:before {
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
 }
+.search-version.shortlist-version .search-results__head .arrive {
+  -webkit-flex-basis: 10%;
+      -ms-flex-preferred-size: 10%;
+          flex-basis: 10%;
+}
+.search-version.shortlist-version .search-results__head .price {
+  -webkit-flex-basis: 18%;
+      -ms-flex-preferred-size: 18%;
+          flex-basis: 18%;
+}
+.search-version.shortlist-version .search-results__body .separator {
+  font-size: 0.95em;
+}
+.search-version.shortlist-version .search-results__body .depart {
+  -webkit-flex-basis: 15%;
+      -ms-flex-preferred-size: 15%;
+          flex-basis: 15%;
+}
+.search-version.shortlist-version .search-results__body .arrive {
+  -webkit-flex-basis: 15%;
+      -ms-flex-preferred-size: 15%;
+          flex-basis: 15%;
+}
+.search-version.shortlist-version .search-results__body .duration {
+  -webkit-flex-basis: 15%;
+      -ms-flex-preferred-size: 15%;
+          flex-basis: 15%;
+}
+.search-version.shortlist-version .search-results__body .price-row {
+  -webkit-flex-basis: 25%;
+      -ms-flex-preferred-size: 25%;
+          flex-basis: 25%;
+}
+.search-version.shortlist-version input[type="radio"].book-select-radio:before {
+  top: -5px;
+  font-size: 1.45em;
+}
 .shortlist-me {
   -webkit-transform: scaleX(-1);
       -ms-transform: scaleX(-1);
@@ -12200,6 +12240,18 @@ input[type="radio"].book-select-radio:before {
 }
 .flight-label.earliest {
   color: #21a1e0;
+}
+.comment-box {
+  font-size: 0.8em;
+  padding: 0.5em;
+  background-color: #fdefbd;
+}
+.profile-view {
+  padding: 2em 1.5em;
+}
+.profile-view .img-circle {
+  width: 50px;
+  height: 50px;
 }
 .profile-stats {
   color: #fff;
