@@ -12046,6 +12046,18 @@ input[type="radio"].book-select-radio:before {
 .mode-border {
   border-bottom: 1px solid #ddd;
 }
+.flight-da__head {
+  padding: 0.8em;
+  background-color: #ddd;
+}
+.share-link,
+.send-mail {
+  padding: 0.8em;
+}
+.copy-bar {
+  padding: 0.8em;
+  border: 1px solid;
+}
 .profile-stats {
   color: #fff;
   background: #ff8400;
