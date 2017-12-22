@@ -12471,6 +12471,20 @@ input[type="radio"].book-select-radio:before {
   padding: 10px;
   margin-top: 15px;
 }
+.get-approve-row {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.get-approve-row > div {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 25%;
+      -ms-flex: 1 0 25%;
+          flex: 1 0 25%;
+  max-width: 25%;
+  margin-bottom: 15px;
+}
 .profile-stats {
   color: #fff;
   background: #ff8400;
