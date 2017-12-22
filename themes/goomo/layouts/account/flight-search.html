@@ -14,47 +14,344 @@
 			<div class="m-b-20 m-b-20">
 				<div>
 					<h5 class="text-darker bolder m-b-5">I am Booking for</h5>
-					<div class="radio-check" id="stops">
+					<!-- <div class="radio-check" id="stops">
 		              <div class="stops-row m-t-15">
 		              	<label><input type="radio" name="stops" class="radio" checked> <span>Myself</span></label>
 		              	<label><input type="radio" name="stops" class="radio"> <span>Team Member</span></label>
 		              	<label><input type="radio" name="stops" class="radio"> <span>Guest</span></label>
 		              </div>
-		            </div>
+		            </div> -->
+
+		            <!-- tabs -->
+		            <ul class="nav nav-pills nav-tabs m-t-15 pills-tabs">
+		                <li class="active"><a  data-target="#myself" data-toggle="tab">Myself</a></li>
+		                <li><a data-target="#t-member" data-toggle="tab">Team Member</a></li>
+		                <li><a data-target="#guest" data-toggle="tab">Guest</a></li>
+	              	</ul>
+
+	              	<div class="tab-content">
+          				<div class="tab-pane active" id="myself">
+							<div class="flex-row m-t-15">
+								<div class="flex-1">
+									<p class="m-b-5 text-darker default-size">Traveller Name</p>
+									<input type="text" class="fnb-input fullwidth" value="Amar Singh" disabled="">
+								</div>
+								<div class="flex-1 m-l-15 m-r-15">
+									<p class="m-b-5 text-darker default-size">Travel Category</p>
+									<select class="fnb-select select-variant default-size">
+										<option> --select--</option>
+				                        <option value="trip" selected="">Business Trip</option>
+				                    </select>
+								</div>
+								<div class="flex-1">
+									<p class="m-b-5 text-darker default-size">Sub Category</p>
+									<select class="fnb-select select-variant default-size">
+										<option>--select--</option>
+				                        <option value="meeting" selected="">Meeting</option>
+				                    </select>
+								</div>
+							</div>
+          				</div>
+          				<div class="tab-pane" id="t-member">
+          					<div class="m-t-15">
+          						lorem ipsum
+          					</div>
+          				</div>
+          				<div class="tab-pane" id="guest">
+          					<div class="m-t-15">
+          						lorem ipsum
+          					</div>
+          				</div> 
+	              	</div>
+		            <!-- /tabs -->
 				</div>
 			</div>
-			<div class="flex-row">
-				<div class="flex-1">
-					<p class="m-b-5 text-darker default-size">Traveller Name</p>
-					<input type="text" class="fnb-input fullwidth" value="Amar Singh" disabled="">
+
+			<div class="m-b-20">
+				<!-- tabs -->
+				<ul class="nav nav-tabs custom-tabs m-t-30" id="myTab">
+					<li class="active"><a data-target="#one-way" data-toggle="tab">ONE-WAY</a></li>
+				  	<li><a data-target="#return" data-toggle="tab">RETURN</a></li>
+				  	<li><a data-target="#multi-city" data-toggle="tab">MULTI-CITY</a></li>
+				</ul>
+
+				<div class="tab-content">
+					<div class="tab-pane active" id="one-way">
+						<div class="m-t-30">
+							<div class="row">
+								<div class="col-sm-5">
+									<div class="flex-1">
+										<p class="m-b-5 text-darker default-size">From</p>
+										<div class="plane-icon_wrapper">
+											<select class="fnb-select select-variant default-size plane-icon">
+												<option> --select--</option>
+												<option value="" selected="">Goa, India (GOI)</option>
+						                        
+						                    </select>
+					                    </div>
+									</div>
+
+									<div class="flex-1 m-t-30">
+										<p class="m-b-5 text-darker default-size">Depart on</p>
+										<div class="input-group custom-input-group">
+											<input type="text" class="from-date form-control fnb-input sub-dates" placeholder="From Date">
+											<span class="input-group-addon" id=""><i class="fa fa-calendar"></i></span>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2 text-center">
+									<img src="../../static/img/from-to.jpg" alt="">
+								</div>
+								<div class="col-sm-5">
+									<div class="flex-1">
+										<p class="m-b-5 text-darker default-size">To</p>
+										<div class="plane-icon_wrapper rotate-90">
+											<select class="fnb-select select-variant default-size plane-icon">
+												<option> --select--</option>
+												<option value="" selected="">New Delhi, India (DEL)</option>
+						                        
+						                    </select>
+					                    </div>
+									</div>
+
+									
+
+									<!-- <div class="flex-1 m-t-30">
+										<p class="m-b-5 text-darker default-size">Return on</p>
+										<div class="input-group custom-input-group">
+											<input type="text" class="from-date form-control fnb-input sub-dates" placeholder="Return Date">
+											<span class="input-group-addon" id=""><i class="fa fa-calendar"></i></span>
+										</div>
+									</div> -->
+
+								</div>
+							</div>
+							
+							<div class="m-t-50">
+								<h6 clas="">Any more travellers?</h6>
+								<div class="row m-t-15">
+									<div class="col-md-3">
+										<div class="flex-1">
+											<p class="m-b-5 text-darker default-size">Adults</p>
+											<select class="fnb-select select-variant default-size">
+												<option> --select--</option>
+												<option value="" >01</option>
+						                        <option value="" selected="">02</option>
+						                    </select>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="flex-1">
+											<p class="m-b-5 text-darker default-size">Children (2-11 yrs)</p>
+											<select class="fnb-select select-variant default-size">
+												<option> --select--</option>
+												<option value="" selected="">01</option>
+						                        <option value="" >02</option>
+						                    </select>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="flex-1">
+											<p class="m-b-5 text-darker default-size">Infants (Below 2 yrs)</p>
+											<select class="fnb-select select-variant default-size">
+												<option> --select--</option>
+												<option value="" selected="">00</option>
+						                        <option value="" >01</option>
+						                    </select>
+										</div>
+									</div>
+									<div class="col-md-3"></div>
+								</div>
+							</div>
+
+							
+
+
+						</div>
+					</div>
+					<div class="tab-pane" id="return">
+						<div class="m-t-30">
+							<div class="row">
+								<div class="col-sm-5">
+									<div class="flex-1">
+										<p class="m-b-5 text-darker default-size">From</p>
+										<div class="plane-icon_wrapper">
+											<select class="fnb-select select-variant default-size plane-icon">
+												<option> --select--</option>
+												<option value="" selected="">Goa, India (GOI)</option>
+						                        
+						                    </select>
+					                    </div>
+									</div>
+
+									<div class="flex-1 m-t-30">
+										<p class="m-b-5 text-darker default-size">Depart on</p>
+										<div class="input-group custom-input-group">
+											<input type="text" class="from-date form-control fnb-input sub-dates" placeholder="From Date">
+											<span class="input-group-addon" id=""><i class="fa fa-calendar"></i></span>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2 text-center">
+									<img src="../../static/img/from-to.jpg" alt="">
+								</div>
+								<div class="col-sm-5">
+									<div class="flex-1">
+										<p class="m-b-5 text-darker default-size">To</p>
+										<div class="plane-icon_wrapper rotate-90">
+											<select class="fnb-select select-variant default-size plane-icon">
+												<option> --select--</option>
+												<option value="" selected="">New Delhi, India (DEL)</option>
+						                        
+						                    </select>
+					                    </div>
+									</div>
+
+									
+
+									<div class="flex-1 m-t-30">
+										<p class="m-b-5 text-darker default-size">Return on</p>
+										<div class="input-group custom-input-group">
+											<input type="text" class="from-date form-control fnb-input sub-dates" placeholder="Return Date">
+											<span class="input-group-addon" id=""><i class="fa fa-calendar"></i></span>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+							<div class="m-t-50">
+								<h6 clas="">Any more travellers?</h6>
+								<div class="row m-t-15">
+									<div class="col-md-3">
+										<div class="flex-1">
+											<p class="m-b-5 text-darker default-size">Adults</p>
+											<select class="fnb-select select-variant default-size">
+												<option> --select--</option>
+												<option value="" >01</option>
+						                        <option value="" selected="">02</option>
+						                    </select>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="flex-1">
+											<p class="m-b-5 text-darker default-size">Children (2-11 yrs)</p>
+											<select class="fnb-select select-variant default-size">
+												<option> --select--</option>
+												<option value="" selected="">01</option>
+						                        <option value="" >02</option>
+						                    </select>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="flex-1">
+											<p class="m-b-5 text-darker default-size">Infants (Below 2 yrs)</p>
+											<select class="fnb-select select-variant default-size">
+												<option> --select--</option>
+												<option value="" selected="">00</option>
+						                        <option value="" >01</option>
+						                    </select>
+										</div>
+									</div>
+									<div class="col-md-3"></div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="tab-pane" id="multi-city">
+						<div class="m-t-30">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil dicta repellat iusto, facilis deserunt iste non? Quam non, assumenda, ullam, illum provident delectus molestiae quae ipsam obcaecati inventore, hic repellendus.
+						</div>
+					</div>
 				</div>
-				<div class="flex-1 m-l-15 m-r-15">
-					<p class="m-b-5 text-darker default-size">Travel Category</p>
-					<select class="fnb-select select-variant default-size">
-						<option> --select--</option>
-                        <option value="trip" selected="">Business Trip</option>
-                    </select>
+				<!-- /tabs -->
+
+				<!-- dump -->
+				<!-- collapse -->
+				<div class="m-t-30 collapsible">
+					<a href="#demo" class="tdn" data-toggle="collapse"><i class="fa fa-caret-down m-r-5"></i> <strong>More options:</strong> class of travel, Airline preference</a>
+				  	<div id="demo" class="collapse">
+				    	<div class="row m-t-15">
+    						<div class="col-md-4">
+    							<div class="flex-1">
+    								<p class="m-b-5 text-darker default-size">Class of travel</p>
+    								<select class="fnb-select select-variant default-size">
+    									<option> --select--</option>
+    									<option value="" >Econonomy</option>
+    			                        <option value="" selected="">Business</option>
+    			                        <option value="" >First Class</option>
+    			                    </select>
+    							</div>
+    						</div>
+    						<div class="col-md-4">
+    							<div class="flex-1">
+    								<p class="m-b-5 text-darker default-size">Preferred Airline</p>
+    								<input type="text" class="fnb-input fullwidth"  placeholder="Airline Name">
+    							</div>
+    						</div>
+    						<div class="col-md-4">
+    							<div class="radio-group m-t-10 custom-radio">
+    		            			<label for="dir-flight" class="m-b-25">
+    		            				<input value="" type="checkbox" class="fnb-checkbox" name="" id="dir-flight" checked="">
+    		            				<span class="p-l-5 text-medium text-color default-size">Direct Flights</span>
+    		            			</label>
+    		            			<br>
+    		            			
+    		            		</div>
+    						</div>
+    					</div>
+				  	</div>
+			  	</div>
+				<!-- /collapse -->
+				<!-- /dump -->
+				
+				<div class="m-t-20 m-b-20">
+					<a href="" class="secondary-link">
+						View Applicable Policy
+					</a>
 				</div>
-				<div class="flex-1">
-					<p class="m-b-5 text-darker default-size">Sub Category</p>
-					<select class="fnb-select select-variant default-size">
-						<option>--select--</option>
-                        <option value="meeting" selected="">Meeting</option>
-                    </select>
+
+				
+
+				<hr>
+				<div class="text-right">
+					<button class="btn fnb-btn secondary-btn bold-btn border-btn full"><span>Search Flights</span></button>
 				</div>
 			</div>
+			
 		</div>
 
 		
 	</div>
 	<div class="col-sm-3">
 		<div class="m-t-50 white-box padding-one-em">
-			<h6 class="bolder text-darker line-height m-b-15">What happens once the request is sent for approval?</h6>
+			<!-- <h6 class="bolder text-darker line-height m-b-15">What happens once the request is sent for approval?</h6>
 			<p class="default-size text-darker m-t-5 flex-row align-top"><i class="fa fa-hand-o-right text-primary m-r-10 m-t-5" aria-hidden="true"></i> You will receive a mail that your request is sent for approval.</p>
 			<p class="default-size text-darker m-t-5 flex-row align-top"><i class="fa fa-hand-o-right text-primary m-r-10 m-t-5" aria-hidden="true"></i> Your approver too will receive a mail that a request has been sent for approval</p>
 			<p class="default-size text-darker m-t-5 flex-row align-top"><i class="fa fa-hand-o-right text-primary m-r-10 m-t-5" aria-hidden="true"></i> Approver will then either Approve or Disapprove the booking</p>
 			<p class="default-size text-darker m-t-5 flex-row align-top"><i class="fa fa-hand-o-right text-primary m-r-10 m-t-5" aria-hidden="true"></i> If the Approver, approves the booking then you receive a mail informing the same. Similarly for disapproval</p>
-			<p class="default-size text-darker m-t-5 flex-row align-top"><i class="fa fa-hand-o-right text-primary m-r-10 m-t-5" aria-hidden="true"></i> Once approved, you can go ahead and issue your ticket/voucher</p>
+			<p class="default-size text-darker m-t-5 flex-row align-top"><i class="fa fa-hand-o-right text-primary m-r-10 m-t-5" aria-hidden="true"></i> Once approved, you can go ahead and issue your ticket/voucher</p> -->
+			<h6 class="bolder text-darker line-height m-b-15">Your Recent Researches</h6>
+			
+			<div class="recent-searches">
+				<div class="indv-search">
+					<div class="flex-row space-between">
+						<div><strong>Goa</strong> <strong>Banglore</strong></div>
+						<div><i class="fa fa-angle-right"></i></div>
+					</div>
+					<p>Wed, 6 Dec, 2017</p>
+				</div>
+
+				<div class="indv-search">
+					<div class="flex-row space-between">
+						<div><strong>Goa</strong> <strong>Pune</strong></div>
+						<div><i class="fa fa-angle-right"></i></div>
+					</div>
+					<p>Wed, 6 Dec, 2017</p>
+				</div>
+			</div>
+
 		</div>
 		<!-- <div class="m-t-50">
 			<h5 class="bolder text-darker">About Goomo</h5>
