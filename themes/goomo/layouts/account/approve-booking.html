@@ -18,10 +18,10 @@
 				</div>
 				<div>
 					<button type="submit" class="btn outline fnb-btn no-radius s-btn" data-toggle="modal" data-target="#reject-modal">Reject</button>	
-					<button type="submit" class="btn primary-btn fnb-btn no-radius">Approve</button>	
+					<button type="submit" class="btn primary-btn fnb-btn no-radius"><i class="fa fa-paper-plane-o m-r-5" aria-hidden="true"></i> Approve</button>	
 				</div>
 			</div>
-			<div class="flex-row space-between">
+			<div class="flex-row space-between flex-wrap get-approve-row">
 				<div>
 					<p class="m-b-5 text-darker default-size">Requester Name</p>
 					<h6 class="m-b-5 text-darker m-t-0 bolder">Valenie Lourenco</h6>
@@ -38,13 +38,24 @@
 					<p class="m-b-5 text-darker default-size">Travel Sub Category</p>
 					<h6 class="m-b-5 text-darker m-t-0 bolder">Meetings</h6>
 				</div>
+				<div class="p-r-10">
+					<p class="m-b-5 text-darker default-size">Traveler Name</p>
+					<input type="text" class="fnb-input fullwidth bolder element-title text-darker" disabled value="Shon Duglas" style="background-color: #eee;">
+				</div>
+				<div>
+					<p class="m-b-5 text-darker default-size">Travel Email</p>
+					<input type="text" class="fnb-input fullwidth bolder element-title text-darker" disabled value="shondug@gmail.com" style="background-color: #eee;">
+				</div>
 			</div>
 		</div>
 
 
 		{{ partial "approve-content.html" .}}
 
-
+		<div class="text-right m-t-20">
+			<!-- <button type="submit" class="btn outline fnb-btn no-radius s-btn">Reject</button>	 -->
+			<button type="submit" class="btn primary-btn fnb-btn no-radius"><i class="fa fa-paper-plane-o m-r-5" aria-hidden="true"></i> Approve</button>	
+		</div>
 
 		
 	</div>
