@@ -1,6 +1,6 @@
 <!-- header -->
 <header class="fnb-header">
-	<nav class="navbar navbar-default nav-extranet {{ $.Params.flight }}">
+	<nav class="navbar navbar-default nav-extranet {{ $.Params.flight }} {{ $.Params.corporater }}">
 		<div class="container-fluid">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header mobile-head mobile-flex">
@@ -28,17 +28,21 @@
 					<li>
 						<h5 class="dash-title">
 
-							<img src="{{"img/ajency-logo.png" | absURL}}" class="img-responsive org-logo-account" width="90">
+							<img src="{{"img/ajency-logo.png" | absURL}}" class="img-responsive org-logo-account p-t-5" width="110">
 
 							<img src="{{"img/wipro-logo.png" | absURL}}" class="img-responsive org-logo-flight" width="60">
 
 						</h5>
 					</li>
 					<li>
-						<p class="flex-row default-size text-lighter powered-by">Powered by <img src="{{"img/mobiz.png" | absURL}}" class="img-responsive org-logo-account"><img src="{{"img/footer-logo.png" | absURL}}" class="img-responsive org-logo-flight" width="80"></p>
+						<p class="flex-row default-size text-lighter powered-by">Powered by <img src="{{"img/mobiz-logo.png" | absURL}}" class="img-responsive m-l-5" width="80"></p>
 					</li>
 				</ul>
 
+				{{ if $.Params.logged }}
+
+				{{ else }}
+		
 				<ul class="nav navbar-nav navbar-right side-section p-t-0">
 					<li><a href="#" class="text-uppercase x-small">Home</a></li>
 					<li><a href="#" class="text-uppercase x-small">Approve</a></li>
@@ -65,6 +69,8 @@
 
 				</ul>
 
+				{{ end }}
+
 				<div class="desk-hide">
 					{{ partial "sidebar_extranet.html" .}}
 				</div>
@@ -85,7 +91,7 @@
 				{{ else }}
 				<div class="element-title"><i class="fa fa-long-arrow-right text-lighter"></i></div>
 				{{ end }}
-				<p class="gray-darker bolder sub-title">BOI <br><span class="x-small lighter text-lighter">Mumbai, IN Dabolim</span></p>
+				<p class="gray-darker bolder sub-title">BOI <br><span class="x-small lighter text-lighter">Mumbai, IN Chatrapati Shivaji</span></p>
 			</div>
 			
 			<div class="flight-col depart">

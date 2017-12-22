@@ -531,6 +531,7 @@ $(function () {
 
   $('.detail-collapse').click(function(){
   	$(this).find('.fa').toggleClass('active');
+  	$(this).parent().closest('.separator').toggleClass('collapse-active');
   });
 
 	$('.shortlist-me:not(.no-click)').click(function(){

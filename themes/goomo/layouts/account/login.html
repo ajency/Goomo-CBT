@@ -10,9 +10,9 @@
 
 			<div class="row login-screen">
 				<div class="col-sm-4">
-					<div class="card login-card">
+					<div class="card login-card padding-1">
 						<div class="login-flow">
-							<h5 class="heavier m-b-15">Login to Mobiz</h5>
+							<h5 class="bolder m-b-15 m-t-0">Login to Mobiz</h5>
 							<div class="form-group m-b-10">
 		                        <label class="m-b-0 text-lighter float-label required" for="name">User ID</label>
 		                        <input id="name" type="text" class="form-control fnb-input text-color float-input" name="name" value="amar@ajency.in" required="">
@@ -48,23 +48,7 @@
 					</div>
 				</div>
 				<div class="col-sm-8">
-					<h4 class="heavier m-b-15 line-height">Mobiz is a handy tool for frequent corporate travelers to book flights &amp; hotels in a convenient way.</h4>
-					<p class="bolder text-color m-t-20 m-b-20 p-t-20 p-b-20">Mobiz simplifies corporate travels.</p>
-					<ul class="points flex-row flex-wrap align-top">
-						<li class="flex-row text-medium text-lighter align-top">
-							<img src="{{"img/device.png" | absURL}}" class="img-responsive p-r-10">
-							Easy access to Hotels &amp; Flights
-						</li>
-						<li class="flex-row text-medium text-lighter align-top p-l-5 p-r-5">
-							<img src="{{"img/travel.png" | absURL}}" class="img-responsive p-r-10">
-							Travel Savings - free meals, no rescheduling &amp; cancellation fees under corporate fares
-						</li>
-						<li class="flex-row text-medium text-lighter align-top">
-							<img src="{{"img/approved.png" | absURL}}" class="img-responsive p-r-10">
-							Approvals - Instant approvals and invoices based on your profile.
-						</li>
-					</ul>
-					<p class="sub-title text-color m-t-30">If you have any queries or face problem during login, please contact the system admin, <b>Sakshi (HR manager).</b></p>
+					{{ partial "login-content.html" .}}
 				</div>
 			</div>
 

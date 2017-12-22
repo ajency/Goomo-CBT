@@ -13,17 +13,35 @@
     <hr>
 
     <div class="row">
-      <div class="col-sm-4">
+      <div class="col-sm-3">
         <div class="partner flex-row p-t-5 justify-center">
-          <img src="{{"img/footer-logo.png" | absURL}}" class="img-responsive p-r-10">
-          Powered by Goomo
+          <img src="{{"img/mobiz-logo.png" | absURL}}" class="img-responsive p-r-10" width="120">
+          <div class="p-t-5">Powered by Goomo</div>
         </div>
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-6">
         <p class="default-size m-b-5 call-support">Call us for Support:</p>
-        <div><a href="callto:+91 987 180 3333" class="cloud-color heavier">+91 987 180 3333</a> / <a href="callto:+91 965 400 3333" class="cloud-color heavier">+91 965 400 3333</a></div>
+        <div class="flex-row">
+          <div class="flex-1 m-r-10 p-r-10" style="border-right: 1px solid #4e8292;">
+            {{ if $.Params.flightheader }}
+
+            <img src="{{"img/wipro-logo.png" | absURL}}" class="img-responsive center-block p-b-5" width="40">
+            (<a href="mailto:lorem@wipro.com" class="cloud-color heavier x-small">lorem@wipro.com</a> | <a href="callto:+91 987 180 3333" class="cloud-color heavier x-small">+91 987 180 3333</a>)
+
+            {{ else }}
+            <img src="{{"img/ajency-logo.png" | absURL}}" class="img-responsive center-block p-b-5" width="80">
+            (<a href="mailto:workwithus@ajency.in" class="cloud-color heavier x-small">workwithus@ajency.in</a> | <a href="callto:+91 987 180 3333" class="cloud-color heavier x-small">+91 987 180 3333</a>)
+
+            {{ end }}
+
+          </div>
+          <div class="flex-1">
+              <img src="{{"img/mobiz-logo.png" | absURL}}" class="img-responsive center-block {{ if $.Params.flightheader }} m-b-15 {{ end }}" width="70">
+              (<a href="mailto:mobiz@goomo.com" class="cloud-color heavier x-small">mobiz@goomo.com</a> | <a href="callto:+91 965 400 3333" class="cloud-color heavier x-small">+91 965 400 3333</a>)
+          </div>
+          </div>
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-3">
         <div class="footerText p-t-15">
           <p class="copyright">
            © 2017 Goomo. All rights reserved.
