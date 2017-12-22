@@ -11752,7 +11752,7 @@ i.w-border {
 }
 .mail-section__body {
   background-color: #fff;
-  padding: 2.5em;
+  padding: 2.5em 2.5em 1em 2.5em;
 }
 .mail-section__body .user-profile {
   padding: 0 4.5em;
