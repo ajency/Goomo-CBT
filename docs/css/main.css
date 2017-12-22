@@ -11752,7 +11752,7 @@ i.w-border {
 }
 .mail-section__body {
   background-color: #fff;
-  padding: 2.5em;
+  padding: 2.5em 2.5em 1em 2.5em;
 }
 .mail-section__body .user-profile {
   padding: 0 4.5em;
@@ -12338,6 +12338,22 @@ input[type="radio"].book-select-radio:before {
 .tab-row .table .total-bg {
   background-color: #eaf0f0;
   font-weight: 600;
+}
+.flight-search .stops-row {
+  border: 0;
+}
+.flight-search .stops-row label {
+  min-width: 120px;
+  margin-right: 10px;
+}
+.flight-search .stops-row label:last-child span {
+  border: 1px solid #ddd;
+}
+.flight-search .stops-row span {
+  border-radius: 4px;
+  font-size: 1.1em;
+  padding: 0.8em;
+  border: 1px solid #ddd;
 }
 .profile-stats {
   color: #fff;
