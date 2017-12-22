@@ -7,6 +7,10 @@ layout: change-password
 
 overlay: blackout
 
+corporater : corporater
+
+flight : flight-header
+
 overlayre: log-password
 
 
