@@ -11910,11 +11910,11 @@ i.w-border {
 }
 .shortlist-row .notification {
   position: absolute;
-  right: 1px;
+  right: -1px;
   top: 0px;
   height: 16px;
   width: 16px;
-  background-color: #ff8400;
+  background-color: #024c64;
   color: #fff;
   text-align: center;
   line-height: 16px;
@@ -12032,8 +12032,12 @@ input[type="radio"].book-select-radio:before {
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
 }
+.search-results__body .collapse-active {
+  box-shadow: -1px -9px 20px 0px rgba(0, 0, 0, 0.1);
+  border: 0;
+}
 .collapsed-area {
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.17);
+  box-shadow: 1px 5px 20px 0px rgba(0, 0, 0, 0.17);
 }
 .tab-data {
   padding: 1.5em 0;
@@ -12173,13 +12177,14 @@ input[type="radio"].book-select-radio:before {
 .search-version .book-btn {
   padding: 0.45em 1.3em;
   font-size: 0.95em;
+  margin: 0;
 }
 .search-version .detail-collapse {
   position: relative;
   font-size: 0.8em;
 }
 .search-version .detail-collapse i {
-  font-size: 1.4em;
+  font-size: 2em;
   vertical-align: middle;
   -webkit-transition: all 0.5s ease;
           transition: all 0.5s ease;
@@ -12239,7 +12244,6 @@ input[type="radio"].book-select-radio:before {
   color: #ff8400;
 }
 .shortlist-me.no-click {
-  color: #000;
   padding-right: 10px;
   padding-left: 0;
   font-size: 2.5em;
@@ -12369,6 +12373,9 @@ input[type="radio"].book-select-radio:before {
 }
 .padding-1 {
   padding: 1.5em 2em;
+}
+.tooltip {
+  min-width: 100px;
 }
 .profile-stats {
   color: #fff;
