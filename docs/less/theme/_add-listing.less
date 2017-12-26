@@ -5215,6 +5215,14 @@ i.w-border{
 		    border-top: 1px solid #ddd;
     		border-bottom: 1px solid #ddd;
     		padding: 0.8em 0;
+    		&:hover{
+				box-shadow: 0 0 16px 0px rgba(0, 0, 0, 0.16);
+			}
+			&.collapse-active{
+				&:hover{
+					box-shadow: -1px -9px 20px 0px rgba(0, 0, 0, 0.1);
+				}
+			}
 	    	&.no-b-top{
 	    		border-top: 0;
 	    	}
@@ -5451,7 +5459,7 @@ input[type="radio"].book-select-radio{
 			text-align: left;
 		}
 		.duration{
-			flex-basis: 15%;
+			flex-basis: 0%;
 			text-align: left;
 		}
 		.policy{
@@ -5463,9 +5471,9 @@ input[type="radio"].book-select-radio{
 		}
 	}
 	.search-results__body{
-		// .airline{
-		// 	flex-basis: 15%;
-		// }
+		.airline{
+			flex-basis: 15%;
+		}
 		.depart{
 			flex-basis: 10%;
 		}
@@ -5484,14 +5492,6 @@ input[type="radio"].book-select-radio{
 		.separator{
 			padding: 0.6em 0;
 			padding-bottom: 1.8em;
-			&:hover{
-				box-shadow: 0 0 16px 0px rgba(0, 0, 0, 0.16);
-			}
-			&.collapse-active{
-				&:hover{
-					box-shadow: -1px -9px 20px 0px rgba(0, 0, 0, 0.1);
-				}
-			}
 		}
 	}
 	.price-row{
@@ -5588,7 +5588,7 @@ input[type="radio"].book-select-radio{
 .shortlist-me{
 	transform: scaleX(-1);
     font-size: 1.5em;
-    padding-left: 15px;
+    margin-left: 20px;
     margin-top: 3px;
     color: #cecece;
     &.active{
