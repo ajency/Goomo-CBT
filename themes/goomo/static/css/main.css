@@ -11920,19 +11920,16 @@ i.w-border {
 }
 .shortlist-row .notification {
   position: absolute;
-  right: -1px;
-  top: 0px;
-  height: 16px;
-  width: 16px;
+  right: -3px;
+  top: -2px;
+  height: 18px;
+  width: 18px;
   background-color: #024c64;
   color: #fff;
   text-align: center;
-  line-height: 16px;
+  line-height: 18px;
   border-radius: 50%;
-  font-size: 0.75em;
-}
-.price-row {
-  position: relative;
+  font-size: 0.9em;
 }
 .price-row__separation {
   border-top: 1px solid #eee;
@@ -12158,6 +12155,13 @@ input[type="radio"].book-select-radio:before {
 }
 .search-version .search-results__body .separator {
   padding: 0.6em 0;
+  padding-bottom: 1.8em;
+}
+.search-version .search-results__body .separator:hover {
+  box-shadow: 0 0 16px 0px rgba(0, 0, 0, 0.16);
+}
+.search-version .search-results__body .separator.collapse-active:hover {
+  box-shadow: -1px -9px 20px 0px rgba(0, 0, 0, 0.1);
 }
 .search-version .price-row__separation {
   border-top: 0;
@@ -12171,16 +12175,6 @@ input[type="radio"].book-select-radio:before {
 .search-version .price-row .check-separator {
   position: relative;
 }
-.search-version .price-row .check-separator:before {
-  content: '';
-  display: inline-block;
-  position: absolute;
-  height: 65%;
-  width: 1px;
-  background-color: #ddd;
-  left: 6px;
-  top: 15px;
-}
 .search-version .price-row .check-separator.no-rate:before {
   display: none;
 }
@@ -12190,11 +12184,14 @@ input[type="radio"].book-select-radio:before {
   margin: 0;
 }
 .search-version .detail-collapse {
-  position: relative;
+  bottom: 0;
+  left: 0;
   font-size: 0.8em;
+  background-color: #eeeeeeb3;
+  margin: 0 auto;
 }
 .search-version .detail-collapse i {
-  font-size: 2em;
+  font-size: 1.8em;
   vertical-align: middle;
   -webkit-transition: all 0.5s ease;
           transition: all 0.5s ease;
@@ -12487,6 +12484,239 @@ input[type="radio"].book-select-radio:before {
           flex: 1 0 25%;
   max-width: 25%;
   margin-bottom: 15px;
+}
+.animated {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+@-webkit-keyframes tada {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  10%,
+  20% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+            transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+  }
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+            transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+  40%,
+  60%,
+  80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+            transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes tada {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  10%,
+  20% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+            transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+  }
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+            transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+  40%,
+  60%,
+  80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+            transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+.tada {
+  -webkit-animation-name: tada;
+          animation-name: tada;
+}
+.animated.bounceIn {
+  -webkit-animation-duration: .75s;
+          animation-duration: .75s;
+}
+@-webkit-keyframes bounceIn {
+  from,
+  20%,
+  40%,
+  60%,
+  80%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+            animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+            transform: scale3d(0.3, 0.3, 0.3);
+  }
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+            transform: scale3d(1.1, 1.1, 1.1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+            transform: scale3d(0.9, 0.9, 0.9);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+            transform: scale3d(1.03, 1.03, 1.03);
+  }
+  80% {
+    -webkit-transform: scale3d(0.97, 0.97, 0.97);
+            transform: scale3d(0.97, 0.97, 0.97);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes bounceIn {
+  from,
+  20%,
+  40%,
+  60%,
+  80%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+            animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+            transform: scale3d(0.3, 0.3, 0.3);
+  }
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+            transform: scale3d(1.1, 1.1, 1.1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+            transform: scale3d(0.9, 0.9, 0.9);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+            transform: scale3d(1.03, 1.03, 1.03);
+  }
+  80% {
+    -webkit-transform: scale3d(0.97, 0.97, 0.97);
+            transform: scale3d(0.97, 0.97, 0.97);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+.bounceIn {
+  -webkit-animation-name: bounceIn;
+          animation-name: bounceIn;
+}
+.price-toggle {
+  /*
+	  Note: using adjacent or general sibling selectors 
+	  combined with pseudo classes doesn't work in Safari 
+	  5.0 and Chrome 12.
+	  See this article for more info and a potential fix: 
+	  https://css-tricks.com/webkit-sibling-bug/
+	*/
+}
+.price-toggle .switcher {
+  position: relative;
+  margin: 0 auto;
+  height: 30px;
+  width: 120px;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+}
+.price-toggle .switch-label {
+  position: relative;
+  z-index: 2;
+  font-weight: 400;
+  width: 58px;
+  line-height: 28px;
+  font-size: 0.8em;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+.price-toggle .switch-label:active {
+  font-weight: 600;
+}
+.price-toggle .switch-label-off {
+  padding-left: 2px;
+}
+.price-toggle .switch-label-on {
+  padding-right: 2px;
+}
+.price-toggle .switch-input {
+  display: none;
+}
+.price-toggle .switch-input:checked + .switch-label {
+  font-weight: 600;
+  font-size: 0.9em;
+  color: #000;
+  -webkit-transition: 0.15s ease-out;
+          transition: 0.15s ease-out;
+}
+.price-toggle .switch-input:checked + .switch-label-on ~ .switch-selection {
+  /* Note: left: 50% doesn't transition in WebKit */
+  left: 60px;
+}
+.price-toggle .switch-selection {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 2px;
+  left: 2px;
+  width: 58px;
+  height: 25px;
+  background: #65bd63;
+  border-radius: 3px;
+  background-image: -webkit-linear-gradient(top, #9dd993, #65bd63);
+  background-image: linear-gradient(to bottom, #9dd993, #65bd63);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 0 2px rgba(0, 0, 0, 0.2);
+  -webkit-transition: left 0.15s ease-out;
+  transition: left 0.15s ease-out;
+}
+.price-head {
+  min-width: 120px;
+  text-align: center;
+}
+.price-logos span {
+  min-width: 60px;
+  margin-top: 5px;
+  padding-top: 5px;
+  border-top: 1px solid #ddd;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+.price-logos span:first-child {
+  border-right: 1px solid #ddd;
 }
 .profile-stats {
   color: #fff;
