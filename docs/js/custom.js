@@ -536,6 +536,7 @@ $(function () {
 
 	$('.shortlist-me:not(.no-click)').click(function(){
   		$(this).toggleClass('active');
+  		$('.notify-block').toggleClass('bounceIn');
   	});
 
 
@@ -553,6 +554,11 @@ $(function () {
 	        }
 	    });
 	}
+
+	$('.get-tab-val').on('shown.bs.tab', function (e) {
+	  	var getlink = $(this).attr('data-link');
+	  	$('.search-flight').attr('href',getlink);
+	})
 
 })
 

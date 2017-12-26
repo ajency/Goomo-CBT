@@ -230,6 +230,10 @@
 					
 
 
+
+
+
+
 <div class="row m-t-10 p-t-20">
 	
 		<div class="col-sm-3"></div>
@@ -237,12 +241,13 @@
 			<div class="flex-row space-between m-b-10">
 			<p class="text-lighter dis-block m-b-0 x-small">33 flights found </p>
 			<div>
-				<p class="bat-color text-uppercase default-size flex-row relative shortlist-row m-b-0">Shortlist <a href="/Goomo-CBT/account/shortlist/"><i class="fa fa-star shortlist-me no-click active cursor-pointer" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Shortlist"></i></a>
-				<span class="notification text-secondary">2</span>
+				<p class="bat-color text-uppercase default-size flex-row relative shortlist-row m-b-0">Shortlist <span class="animated notify-block"><a href="/Goomo-CBT/account/shortlist/"><i class="fa fa-star shortlist-me shortlist-added no-click active cursor-pointer" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Shortlist"></i></a>
+				<span class="notification text-secondary">2</span></span>
 				</p>
 			</div>
 			</div>	
 		</div>
+
 	
 	<div class="col-sm-3 white-box m-b-30">
 		<div class="flight-filter">
@@ -374,13 +379,21 @@
 					
 				</div>
 				<div class="head_col text-lighter price">
-					<div class="dis-inline text-left m-l-15">
+					<div class="dis-inline text-left m-l-15 price-head">
 						Price
+					</div>
+					<div class="flex-row m-l-15 price-logos">
+	    				<span>
+							<img src="https://ajency.github.io/Goomo-CBT/img/corporate.png" class="img-responsive cursor-pointer no-opac center-block" width="18" data-toggle="tooltip" data-placement="top" title="" data-original-title="Corporate rate" style="">
+						</span>
+					    <span>
+					    	<img src="https://ajency.github.io/Goomo-CBT/img/retail-rate.png" class="img-responsive cursor-pointer no-opac center-block" width="18" data-toggle="tooltip" data-placement="top" title="" data-original-title="Retail rate">
+					    </span>
 					</div>
 				</div>
 			</div>
 			<div class="search-results__body m-b-30">
-				<div class="flex-row separator align-top">
+				<div class="flex-row separator align-top relative">
 					<div class="head_col text-lighter flex-row align-top airline">
 						<i class="fa fa-star shortlist-me cursor-pointer" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Shortlist"></i>
 						<div>
@@ -412,17 +425,14 @@
 					</div>
 					<div class="head_col text-lighter price-row flex-row align-top">
 						<div class="check-separator">
-						 	<div class="flex-row justify-center">
-								
-								<input type="radio" name="book-check-1" id="expressCheckYes" value="yes" class="fnb-radio book-select-radio" checked>
-								<p class="m-b-0 text-color flex-row"><i class="fa fa-inr" aria-hidden="true"></i> <b class="bat-color sub-title">4,995</b> <img src="https://ajency.github.io/Goomo-CBT/img/corporate.png" class="img-responsive m-l-5 cursor-pointer no-opac" width="20" data-toggle="tooltip" data-placement="top" title="Corporate rate"></p>
-							</div>
-							<div class="flex-row justify-center price-row__separation">
-								
-								<p class="m-b-0 text-darker x-small flex-row"><input type="radio" name="book-check-1" id="expressCheckYes" value="yes" class="fnb-radio book-select-radio"> </p>
-								<div class="flex-row m-t-5">
-									<i class="fa fa-inr" aria-hidden="true"></i> 5,110 <div class="p-l-15"><img src="https://ajency.github.io/Goomo-CBT/img/retail-rate.png" class="img-responsive cursor-pointer" width="20" data-toggle="tooltip" data-placement="top" title="Retail rate"></div>
-								</div>
+						 	<div class="price-toggle">
+							  <div class="switcher">
+							    <input type="radio" class="switch-input" name="view" value="week" id="cor" checked>
+							    <label for="cor" class="switch-label switch-label-off"><i class="fa fa-inr" aria-hidden="true"></i> <span class="sub-title">4,995</span></label>
+							    <input type="radio" class="switch-input" name="view" value="month" id="ret">
+							    <label for="ret" class="switch-label switch-label-on"><i class="fa fa-inr" aria-hidden="true"></i> <span class="sub-title">5,000</span></label>
+							    <span class="switch-selection"></span>
+							  </div>
 							</div>
 						</div>
 						<div class="m-l-25">
@@ -521,7 +531,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="flex-row separator align-top">
+				<div class="flex-row separator align-top relative">
 					<div class="head_col text-lighter flex-row align-top airline">
 						<i class="fa fa-star shortlist-me cursor-pointer active" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Shortlist"></i>
 						<div>
@@ -557,24 +567,22 @@
 					</div>
 					<div class="head_col text-lighter price-row flex-row align-top">
 						<div class="check-separator">
-						 	<div class="flex-row justify-center">
-								
-								<input type="radio" name="book-check-2" id="expressCheckYes" value="yes" class="fnb-radio book-select-radio" checked>
-								<p class="m-b-0 text-color flex-row"><i class="fa fa-inr" aria-hidden="true"></i> <b class="bat-color sub-title">4,995</b> <img src="https://ajency.github.io/Goomo-CBT/img/corporate.png" class="img-responsive m-l-5 cursor-pointer no-opac" width="20" data-toggle="tooltip" data-placement="top" title="Corporate rate"></p>
-							</div>
-							<div class="flex-row justify-center price-row__separation">
-								
-								<p class="m-b-0 text-darker x-small flex-row"><input type="radio" name="book-check-2" id="expressCheckYes" value="yes" class="fnb-radio book-select-radio"> </p>
-								<div class="flex-row m-t-5">
-									<i class="fa fa-inr" aria-hidden="true"></i> 5,110 <div class="p-l-15"><img src="https://ajency.github.io/Goomo-CBT/img/retail-rate.png" class="img-responsive cursor-pointer" width="20" data-toggle="tooltip" data-placement="top" title="Retail rate"></div>
+						 	
+								<div class="price-toggle">
+									<div class="switcher">
+									    <input type="radio" class="switch-input" name="view-1" value="week" id="cor-1" checked="">
+									    <label for="cor-1" class="switch-label switch-label-off"><i class="fa fa-inr" aria-hidden="true"></i> <span class="sub-title">5,100</span></label>
+									    <input type="radio" class="switch-input" name="view-1" value="month" id="ret-1">
+									    <label for="ret-1" class="switch-label switch-label-on"><i class="fa fa-inr" aria-hidden="true"></i> <span class="sub-title">4,995</span></label>
+									    <span class="switch-selection"></span>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="m-l-25">
-							<button type="submit" class="btn primary-btn fnb-btn no-radius text-uppercase book-btn">Book</button>
-							
-						</div>
-						<p class="detail-collapse text-color m-b-0 p-l-10 p-r-5 m-t-5 cursor-pointer" data-toggle="collapse" data-target="#flight-data-2" aria-expanded="false" aria-controls="flight-data-2"><i class="fa fa-angle-down p-l-5" aria-hidden="true"></i></p>
+							<div class="m-l-25">
+								<button type="submit" class="btn primary-btn fnb-btn no-radius text-uppercase book-btn">Book</button>
+							</div>
+
+							<p class="detail-collapse text-color m-b-0 p-l-10 p-r-5 m-t-5 cursor-pointer" data-toggle="collapse" data-target="#flight-data-2" aria-expanded="false" aria-controls="flight-data-2"><i class="fa fa-angle-down p-l-5" aria-hidden="true"></i></p>
 					</div>
 				</div>
 				<div class="collapsed-area collapse" id="flight-data-2">
@@ -667,7 +675,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="flex-row separator align-top">
+				<div class="flex-row separator align-top relative">
 					<div class="head_col text-lighter flex-row align-top airline">
 						<i class="fa fa-star shortlist-me cursor-pointer" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Shortlist"></i>
 						<div>
@@ -699,11 +707,15 @@
 					</div>
 					<div class="head_col text-lighter price-row flex-row align-top">
 						<div class="check-separator no-rate">
-						 	<div class="flex-row justify-center">
-								<input type="radio" name="book-check-3" id="expressCheckYes" value="yes" class="fnb-radio book-select-radio" checked>
-								<p class="m-b-0 text-color flex-row"><i class="fa fa-inr" aria-hidden="true"></i> <b class="bat-color sub-title">4,995</b> <img src="https://ajency.github.io/Goomo-CBT/img/retail-rate.png" class="img-responsive m-l-5 cursor-pointer no-opac" width="20" data-toggle="tooltip" data-placement="top" title="Retail rate"></p>
+						 	<div class="price-toggle">
+								<div class="switcher">
+								    <input type="radio" class="switch-input" name="view-2" value="week" id="cor-2" disabled="">
+								    <label for="cor-2" class="switch-label switch-label-off"> <span class="sub-title">NA</span></label>
+								    <input type="radio" class="switch-input" name="view-2" value="month" id="ret-2" checked="">
+								    <label for="ret-2" class="switch-label switch-label-on"><i class="fa fa-inr" aria-hidden="true"></i> <span class="sub-title">5,110</span></label>
+								    <span class="switch-selection"></span>
+								</div>
 							</div>
-							
 						</div>
 						<div class="m-l-25">
 							<button type="submit" class="btn primary-btn fnb-btn no-radius text-uppercase book-btn">Book</button>
@@ -712,7 +724,7 @@
 						<p class="detail-collapse text-color m-b-0 p-l-10 p-r-5 m-t-5 cursor-pointer"  aria-expanded="false" ><i class="fa fa-angle-down p-l-5" aria-hidden="true"></i></p>
 					</div>
 				</div>
-				<div class="flex-row separator align-top">
+				<div class="flex-row separator align-top relative">
 					<div class="head_col text-lighter flex-row align-top airline">
 						<i class="fa fa-star shortlist-me cursor-pointer active" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Shortlist"></i>
 						<div>
@@ -753,16 +765,13 @@
 					</div>
 					<div class="head_col text-lighter price-row flex-row align-top">
 						<div class="check-separator">
-						 	<div class="flex-row justify-center">
-								
-								<input type="radio" name="book-check-4" id="expressCheckYes" value="yes" class="fnb-radio book-select-radio" checked>
-								<p class="m-b-0 text-color flex-row"><i class="fa fa-inr" aria-hidden="true"></i> <b class="bat-color sub-title">5,100</b> <img src="https://ajency.github.io/Goomo-CBT/img/retail-rate.png" class="img-responsive m-l-5 cursor-pointer no-opac" width="20" data-toggle="tooltip" data-placement="top" title="Retail rate"></p>
-							</div>
-							<div class="flex-row justify-center price-row__separation">
-								
-								<p class="m-b-0 text-darker x-small flex-row"><input type="radio" name="book-check-4" id="expressCheckYes" value="yes" class="fnb-radio book-select-radio"> </p>
-								<div class="flex-row m-t-5">
-									<i class="fa fa-inr" aria-hidden="true"></i> 5,330 <div class="p-l-15"><img src="https://ajency.github.io/Goomo-CBT/img/corporate.png" class="img-responsive cursor-pointer" width="20" data-toggle="tooltip" data-placement="top" title="Corporate rate"></div>
+						 	<div class="price-toggle">
+								<div class="switcher">
+								    <input type="radio" class="switch-input" name="view-3" value="week" id="cor-3" checked>
+								    <label for="cor-3" class="switch-label switch-label-off"><i class="fa fa-inr" aria-hidden="true"></i> <span class="sub-title">5,100</span></label>
+								    <input type="radio" class="switch-input" name="view-3" value="month" id="ret-3">
+								    <label for="ret-3" class="switch-label switch-label-on"><i class="fa fa-inr" aria-hidden="true"></i> <span class="sub-title">5,330</span></label>
+								    <span class="switch-selection"></span>
 								</div>
 							</div>
 						</div>
