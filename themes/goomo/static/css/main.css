@@ -11908,6 +11908,12 @@ i.w-border {
   border-bottom: 1px solid #ddd;
   padding: 0.8em 0;
 }
+.search-results__body .separator:hover {
+  box-shadow: 0 0 16px 0px rgba(0, 0, 0, 0.16);
+}
+.search-results__body .separator.collapse-active:hover {
+  box-shadow: -1px -9px 20px 0px rgba(0, 0, 0, 0.1);
+}
 .search-results__body .separator.no-b-top {
   border-top: 0;
 }
@@ -12117,9 +12123,9 @@ input[type="radio"].book-select-radio:before {
   text-align: left;
 }
 .search-version .search-results__head .duration {
-  -webkit-flex-basis: 15%;
-      -ms-flex-preferred-size: 15%;
-          flex-basis: 15%;
+  -webkit-flex-basis: 0%;
+      -ms-flex-preferred-size: 0%;
+          flex-basis: 0%;
   text-align: left;
 }
 .search-version .search-results__head .policy {
@@ -12132,6 +12138,11 @@ input[type="radio"].book-select-radio:before {
       -ms-flex-preferred-size: 27%;
           flex-basis: 27%;
   text-align: left;
+}
+.search-version .search-results__body .airline {
+  -webkit-flex-basis: 15%;
+      -ms-flex-preferred-size: 15%;
+          flex-basis: 15%;
 }
 .search-version .search-results__body .depart {
   -webkit-flex-basis: 10%;
@@ -12156,12 +12167,6 @@ input[type="radio"].book-select-radio:before {
 .search-version .search-results__body .separator {
   padding: 0.6em 0;
   padding-bottom: 1.8em;
-}
-.search-version .search-results__body .separator:hover {
-  box-shadow: 0 0 16px 0px rgba(0, 0, 0, 0.16);
-}
-.search-version .search-results__body .separator.collapse-active:hover {
-  box-shadow: -1px -9px 20px 0px rgba(0, 0, 0, 0.1);
 }
 .search-version .price-row__separation {
   border-top: 0;
@@ -12243,7 +12248,7 @@ input[type="radio"].book-select-radio:before {
       -ms-transform: scaleX(-1);
           transform: scaleX(-1);
   font-size: 1.5em;
-  padding-left: 15px;
+  margin-left: 20px;
   margin-top: 3px;
   color: #cecece;
 }
