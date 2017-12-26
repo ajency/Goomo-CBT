@@ -12390,6 +12390,9 @@ input[type="radio"].book-select-radio:before {
   background: #024c64;
   border: #024c64;
 }
+.custom-tabs li a {
+  cursor: pointer !important;
+}
 .custom-tabs.nav-tabs > li.active > a,
 .custom-tabs.nav-tabs > li.active > a:focus,
 .custom-tabs.nav-tabs > li.active > a:hover {
