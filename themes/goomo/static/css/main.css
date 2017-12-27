@@ -12850,6 +12850,18 @@ input[type="radio"].book-select-radio:before {
 .approver-name {
   padding: 1em;
 }
+.filter-select-box.select-variant {
+  -webkit-flex-basis: 10%;
+      -ms-flex-preferred-size: 10%;
+          flex-basis: 10%;
+  font-size: 0.9em;
+}
+.checkbox-inline {
+  margin-left: 0 !important;
+}
+.checkbox-inline .fnb-checkbox:before {
+  top: -1px;
+}
 .profile-stats {
   color: #fff;
   background: #ff8400;
