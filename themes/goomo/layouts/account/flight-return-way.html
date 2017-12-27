@@ -78,21 +78,29 @@
 							Arrive
 						</div>
 					</div>
-					<div class="head_col text-lighter">
+					<!-- <div class="head_col text-lighter">
 						<div class="dis-inline text-left m-r-35">
 							Duration
 						</div>
-					</div>
+					</div> -->
 					<div class="head_col text-lighter">
-						<div class="dis-inline text-left m-r-30">
+						<div class="dis-inline text-left m-l-10">
 							Price
+						</div>
+						<div class="flex-row m-l-15 price-logos">
+		    				<span>
+								<img src="{{"img/corporate.png" | absURL}}" class="img-responsive cursor-pointer no-opac center-block" width="18" data-toggle="tooltip" data-placement="top" title="" data-original-title="Corporate rate" style="">
+							</span>
+						    <span>
+						    	<img src="{{"img/retail-rate.png" | absURL}}" class="img-responsive cursor-pointer no-opac center-block" width="18" data-toggle="tooltip" data-placement="top" title="" data-original-title="Retail rate">
+						    </span>
 						</div>
 					</div>
 				</div>
 				<div class="search-results__body f-return-way">
-					<div class="flex-row separator align-top">
+					<div class="flex-row separator align-top relative">
 						<div class="head_col text-lighter flex-row align-top airlines">
-							<i class="fa fa-star shortlist-me cursor-pointer" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Shortlist"></i>
+							<!-- <i class="fa fa-star shortlist-me cursor-pointer" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Shortlist"></i> -->
 							<div>
 								<div class="flex-row">
 									<img src="{{"img/SG.png" | absURL}}" class="img-responsive">
@@ -113,28 +121,26 @@
 						</div>
 						<div class="head_col text-lighter arrive">
 							<p class="text-color m-b-5">05:10</p>
+							<p class="text-color m-b-5">1h 10m</p>
+							<p class="m-b-0 x-small text-lighter">nonstop</p>
 						</div>
-						<div class="head_col text-lighter">
+						<!-- <div class="head_col text-lighter">
 							<p class="text-color m-b-5">1h 10m</p>
 							<p class="m-b-0 x-small text-lighter">nonstop</p>
 							<div class="flight-label cheapest dis-inline m-t-5">
 								Cheapest
 							</div>
-						</div>
+						</div> -->
 						<div class="head_col text-lighter price-row flex-row duration">
 							<div class="check-separator">
-							 	<div class="flex-row justify-center">
-									<!-- <img src="{{"img/Wishlist-selected.png" | absURL}}" class="img-responsive m-r-5 cursor-pointer" width="20" data-toggle="tooltip" data-placement="top" title="Shortlist"> -->
-									<input type="radio" name="book-check-1" id="expressCheckYes" value="yes" class="fnb-radio book-select-radio" checked>
-									<p class="m-b-0 text-color flex-row"><i class="fa fa-inr" aria-hidden="true"></i> <b class="bat-color sub-title">4,995</b> <img src="{{"img/corporate.png" | absURL}}" class="img-responsive m-l-5 cursor-pointer no-opac" width="15" data-toggle="tooltip" data-placement="top" title="Corporate rate"></p>
-								</div>
-								<div class="flex-row justify-center price-row__separation">
-									<!-- <p class="m-b-0 text-darker x-small flex-row"><img src="{{"img/corporate.png" | absURL}}" class="img-responsive m-r-5 cursor-pointer" width="20" data-toggle="tooltip" data-placement="top" title="Corporate rate"> <i class="fa fa-inr" aria-hidden="true"></i> <b class="bat-color sub-title">4,995</b></p>
-									<p class="m-b-0 p-l-5 p-r-5">|</p> -->
-									<p class="m-b-0 text-darker x-small flex-row"><input type="radio" name="book-check-1" id="expressCheckYes" value="yes" class="fnb-radio book-select-radio"> </p>
-									<div class="flex-row m-t-5">
-										<i class="fa fa-inr p-l-5" aria-hidden="true"></i> 5,110 <img src="{{"img/retail-rate.png" | absURL}}" class="img-responsive m-l-5 cursor-pointer" width="18" data-toggle="tooltip" data-placement="top" title="Retail rate">
-									</div>
+							 	<div class="price-toggle">
+								  <div class="switcher">
+								    <input type="radio" class="switch-input" name="view" value="week" id="cor" checked>
+								    <label for="cor" class="switch-label switch-label-off"><i class="fa fa-inr" aria-hidden="true"></i> <span class="sub-title">4,995</span></label>
+								    <input type="radio" class="switch-input" name="view" value="month" id="ret">
+								    <label for="ret" class="switch-label switch-label-on"><i class="fa fa-inr" aria-hidden="true"></i> <span class="sub-title">5,000</span></label>
+								    <span class="switch-selection"></span>
+								  </div>
 								</div>
 							</div>
 							<p class="detail-collapse text-color m-b-0 p-l-5 p-r-5 cursor-pointer" data-toggle="collapse" data-target="#flight-data" aria-expanded="false" aria-controls="flight-data"><i class="fa fa-angle-down" aria-hidden="true"></i></p>
