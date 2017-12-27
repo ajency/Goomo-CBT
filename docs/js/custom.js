@@ -560,6 +560,38 @@ $(function () {
 	  	$('.search-flight').attr('href',getlink);
 	})
 
+
+ 	var target = "comment-collapse_";
+  	var i = 1;
+
+	$('body').on('click', '.add-traveller', function(e) {
+	  var highlight_group, highlight_group_clone;
+	  e.preventDefault();
+	  highlight_group = $(this).parent().closest('.traveller');
+	  highlight_group_clone = highlight_group.clone();
+	  highlight_group.find('.add-traveller').remove();
+	  highlight_group.find('.traveller__row').addClass('disable');
+	  highlight_group.find('.traveller-action').removeClass('hidden');
+
+	  // highlight_group_clone.removeClass('hidden');
+	  highlight_group_clone.find('.guest-check').attr('data-target','#'+target+i);
+	  highlight_group_clone.find('.guest-details').attr('id',target+i);
+	  highlight_group_clone.insertAfter(highlight_group);
+	  i++;
+	});
+
+	$('body').on('click', '.remove-traveller', function(e) {
+	  e.preventDefault();
+	  $(this).parent().closest('.traveller').remove();
+	});
+
+	$('body').on('click', '.edit-traveller', function(e) {
+	  e.preventDefault();
+	  $(this).parent().closest('.traveller').find('.traveller__row').removeClass('disable');
+	});
+
+
+
 })
 
 

@@ -2963,6 +2963,16 @@ footer {
 .boxshadow5 {
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15);
 }
+.outline {
+  box-shadow: none;
+  outline: 0;
+}
+.outline:hover,
+.outline:active,
+.outline:focus {
+  box-shadow: none;
+  outline: 0;
+}
 .slide-nav {
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
@@ -12760,6 +12770,85 @@ input[type="radio"].book-select-radio:before {
 }
 .price-logos span:first-child {
   border-right: 1px solid #ddd;
+}
+.book-head {
+  margin: -20px;
+  padding: 20px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.17);
+}
+.traveller__name,
+.travel-cat__name {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 60%;
+      -ms-flex: 1 0 60%;
+          flex: 1 0 60%;
+}
+.traveller__guest,
+.travel-cat__guest {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 40%;
+      -ms-flex: 1 0 40%;
+          flex: 1 0 40%;
+}
+.traveller__row,
+.travel-cat__row {
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #eee;
+}
+.traveller__row .fnb-input,
+.travel-cat__row .fnb-input {
+  outline: 0;
+  border: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 65%;
+      -ms-flex: 1 0 65%;
+          flex: 1 0 65%;
+}
+.traveller__row .fnb-input:hover,
+.travel-cat__row .fnb-input:hover,
+.traveller__row .fnb-input:active,
+.travel-cat__row .fnb-input:active,
+.traveller__row .fnb-input:focus,
+.travel-cat__row .fnb-input:focus {
+  outline: 0;
+}
+.traveller .guest-check,
+.travel-cat .guest-check {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 20%;
+      -ms-flex: 1 0 20%;
+          flex: 1 0 20%;
+}
+.traveller .guest-check .fnb-checkbox,
+.travel-cat .guest-check .fnb-checkbox {
+  margin-right: 5px;
+}
+.traveller .guest-check .fnb-checkbox:before,
+.travel-cat .guest-check .fnb-checkbox:before {
+  top: -12px;
+}
+.traveller .fnb-select,
+.travel-cat .fnb-select {
+  font-size: 1em;
+}
+.guest-holder {
+  background-color: #eee;
+  padding: 1em;
+}
+.guest-holder .comments {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 60%;
+      -ms-flex: 1 0 60%;
+          flex: 1 0 60%;
+}
+.guest-holder .birthdate {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 40%;
+      -ms-flex: 1 0 40%;
+          flex: 1 0 40%;
+}
+.approver-name {
+  padding: 1em;
 }
 .profile-stats {
   color: #fff;
