@@ -11983,6 +11983,26 @@ input[type="radio"].book-select-radio:before {
 .return-data .search-results__head {
   font-size: 0.9em;
 }
+.return-data .search-results__head .head_col.airline {
+  -webkit-flex-basis: 3%;
+      -ms-flex-preferred-size: 3%;
+          flex-basis: 3%;
+}
+.return-data .search-results__head .head_col.depart {
+  -webkit-flex-basis: 3%;
+      -ms-flex-preferred-size: 3%;
+          flex-basis: 3%;
+}
+.return-data .search-results__head .head_col.arrive {
+  -webkit-flex-basis: 3%;
+      -ms-flex-preferred-size: 3%;
+          flex-basis: 3%;
+}
+.return-data .search-results__head .head_col.price {
+  -webkit-flex-basis: 4%;
+      -ms-flex-preferred-size: 4%;
+          flex-basis: 4%;
+}
 .return-data .search-results__body {
   font-size: 0.85em;
 }
@@ -11996,14 +12016,19 @@ input[type="radio"].book-select-radio:before {
           flex-basis: 20%;
 }
 .return-data .search-results .head_col.airlines {
-  -webkit-flex-basis: 23%;
-      -ms-flex-preferred-size: 23%;
-          flex-basis: 23%;
+  -webkit-flex-basis: 4%;
+      -ms-flex-preferred-size: 4%;
+          flex-basis: 4%;
+}
+.return-data .search-results .head_col.depart {
+  -webkit-flex-basis: 3%;
+      -ms-flex-preferred-size: 3%;
+          flex-basis: 3%;
 }
 .return-data .search-results .head_col.arrive {
-  -webkit-flex-basis: 13%;
-      -ms-flex-preferred-size: 13%;
-          flex-basis: 13%;
+  -webkit-flex-basis: 3%;
+      -ms-flex-preferred-size: 3%;
+          flex-basis: 3%;
 }
 .return-data .search-results .head_col.duration {
   -webkit-flex-basis: 15%;
@@ -12011,9 +12036,9 @@ input[type="radio"].book-select-radio:before {
           flex-basis: 15%;
 }
 .return-data .search-results .head_col.price-row {
-  -webkit-flex-basis: 26%;
-      -ms-flex-preferred-size: 26%;
-          flex-basis: 26%;
+  -webkit-flex-basis: 13%;
+      -ms-flex-preferred-size: 13%;
+          flex-basis: 13%;
   font-size: 0.9em;
 }
 .return-data .search-results .head_col.price-row input[type="radio"].book-select-radio {
@@ -12304,7 +12329,7 @@ input[type="radio"].book-select-radio:before {
 }
 .f-return-way .separator {
   padding: 0.6em 0;
-  min-height: 95px;
+  min-height: 108px;
   padding-bottom: 1.8em;
 }
 .f-return-way .price-row__separation {

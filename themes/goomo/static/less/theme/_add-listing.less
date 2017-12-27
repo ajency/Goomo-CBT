@@ -5310,6 +5310,18 @@ input[type="radio"].book-select-radio{
 	.search-results{
 		&__head{
 			font-size: 0.9em;
+			.head_col.airline{
+				flex-basis: 3%;
+			}
+			.head_col.depart{
+				flex-basis: 3%;
+			}
+			.head_col.arrive{
+				flex-basis: 3%;
+			}
+			.head_col.price{
+				flex-basis: 4%;
+			}
 		}
 		&__body{
 			font-size: 0.85em;
@@ -5324,16 +5336,19 @@ input[type="radio"].book-select-radio{
 		.head_col{
 			flex-basis: 20%;
 			&.airlines{
-				flex-basis: 23%;
+				flex-basis: 4%;
+			}
+			&.depart{
+				flex-basis: 3%;
 			}
 			&.arrive{
-				flex-basis: 13%;
+				flex-basis: 3%;
 			}
 			&.duration{
 				flex-basis: 15%;
 			}
 			&.price-row{
-				flex-basis: 26%;
+				flex-basis: 13%;
     			font-size: 0.9em;
     			input[type="radio"].book-select-radio{
     				margin-right: 5px;
@@ -5668,7 +5683,7 @@ input[type="radio"].book-select-radio{
 	}
 	.separator{
 		padding: 0.6em 0;
-		min-height: 95px;
+		min-height: 108px;
 		padding-bottom: 1.8em;
 	}
 	.price-row__separation{
