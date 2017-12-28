@@ -12526,12 +12526,22 @@ input[type="radio"].book-select-radio:before {
 .secondary-link {
   color: #024c64;
 }
+.input-group.custom-input-group {
+  cursor: pointer;
+  width: 100%;
+}
 .input-group.custom-input-group .input-group-addon {
   border: none;
   border-bottom: 1px solid #ccc;
   background-color: transparent;
   color: #fc863b;
   border-radius: 0;
+  position: absolute;
+  right: 15px;
+  border: 0;
+  top: 12px;
+  cursor: pointer;
+  padding: 0;
 }
 .plane-icon_wrapper {
   position: relative;
@@ -12826,6 +12836,10 @@ input[type="radio"].book-select-radio:before {
 .traveller__row .fnb-input:focus,
 .travel-cat__row .fnb-input:focus {
   outline: 0;
+}
+.traveller__row.disable,
+.travel-cat__row.disable {
+  opacity: 0.5;
 }
 .traveller .guest-check,
 .travel-cat .guest-check {

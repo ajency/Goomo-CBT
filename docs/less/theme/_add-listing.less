@@ -5913,12 +5913,21 @@ input[type="radio"].book-select-radio{
 
 .input-group {
 	&.custom-input-group {
+		cursor: pointer;
+		width: 100%;
 		.input-group-addon {
 			border: none;
 			border-bottom: 1px solid #ccc;
 			background-color: transparent;
 			color: #fc863b;
 			border-radius: 0;
+			position: absolute;
+		    right: 15px;
+		    border: 0;
+		    top: 12px;
+		    cursor: pointer;
+		    padding: 0;
+		    // z-index: 2;
 		}
 	}
 }
@@ -6167,6 +6176,9 @@ input[type="radio"].book-select-radio{
 			&:hover,&:active,&:focus{
 				outline: 0;
 			}
+    	}
+    	&.disable{
+    		opacity: 0.5;
     	}
 	}
 	.guest-check{
