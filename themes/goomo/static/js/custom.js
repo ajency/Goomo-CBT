@@ -549,6 +549,9 @@ $('.shortlist-me:not(.no-click)').click(function(){
 		$(this).attr('data-original-title','Remove Shortlist');
 		// $('[data-toggle="tooltip"]').tooltip();
 	}
+	else{
+		$(this).attr('data-original-title','Add to Shortlist');
+	}
 });
 
 
@@ -615,7 +618,8 @@ if($('.sticky-book').length){
 	  highlight_group.find('.traveller__row').addClass('disable');
 	  highlight_group.find('.traveller-action').removeClass('hidden');
 	  highlight_group_clone.find('.main-name').remove();
-	  var myapp = '<input type="text" class="fnb-input flex-1 main-name flexdatalist" value="Amar Singh" id="" list="languages" name="language">';
+	  highlight_group_clone.find('.guest-check').css('visibility','hidden');
+	  var myapp = '<input type="text" class="fnb-input flex-1 main-name flexdatalist" value="" id="" list="languages" name="language">';
 	  highlight_group_clone.find('.traveller__row').find('.append-row').append(myapp);
 	  highlight_group_clone.find('.dataList').attr('id','data'+target+i);
 	  highlight_group_clone.find('.main-name').attr('list','data'+target+i);
