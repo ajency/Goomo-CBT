@@ -12869,6 +12869,20 @@ input[type="radio"].book-select-radio:before {
 .checkbox-inline .fnb-checkbox:before {
   top: -1px;
 }
+.check-return input[type='radio'].fnb-radio {
+  -webkit-appearance: none;
+  margin-right: 2em;
+  outline: 0;
+}
+.check-return input[type='radio'].fnb-radio:hover,
+.check-return input[type='radio'].fnb-radio:active,
+.check-return input[type='radio'].fnb-radio:focus {
+  outline: 0;
+}
+.check-return input[type='radio'].fnb-radio:before {
+  top: -6px;
+  font-size: 1.4em;
+}
 .profile-stats {
   color: #fff;
   background: #ff8400;
