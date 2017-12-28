@@ -5381,7 +5381,7 @@ input[type="radio"].book-select-radio{
 	bottom: 0;
 	left: 0;
 	font-size: 1.5em;
-	background-color: #eeeeeeb3;
+	// background-color: #eeeeeeb3;
 	margin: 0 auto;
 	position: absolute;
 	right: 0;
@@ -5418,7 +5418,9 @@ input[type="radio"].book-select-radio{
 		}
 		&.active{
 			a{
-				color: @accent-primary;
+				// color: @accent-primary;
+				border-bottom: 1px solid @accent-primary;
+    			padding-bottom: 5px;
 			}
 		}
 	}
@@ -5557,7 +5559,7 @@ input[type="radio"].book-select-radio{
 		bottom: 0;
 		left: 0;
 		font-size: 0.8em;
-		background-color: #eeeeeeb3;
+		// background-color: #eeeeeeb3;
     	margin: 0 auto;
 		i{
 			font-size: 1.8em;
@@ -5570,8 +5572,22 @@ input[type="radio"].book-select-radio{
 	}
 	&.shortlist-version{
 		.search-results__head{
-			.arrive{
+			.airline{
+				flex-basis: 9%;
+			}
+			.duration{
+				flex-basis: 8%;
+				text-align: left;
+			}
+			.policy{
 				flex-basis: 10%;
+			}
+			.depart{
+				text-align: 5%;
+				text-align: left;
+			}
+			.arrive{
+				flex-basis: 9%;
 			}
 			.price{
 				flex-basis: 18%;
@@ -5580,6 +5596,9 @@ input[type="radio"].book-select-radio{
 		.search-results__body{
 			.separator{
 				font-size: 0.95em;
+			}
+			.airline{
+				flex-basis: 16%;
 			}
 			.depart{
 				flex-basis: 15%;
@@ -5696,7 +5715,7 @@ input[type="radio"].book-select-radio{
 		min-width: 65px;
 	}
 	.price-toggle{
-		font-size: 0.9em;
+		font-size: 1.15em;
 		.switcher{
 			width: 100px;
 		}
@@ -5838,7 +5857,7 @@ input[type="radio"].book-select-radio{
 }
 
 .tooltip{
-	min-width: 100px;
+	min-width: 110px;
 }
 
 .f-return-way{
@@ -6022,10 +6041,9 @@ input[type="radio"].book-select-radio{
 	  margin: 0 auto;
 	  height: 30px;
 	  width: 120px;
-	  background: rgba(0, 0, 0, 0.25);
+	  // background: rgba(0, 0, 0, 0.25);
 	  border-radius: 3px;
-	  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
-	  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+	  // box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
 	}
 	.switch-label {
 	  position: relative;
@@ -6035,10 +6053,11 @@ input[type="radio"].book-select-radio{
 	  width: 58px;
 	  line-height: 28px;
 	  font-size: 0.8em;
-	  color: #fff;
+	  color: #000;
 	  text-align: center;
 	  // text-shadow: 0 1px 1px rgba(0, 0, 0, 0.45);
 	  cursor: pointer;
+	  margin-bottom: 0;
 	}
 
 	.switch-label:active {
@@ -6067,7 +6086,7 @@ input[type="radio"].book-select-radio{
 
 	.switch-input:checked + .switch-label {
 	  font-weight: 600;
-	  font-size: 0.9em;
+	  font-size: 1.05em;
 	  color: #000;
 	  // text-shadow: 0 1px rgba(255, 255, 255, 0.25);
 	  transition: 0.15s ease-out;
@@ -6078,27 +6097,27 @@ input[type="radio"].book-select-radio{
 	  left: 60px;
 	}
 
-	.switch-selection {
-	  display: block;
-	  position: absolute;
-	  z-index: 1;
-	  top: 2px;
-	  left: 2px;
-	  width: 58px;
-	  height: 25px;
-	  background: #65bd63;
-	  border-radius: 3px;
-	  background-image: -webkit-linear-gradient(top, #9dd993, #65bd63);
-	  background-image: -moz-linear-gradient(top, #9dd993, #65bd63);
-	  background-image: -o-linear-gradient(top, #9dd993, #65bd63);
-	  background-image: linear-gradient(to bottom, #9dd993, #65bd63);
-	  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 0 2px rgba(0, 0, 0, 0.2);
-	  box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 0 2px rgba(0, 0, 0, 0.2);
-	  -webkit-transition: left 0.15s ease-out;
-	  -moz-transition: left 0.15s ease-out;
-	  -o-transition: left 0.15s ease-out;
-	  transition: left 0.15s ease-out;
-	}
+	// .switch-selection {
+	//   display: block;
+	//   position: absolute;
+	//   z-index: 1;
+	//   top: 2px;
+	//   left: 2px;
+	//   width: 58px;
+	//   height: 25px;
+	//   background: #65bd63;
+	//   border-radius: 3px;
+	//   background-image: -webkit-linear-gradient(top, #9dd993, #65bd63);
+	//   background-image: -moz-linear-gradient(top, #9dd993, #65bd63);
+	//   background-image: -o-linear-gradient(top, #9dd993, #65bd63);
+	//   background-image: linear-gradient(to bottom, #9dd993, #65bd63);
+	//   -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 0 2px rgba(0, 0, 0, 0.2);
+	//   box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 0 2px rgba(0, 0, 0, 0.2);
+	//   -webkit-transition: left 0.15s ease-out;
+	//   -moz-transition: left 0.15s ease-out;
+	//   -o-transition: left 0.15s ease-out;
+	//   transition: left 0.15s ease-out;
+	// }
 
 }
 

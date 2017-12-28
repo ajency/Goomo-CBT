@@ -16,6 +16,7 @@
 		<link rel="stylesheet" href="https://ajency.github.io/Goomo-CBT/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://ajency.github.io/Goomo-CBT/css/jquery.flexdatalist.min.css">
 		<link rel="stylesheet" href="https://ajency.github.io/Goomo-CBT/css/bootstrap-multiselect.min.css">
+		
 		<link rel="stylesheet" href="https://ajency.github.io/Goomo-CBT/js/bootstrap-daterangepicker/daterangepicker.css">
 		<link href="https://ajency.github.io/Goomo-CBT/css/main.css" rel="stylesheet">
 	</head>
@@ -223,7 +224,15 @@
 									<div class="traveller__name">
 										<p class="m-b-5 text-darker default-size">Traveller Name</p>
 										<div class="relative flex-row traveller__row">
-											<input type="text" class="fnb-input flex-1 main-name" value="Amar Singh">
+											<input type="text" class="fnb-input flex-1 main-name flexdatalist" value="Amar Singh" id="" list='languages' name='language'>
+											<datalist id="languages">
+												<option value="Amar Singh">Amar Singh</option>
+											    <option value="Amit Adav">Amit Adav</option>
+											    <option value="Ajaj Rajguru">Ajaj Rajguru</option>
+											    <option value="Valenie Lourenco">Valenie Lourenco</option>
+											    <option value="Anuj Khurana">Anuj Khurana</option>
+											</datalist>
+											
 											<label class="guest-check flex-1 flex-row m-b-0 m-l-10 text-medium text-color flex-end" data-toggle="collapse" data-target="#comment-collapse" aria-expanded="false" aria-controls="comment-collapse">
 												<input type="checkbox" class="fnb-checkbox">
 												<span>Add as a Guest</span>
@@ -241,7 +250,7 @@
 								</div>
 								<div class="collapse guest-details m-t-15" id="comment-collapse">
 									<div class="flex-row guest-holder">
-										<div class="comments m-r-20">
+										<div class="comments p-r-20">
 											<p class="m-b-5 text-darker default-size">Comments</p>
 											<textarea class="fnb-input outline fullwidth p-t-15" rows="1"></textarea>
 										</div>
@@ -454,7 +463,7 @@
 
 				<hr>
 				<div class="text-right">
-					<a href="/Goomo-CBT/account/flight-one-way/" class="btn fnb-btn primary-btn bold-btn full search-flight" target="_blank"><span>Search Flights</span></a>
+					<a href="/Goomo-CBT/account/flight-one-way/" class="btn fnb-btn primary-btn bold-btn full search-flight"><span>Search Flights</span></a>
 				</div>
 			</div>
 			
@@ -474,10 +483,10 @@
 			<div class="approver-name boxshadow5 m-b-20 white-box">
 				<p class="m-b-0 text-darker x-small text-uppercase text-lighter">Traveller Name</p>
 				<h6 class="bolder m-t-5 m-b-5 sub-title">Amar Singh</h6>
-				<a href="#" class="primary-link">View Applicable Policy</a>
+				<a href="#" class="secondary-link text-decor">View Applicable Policy</a>
 				<p class="m-b-0 m-t-15 text-darker x-small text-uppercase text-lighter">Guest Name</p>
 				<h6 class="bolder m-t-5 m-b-5 sub-title">Summer Patekar</h6>
-				<a href="#" class="primary-link">View Applicable Policy</a>
+				<a href="#" class="secondary-link text-decor">View Applicable Policy</a>
 				<hr>
 				<p class="m-b-0 text-darker x-small text-uppercase text-lighter">Travel Category</p>
 				<h6 class="bolder m-t-5 m-b-10 sub-title">Business Trip</h6>
@@ -575,8 +584,12 @@
 
 
 		<script type="text/javascript" src="/Goomo-CBT/js/jquery.min.js"></script>
+
+
 		
 		<script type="text/javascript" src="/Goomo-CBT/js/bootstrap.min.js"></script>
+
+		
 
 		
 		<script type="text/javascript" src="/Goomo-CBT/js/datatables.net/js/jquery.dataTables.min.js"></script>
@@ -588,9 +601,11 @@
 		<script type="text/javascript" src="/Goomo-CBT/js/moment.min.js"></script>	
 		<script type="text/javascript" src="/Goomo-CBT/js/bootstrap-daterangepicker/daterangepicker.js"></script>	
 		
-
+		
 		
 		<script type="text/javascript" src="/Goomo-CBT/js/flex-datalist/jquery.flexdatalist.min.js"></script>
+
+
 
 		<script type="text/javascript" src="/Goomo-CBT/js/custom.js"></script>
 	</body>
