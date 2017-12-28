@@ -567,10 +567,40 @@ if($('.sticky-book').length){
     });
 }
 
-$('.get-tab-val').on('shown.bs.tab', function (e) {
-  	var getlink = $(this).attr('data-link');
-  	$('.search-flight').attr('href',getlink);
-})
+	$('.get-tab-val').on('shown.bs.tab', function (e) {
+	  	var getlink = $(this).attr('data-link');
+	  	$('.search-flight').attr('href',getlink);
+	})
+
+
+	function autoflex(){
+		$('.flexdatalist').flexdatalist({
+		     minLength: 0,
+		     noResultsText : '<span>No record found. Please complete the name and add as a guest</span>'
+		});
+
+		$('.main-name').on('change:flexdatalist', function () {
+	        value = $(this).val();
+	        // console.log(value);
+	        // $('#languages option').each(function(){
+	        // 	idval = $(this).val();
+	        // });
+	        var name = ['Amar Singh','Amit Adav','Ajaj Rajguru','Valenie Lourenco','Anuj Khurana'];
+	        $('.guest-check').css('visibility','hidden');
+	        if( $(this).val().length != 0 ) {
+	        	if($.inArray( value, name ) >= 0){
+	        		$(this).closest('.traveller__row').find('.guest-check').css('visibility','hidden');
+	        		console.log(this);
+	        	}
+	        	else{
+	        		$(this).closest('.traveller__row').find('.guest-check').css('visibility','visible');
+	        	}
+	        	// console.log();
+	        }
+	        // $(this).val('');
+
+	    });
+	}
 
 
 	var target = "comment-collapse_";
@@ -584,12 +614,44 @@ $('.get-tab-val').on('shown.bs.tab', function (e) {
 	  highlight_group.find('.add-traveller').remove();
 	  highlight_group.find('.traveller__row').addClass('disable');
 	  highlight_group.find('.traveller-action').removeClass('hidden');
+	  highlight_group_clone.find('.main-name').remove();
+	  var myapp = '<input type="text" class="fnb-input flex-1 main-name flexdatalist" value="Amar Singh" id="" list="languages" name="language">';
+	  highlight_group_clone.find('.traveller__row').find('.append-row').append(myapp);
+	  highlight_group_clone.find('.dataList').attr('id','data'+target+i);
+	  highlight_group_clone.find('.main-name').attr('list','data'+target+i);
+	  highlight_group_clone.find('.main-name').attr('name','data'+target+i);
+	  highlight_group_clone.find('.main-name').flexdatalist('reset');
+	  highlight_group_clone.find('.main-name').flexdatalist({
+		     minLength: 0,
+		     noResultsText : '<span>No record found. Please complete the name and add as a guest</span>'
+		});
+	  highlight_group_clone.find('.main-name').on('change:flexdatalist', function () {
+	        value = $(this).val();
+	        // console.log(value);
+	        // $('#languages option').each(function(){
+	        // 	idval = $(this).val();
+	        // });
+	        var name = ['Amar Singh','Amit Adav','Ajaj Rajguru','Valenie Lourenco','Anuj Khurana'];
+	        $('.guest-check').css('visibility','hidden');
+	        if( $(this).val().length != 0 ) {
+	        	if($.inArray( value, name ) >= 0){
+	        		$(this).closest('.traveller__row').find('.guest-check').css('visibility','hidden');
+	        		console.log(this);
+	        	}
+	        	else{
+	        		$(this).closest('.traveller__row').find('.guest-check').css('visibility','visible');
+	        	}
+	        	// console.log();
+	        }
+	        // $(this).val('');
 
+	    });
 	  // highlight_group_clone.removeClass('hidden');
 	  highlight_group_clone.find('.guest-check').attr('data-target','#'+target+i);
 	  highlight_group_clone.find('.guest-details').attr('id',target+i);
 	  highlight_group_clone.insertAfter(highlight_group);
 	  i++;
+	 
 	});
 
 	$('body').on('click', '.remove-traveller', function(e) {
@@ -602,31 +664,8 @@ $('.get-tab-val').on('shown.bs.tab', function (e) {
 	  $(this).parent().closest('.traveller').find('.traveller__row').removeClass('disable');
 	});
 
-	$('.flexdatalist').flexdatalist({
-	     minLength: 0,
-	     noResultsText : 'Nothing found please complete the name and add as a guest'
-	});
 
-	$('.main-name').on('change:flexdatalist', function () {
-        value = $(this).val();
-        // console.log(value);
-        // $('#languages option').each(function(){
-        // 	idval = $(this).val();
-        // });
-        var name = ['Amar Singh','Amit Adav','Ajaj Rajguru','Valenie Lourenco','Anuj Khurana'];
-        
-        if( $(this).val().length != 0 ) {
-        	if($.inArray( value, name ) >= 0){
-        		$('.guest-check').css('visibility','hidden');
-        	}
-        	else{
-        		$('.guest-check').css('visibility','visible');
-        	}
-        	// console.log();
-        }
-        // $(this).val('');
-
-    });
+	autoflex();
 
 
 })
