@@ -6,6 +6,8 @@ layout: approve-booking
 
 flight : flight-header
 
+admin: true
+
 flightContent : gray-bg
 
 
