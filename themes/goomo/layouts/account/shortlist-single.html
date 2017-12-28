@@ -1,57 +1,32 @@
 {{ define "main" }}
 
 
+<div class="row m-t-20 p-t-20">
+	<div class="col-sm-12">
+		<a href="/Goomo-CBT/account/flight-one-way/" class="btn primary-btn fnb-btn no-radius"><i class="fa fa-angle-left sub-title p-r-5" aria-hidden="true"></i> Back to Search Results</a>
+	</div>
+	<div class="col-sm-12">
+		<div class="text-center">
+			<h4 class="text-uppercase bolder">Shortlist</h4>
+			<p class="text-darker">Email this Shortlist or share the link with a friend.</p>
+		</div>
+	</div>
+</div>
+
+
+
 <div class="row m-t-20 m-b-20">
-	<div class="col-sm-9 search-results shortlist-section">
-		<div class="">
-			<h5 class="bolder m-b-15 sub-title">Shon Duglas has shortlisted the below flight(s). Please have a look.</h5>
-		</div>
-		<div class="white-box approve-detail">
-			<div class="flex-row space-between m-b-20">
-				<div>
-					<h5 class="text-darker bolder m-b-5 sub-title">Goa to Mumbai</h5>
-					<p class="lighter text-darker">Wed, 20 Dec | Traveller(s) - 1 Adult</p>
-				</div>
-				<!-- <div>
-					
-					<button type="submit" class="btn primary-btn fnb-btn no-radius">Send for Approval</button>	
-				</div> -->
-			</div>
-			<div class="flex-row space-between">
-				<div>
-					<p class="m-b-5 text-darker default-size">Name</p>
-					<h6 class="m-b-5 text-darker m-t-0 bolder sub-title">Shon Duglas</h6>
-				</div>
-				<div>
-					<p class="m-b-5 text-darker default-size">Email</p>
-					<h6 class="m-b-5 text-darker m-t-0 bolder sub-title">shonduglas@gmail.com</h6>
-				</div>
-				<div>
-					<p class="m-b-5 text-darker default-size">Travel Category</p>
-					<h6 class="m-b-5 text-darker m-t-0 bolder sub-title">Business Trip</h6>
-				</div>
-				<div>
-					<p class="m-b-5 text-darker default-size">Travel Sub Category</p>
-					<h6 class="m-b-5 text-darker m-t-0 bolder sub-title">Meetings</h6>
-				</div>
-			</div>
-		</div>
-		<div class="profile-view white-box">
-			<div class="flex-row align-top">
-				<!-- <div class="user">
-					<img src="{{"img/dummy.jpg" | absURL}}" class="img-responsive img-circle">
-				</div> -->
-				<div class="" style="width: 70%; margin-top: -25px;">
-					<!-- <p class="text-darker bolder m-b-5">Email : showdug18@gmail.com</p> -->
-					<textarea rows="3" class="note-text fnb-input fullwidth m-b-10" placeholder="Comments" disabled>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, beatae.</textarea>
-					<!-- <a href="#" class="secondary-link text-decor">View Applicable Policy</a> -->
-				</div>
+	<div class="col-sm-8 search-results shortlist-section">
+		<div class="flex-row space-between m-b-20 white-box approve-detail">
+			<div>
+				<h5 class="text-darker bolder m-b-5 sub-title">Goa to Mumbai <span class="default-size text-color">(One Way)</span></h5>
+				<p class="lighter text-darker">Wed, 20 Dec | Traveller(s) - 1 Adult</p>
 			</div>
 		</div>
 		<div class="flight-da">
 			<div class="flight-da__head no-bg-row flex-row">
-				<i class="fa fa-plane m-t-10" aria-hidden="true"></i>
-				<p class="m-b-0 m-l-15 text-darker default-size bolder sub-title m-t-10">From</p>
+				<i class="fa fa-plane" aria-hidden="true"></i>
+				<p class="m-b-0 m-l-10 text-darker default-size bolder sub-title">From</p>
 			</div>
 			<div class="flight-da__body search-results__body white-box">
 				<div class="search-results white-box search-version shortlist-version">
@@ -121,6 +96,7 @@
 										<p class="m-b-0 text-color flex-row"><i class="fa fa-inr" aria-hidden="true"></i> <b class="bat-color sub-title">4,995</b> <img src="{{"img/corporate.png" | absURL}}" class="img-responsive m-l-5 cursor-pointer no-opac" width="20" data-toggle="tooltip" data-placement="top" title="Corporate rate"></p>
 									</div>
 								</div>
+								<i class="fa fa-times element-title m-l-30 m-t-5 cursor-pointer" aria-hidden="true"></i>
 							</div>
 						</div>
 						<!-- <div class="comment-box">
@@ -167,6 +143,7 @@
 										<p class="m-b-0 text-color flex-row"><i class="fa fa-inr" aria-hidden="true"></i> <b class="bat-color sub-title">4,995</b> <img src="{{"img/retail-rate.png" | absURL}}" class="img-responsive m-l-5 cursor-pointer no-opac" width="20" data-toggle="tooltip" data-placement="top" title="retail rate"></p>
 									</div>
 								</div>
+								<i class="fa fa-times element-title m-l-30 m-t-5 cursor-pointer" aria-hidden="true"></i>
 							</div>
 						</div>
 						<div class="flex-row separator align-top">
@@ -206,12 +183,15 @@
 										<p class="m-b-0 text-color flex-row"><i class="fa fa-inr" aria-hidden="true"></i> <b class="bat-color sub-title">4,995</b> <img src="{{"img/corporate.png" | absURL}}" class="img-responsive m-l-5 cursor-pointer no-opac" width="20" data-toggle="tooltip" data-placement="top" title="Corporate rate"></p>
 									</div>
 								</div>
+								<i class="fa fa-times element-title m-l-30 m-t-5 cursor-pointer" aria-hidden="true"></i>
 							</div>
 						</div>
 					</div>
-					<div class="flight-da__head no-bg-row flex-row">
-						<i class="fa fa-plane fa-rotate-180 m-t-10 m-b-10" aria-hidden="true"></i>
-						<p class="m-b-0 m-l-15 text-darker default-size bolder sub-title m-t-10 m-b-10">To</p>
+
+
+					<!-- <div class="flight-da__head no-bg-row  flex-row">
+						<i class="fa fa-plane fa-rotate-180 m-b-10 m-t-10" aria-hidden="true"></i>
+						<p class="m-b-0 m-l-10 text-darker default-size bolder sub-title m-b-10 m-t-10">To</p>
 					</div>
 					<div class="search-results__head flex-row m-t-10 p-t-5 p-b-5">
 						<div class="head_col text-lighter airline">
@@ -247,7 +227,6 @@
 								<div class="p-l-10">
 									<div class="flex-row">
 										<img src="{{"img/SG.png" | absURL}}" class="img-responsive" width="28">
-										<!-- <img src="{{"img/earliest.png" | absURL}}" class="no-opac img-responsive m-l-10 cursor-pointer" width="30" data-toggle="tooltip" data-placement="top" title="Earliest Flight"> -->
 										<div class="p-l-10 text-left">
 											<p class="text-lighter lighter x-small m-b-0">Spice Jet</p>
 											<p class="m-b-0 text-lighter lighter x-small">SG454</p>
@@ -276,11 +255,12 @@
 							<div class="head_col text-lighter price-row flex-row align-top">
 								<div class="check-separator no-rate">
 								 	<div class="flex-row justify-center">
-										<!-- <img src="{{"img/Wishlist-selected.png" | absURL}}" class="img-responsive m-r-5 cursor-pointer" width="20" data-toggle="tooltip" data-placement="top" title="Shortlist"> -->
+										
 										
 										<p class="m-b-0 text-color flex-row"><i class="fa fa-inr" aria-hidden="true"></i> <b class="bat-color sub-title">4,995</b> <img src="{{"img/corporate.png" | absURL}}" class="img-responsive m-l-5 cursor-pointer no-opac" width="20" data-toggle="tooltip" data-placement="top" title="Corporate rate"></p>
 									</div>
 								</div>
+								<i class="fa fa-times element-title m-l-30 m-t-5 cursor-pointer" aria-hidden="true"></i>
 							</div>
 						</div>
 						<div class="flex-row separator align-top">
@@ -288,7 +268,7 @@
 								<div class="p-l-10">
 									<div class="flex-row">
 										<img src="{{"img/AI.png" | absURL}}" class="img-responsive" width="28">
-										<!-- <img src="{{"img/earliest.png" | absURL}}" class="no-opac img-responsive m-l-10 cursor-pointer" width="30" data-toggle="tooltip" data-placement="top" title="Earliest Flight"> -->
+										
 										<div class="p-l-10 text-left">
 											<p class="text-lighter lighter x-small m-b-0">Air India</p>
 											<p class="m-b-0 text-lighter lighter x-small">AI454</p>
@@ -311,7 +291,7 @@
 								<p class="m-b-0 x-small text-lighter">Non Stop</p>
 							</div>
 							<div class="head_col text-lighter policy">
-								<!-- <p class="m-b-0 x-small text-danger"><i class="fa fa-ban" aria-hidden="true"></i> out of policy</p> -->
+								
 								<div class="flight-label fastest dis-inline">
 									Fastest
 								</div>
@@ -319,22 +299,21 @@
 							<div class="head_col text-lighter price-row flex-row align-top">
 								<div class="check-separator no-rate">
 								 	<div class="flex-row justify-center">
-										<!-- <img src="{{"img/Wishlist-selected.png" | absURL}}" class="img-responsive m-r-5 cursor-pointer" width="20" data-toggle="tooltip" data-placement="top" title="Shortlist"> -->
+										
 										
 										<p class="m-b-0 text-color flex-row"><i class="fa fa-inr" aria-hidden="true"></i> <b class="bat-color sub-title">4,995</b> <img src="{{"img/retail-rate.png" | absURL}}" class="img-responsive m-l-5 cursor-pointer no-opac" width="20" data-toggle="tooltip" data-placement="top" title="retail rate"></p>
 									</div>
 								</div>
+								<i class="fa fa-times element-title m-l-30 m-t-5 cursor-pointer" aria-hidden="true"></i>
 							</div>
 						</div>
-						<!-- <div class="comment-box">
-							<p class="m-b-0 text-darker p-l-15"><b class="bolder">Comments: </b> The cheapest flight option did not match my schedule</p>
-						</div> -->
+						
 						<div class="flex-row separator align-top">
 							<div class="head_col text-lighter flex-row align-top airline">
 								<div class="p-l-10">
 									<div class="flex-row">
 										<img src="{{"img/SG.png" | absURL}}" class="img-responsive" width="28">
-										<!-- <img src="{{"img/earliest.png" | absURL}}" class="no-opac img-responsive m-l-10 cursor-pointer" width="30" data-toggle="tooltip" data-placement="top" title="Earliest Flight"> -->
+										
 										<div class="p-l-10 text-left">
 											<p class="text-lighter lighter x-small m-b-0">Spice Jet</p>
 											<p class="m-b-0 text-lighter lighter x-small">SG454</p>
@@ -361,30 +340,42 @@
 							<div class="head_col text-lighter price-row flex-row align-top">
 								<div class="check-separator no-rate">
 								 	<div class="flex-row justify-center">
-										<!-- <img src="{{"img/Wishlist-selected.png" | absURL}}" class="img-responsive m-r-5 cursor-pointer" width="20" data-toggle="tooltip" data-placement="top" title="Shortlist"> -->
+										
 										
 										<p class="m-b-0 text-color flex-row"><i class="fa fa-inr" aria-hidden="true"></i> <b class="bat-color sub-title">4,995</b> <img src="{{"img/corporate.png" | absURL}}" class="img-responsive m-l-5 cursor-pointer no-opac" width="20" data-toggle="tooltip" data-placement="top" title="Corporate rate"></p>
 									</div>
 								</div>
+								<i class="fa fa-times element-title m-l-30 m-t-5 cursor-pointer" aria-hidden="true"></i>
 							</div>
 						</div>
-						<!-- <div class="comment-box">
-							<p class="m-b-0 text-darker p-l-15"><b class="bolder">Comments: </b> The cheapest flight option did not match my schedule</p>
-						</div> -->
-					</div>
+						
+					</div> -->
 				</div>
 			</div>
 			
 		</div>
 	</div>
-	<div class="col-sm-3">
-		<div class="m-t-50">
-			<h5 class="bolder text-darker">About Mobiz</h5>
-			<p class="sub-title text-darker m-t-20"><a href="#" class="dark-link">Mobiz</a> is a tool by Goomo which makes corporate travel easier with great benefits.</p>
+	<div class="col-sm-4">
+		<div class="white-box share-link">
+			<h5 class="lighter m-b-15">Share a link</h5>
+			<div class="copy-bar flex-row space-between">
+				<p class="m-b-0 bolder default-size text-color">http://www.goomo-CBT.com/trips/!ADCfMr</p>
+				<a href="#" class="primary-link">Copy Link</a>
+			</div>
 		</div>
-		<div class="m-t-50">
-			<h5 class="bolder text-darker">About Goomo</h5>
-			<p class="sub-title text-darker m-t-20"><a href="#" class="dark-link">Goomo</a> is an omni-channel, travel-tech company that distributes products &amp; services through its website goomo.com, 15 company owned branches and a b2b partner network.</p>
+		<div class="white-box m-t-15 send-mail">
+			<h5 class="heavier m-b-15 line-height">Send an email</h5>
+			<div class="form-group p-b-5 relative">
+                <label class="m-b-0 text-lighter float-label required" for="password">To</label>
+                <input id="password" type="text" class="form-control fnb-input text-color float-input" name="name" value="tanvi@ajency.in" required="">
+			</div>
+			<div class="form-group m-b-0 relative">
+                <label class="m-b-0 text-lighter float-label required" for="comment">Comments</label>
+                <textarea id="comment" class="form-control fnb-input text-color float-input" name="name" value="745845125445454" required="">These are my options</textarea>
+			</div>
+			<div class="m-t-20 m-b-5">
+				<button class="btn fnb-btn primary-btn full save-btn" type="button"><i class="fa fa-paper-plane-o m-r-5" aria-hidden="true"></i>Send</button>
+			</div>
 		</div>
 	</div>
 </div>

@@ -12072,7 +12072,6 @@ input[type="radio"].book-select-radio:before {
   bottom: 0;
   left: 0;
   font-size: 1.5em;
-  background-color: #eeeeeeb3;
   margin: 0 auto;
   position: absolute;
   right: 0;
@@ -12110,7 +12109,8 @@ input[type="radio"].book-select-radio:before {
   color: inherit;
 }
 .tab-data li.active a {
-  color: #ff8400;
+  border-bottom: 1px solid #ff8400;
+  padding-bottom: 5px;
 }
 .tab-data__content {
   padding: 1em;
@@ -12231,7 +12231,6 @@ input[type="radio"].book-select-radio:before {
   bottom: 0;
   left: 0;
   font-size: 0.8em;
-  background-color: #eeeeeeb3;
   margin: 0 auto;
 }
 .search-version .detail-collapse i {
@@ -12245,10 +12244,30 @@ input[type="radio"].book-select-radio:before {
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
 }
-.search-version.shortlist-version .search-results__head .arrive {
+.search-version.shortlist-version .search-results__head .airline {
+  -webkit-flex-basis: 9%;
+      -ms-flex-preferred-size: 9%;
+          flex-basis: 9%;
+}
+.search-version.shortlist-version .search-results__head .duration {
+  -webkit-flex-basis: 8%;
+      -ms-flex-preferred-size: 8%;
+          flex-basis: 8%;
+  text-align: left;
+}
+.search-version.shortlist-version .search-results__head .policy {
   -webkit-flex-basis: 10%;
       -ms-flex-preferred-size: 10%;
           flex-basis: 10%;
+}
+.search-version.shortlist-version .search-results__head .depart {
+  text-align: 5%;
+  text-align: left;
+}
+.search-version.shortlist-version .search-results__head .arrive {
+  -webkit-flex-basis: 9%;
+      -ms-flex-preferred-size: 9%;
+          flex-basis: 9%;
 }
 .search-version.shortlist-version .search-results__head .price {
   -webkit-flex-basis: 18%;
@@ -12257,6 +12276,11 @@ input[type="radio"].book-select-radio:before {
 }
 .search-version.shortlist-version .search-results__body .separator {
   font-size: 0.95em;
+}
+.search-version.shortlist-version .search-results__body .airline {
+  -webkit-flex-basis: 16%;
+      -ms-flex-preferred-size: 16%;
+          flex-basis: 16%;
 }
 .search-version.shortlist-version .search-results__body .depart {
   -webkit-flex-basis: 15%;
@@ -12352,7 +12376,7 @@ input[type="radio"].book-select-radio:before {
   min-width: 65px;
 }
 .f-return-way .price-toggle {
-  font-size: 0.9em;
+  font-size: 1.15em;
 }
 .f-return-way .price-toggle .switcher {
   width: 100px;
@@ -12462,7 +12486,7 @@ input[type="radio"].book-select-radio:before {
   padding: 1.5em 2em;
 }
 .tooltip {
-  min-width: 100px;
+  min-width: 110px;
 }
 .f-return-way .detail-collapse i {
   -webkit-transition: all 0.5s ease;
@@ -12702,9 +12726,7 @@ input[type="radio"].book-select-radio:before {
   margin: 0 auto;
   height: 30px;
   width: 120px;
-  background: rgba(0, 0, 0, 0.25);
   border-radius: 3px;
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
 }
 .price-toggle .switch-label {
   position: relative;
@@ -12713,9 +12735,10 @@ input[type="radio"].book-select-radio:before {
   width: 58px;
   line-height: 28px;
   font-size: 0.8em;
-  color: #fff;
+  color: #000;
   text-align: center;
   cursor: pointer;
+  margin-bottom: 0;
 }
 .price-toggle .switch-label:active {
   font-weight: 600;
@@ -12731,7 +12754,7 @@ input[type="radio"].book-select-radio:before {
 }
 .price-toggle .switch-input:checked + .switch-label {
   font-weight: 600;
-  font-size: 0.9em;
+  font-size: 1.05em;
   color: #000;
   -webkit-transition: 0.15s ease-out;
           transition: 0.15s ease-out;
@@ -12739,22 +12762,6 @@ input[type="radio"].book-select-radio:before {
 .price-toggle .switch-input:checked + .switch-label-on ~ .switch-selection {
   /* Note: left: 50% doesn't transition in WebKit */
   left: 60px;
-}
-.price-toggle .switch-selection {
-  display: block;
-  position: absolute;
-  z-index: 1;
-  top: 2px;
-  left: 2px;
-  width: 58px;
-  height: 25px;
-  background: #65bd63;
-  border-radius: 3px;
-  background-image: -webkit-linear-gradient(top, #9dd993, #65bd63);
-  background-image: linear-gradient(to bottom, #9dd993, #65bd63);
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 0 2px rgba(0, 0, 0, 0.2);
-  -webkit-transition: left 0.15s ease-out;
-  transition: left 0.15s ease-out;
 }
 .price-head {
   min-width: 120px;
