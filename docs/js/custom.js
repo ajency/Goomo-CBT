@@ -515,6 +515,12 @@ $('.inactive').change(function() {
 	 $(".rates-table").addClass("hidden");
 });
 
+$('.send-mail').click(function(){
+
+	$('.alert').removeClass('hidden');
+
+});
+
 $('.page-sidebar').on('click', '.add-blackout', function(e) {
   var contact_group, contact_group_clone, input;
   e.preventDefault();

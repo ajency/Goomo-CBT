@@ -11933,6 +11933,9 @@ i.w-border {
 .search-results__body .separator.no-b-btm {
   border-bottom: 0;
 }
+.search-results.mail-results:hover {
+  box-shadow: none;
+}
 .img-circle {
   width: 30px;
   height: 30px;
