@@ -1,12 +1,12 @@
 ---
-title: "Shortlist"
+title: "Get Approval"
 date: 2017-09-26T12:57:20+05:30
 draft: false
-layout: shortlist-flight
+layout: get-approval-single
 
 flight : flight-header
 
-link: true
+returnway: true
 
 flightContent : gray-bg
 

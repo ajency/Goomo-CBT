@@ -2973,6 +2973,9 @@ footer {
   box-shadow: none;
   outline: 0;
 }
+.bg-trans.bg-trans {
+  background-color: transparent;
+}
 .slide-nav {
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
@@ -12245,34 +12248,39 @@ input[type="radio"].book-select-radio:before {
           transform: rotate(180deg);
 }
 .search-version.shortlist-version .search-results__head .airline {
-  -webkit-flex-basis: 9%;
-      -ms-flex-preferred-size: 9%;
-          flex-basis: 9%;
+  -webkit-flex-basis: 20%;
+      -ms-flex-preferred-size: 20%;
+          flex-basis: 20%;
 }
 .search-version.shortlist-version .search-results__head .duration {
-  -webkit-flex-basis: 8%;
-      -ms-flex-preferred-size: 8%;
-          flex-basis: 8%;
+  -webkit-flex-basis: 20%;
+      -ms-flex-preferred-size: 20%;
+          flex-basis: 20%;
   text-align: left;
 }
 .search-version.shortlist-version .search-results__head .policy {
-  -webkit-flex-basis: 10%;
-      -ms-flex-preferred-size: 10%;
-          flex-basis: 10%;
+  -webkit-flex-basis: 0%;
+      -ms-flex-preferred-size: 0%;
+          flex-basis: 0%;
 }
 .search-version.shortlist-version .search-results__head .depart {
-  text-align: 5%;
+  -webkit-flex-basis: 20%;
+      -ms-flex-preferred-size: 20%;
+          flex-basis: 20%;
   text-align: left;
 }
 .search-version.shortlist-version .search-results__head .arrive {
-  -webkit-flex-basis: 9%;
-      -ms-flex-preferred-size: 9%;
-          flex-basis: 9%;
+  -webkit-flex-basis: 20%;
+      -ms-flex-preferred-size: 20%;
+          flex-basis: 20%;
 }
 .search-version.shortlist-version .search-results__head .price {
-  -webkit-flex-basis: 18%;
-      -ms-flex-preferred-size: 18%;
-          flex-basis: 18%;
+  -webkit-flex-basis: 20%;
+      -ms-flex-preferred-size: 20%;
+          flex-basis: 20%;
+}
+.search-version.shortlist-version .check-separator {
+  min-width: 140px;
 }
 .search-version.shortlist-version .search-results__body .separator {
   font-size: 0.95em;
@@ -12882,6 +12890,13 @@ input[type="radio"].book-select-radio:before {
 .check-return input[type='radio'].fnb-radio:before {
   top: -6px;
   font-size: 1.4em;
+}
+.flight-layover {
+  margin: 1.5em 0;
+  padding: 0.3em 0;
+  background-color: #eee;
+  text-align: center;
+  font-size: 0.9em;
 }
 .profile-stats {
   color: #fff;

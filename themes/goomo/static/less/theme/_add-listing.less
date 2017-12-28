@@ -5573,25 +5573,28 @@ input[type="radio"].book-select-radio{
 	&.shortlist-version{
 		.search-results__head{
 			.airline{
-				flex-basis: 9%;
+				flex-basis: 20%;
 			}
 			.duration{
-				flex-basis: 8%;
+				flex-basis: 20%;
 				text-align: left;
 			}
 			.policy{
-				flex-basis: 10%;
+				flex-basis: 0%;
 			}
 			.depart{
-				text-align: 5%;
+				flex-basis: 20%;
 				text-align: left;
 			}
 			.arrive{
-				flex-basis: 9%;
+				flex-basis: 20%;
 			}
 			.price{
-				flex-basis: 18%;
+				flex-basis: 20%;
 			}
+		}
+		.check-separator{
+			min-width: 140px;
 		}
 		.search-results__body{
 			.separator{
@@ -6229,4 +6232,10 @@ input[type="radio"].book-select-radio{
 	}
 }
 
-
+.flight-layover{
+	margin: 1.5em 0;
+    padding: 0.3em 0;
+    background-color: #eee;
+    text-align: center;
+    font-size: 0.9em;
+}

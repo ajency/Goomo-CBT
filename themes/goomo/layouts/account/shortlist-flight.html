@@ -55,6 +55,15 @@
 			</div>
 			<div class="flight-da__body search-results__body white-box">
 				<div class="search-results white-box search-version shortlist-version">
+					<div>
+
+						{{ partial "shortlist-one-way.html" .}}
+
+					</div>
+					<div class="flight-da__head no-bg-row  flex-row">
+						<i class="fa fa-plane fa-rotate-180 m-b-10 m-t-10" aria-hidden="true"></i>
+						<p class="m-b-0 m-l-10 text-darker default-size bolder sub-title m-b-10 m-t-10">To</p>
+					</div>
 					<div class="search-results__head flex-row m-t-10 p-t-5 p-b-5">
 						<div class="head_col text-lighter airline">
 							<div class="dis-inline">
@@ -62,12 +71,12 @@
 							</div>
 						</div>
 						<div class="head_col text-lighter depart">
-							<div class="dis-inline text-left m-l-5">
+							<div class="dis-inline text-left m-l-25">
 								Depart
 							</div>
 						</div>
 						<div class="head_col text-lighter arrive">
-							<div class="dis-inline text-left m-l-20">
+							<div class="dis-inline text-left m-l-25">
 								Arrive
 							</div>
 						</div>
@@ -78,165 +87,7 @@
 							
 						</div>
 						<div class="head_col text-lighter price">
-							<div class="dis-inline text-left m-l-20">
-								Price
-							</div>
-						</div>
-					</div>
-					<div class="search-results__body">
-						<div class="flex-row separator align-top">
-							<div class="head_col text-lighter flex-row align-top airline">
-								<div class="p-l-10">
-									<div class="flex-row">
-										<img src="{{"img/SG.png" | absURL}}" class="img-responsive" width="28">
-										<!-- <img src="{{"img/earliest.png" | absURL}}" class="no-opac img-responsive m-l-10 cursor-pointer" width="30" data-toggle="tooltip" data-placement="top" title="Earliest Flight"> -->
-										<div class="p-l-10 text-left">
-											<p class="text-lighter lighter x-small m-b-0">Spice Jet</p>
-											<p class="m-b-0 text-lighter lighter x-small">SG454</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="head_col text-lighter depart">
-								<div class="dis-inline text-left">
-									<p class="bolder text-color m-b-0 label-size bat-color">04:30</p>
-									<p class="m-b-0 x-small text-lighter lighter">GOI - BOM</p>
-								</div>
-							</div>
-							<div class="head_col text-lighter arrive">
-								<p class="text-color m-b-5 label-size">10:30</p>
-							</div>
-							<div class="head_col text-lighter duration">
-								<p class="text-color m-b-0 label-size">1h 15m</p>
-								<p class="m-b-0 x-small text-lighter">Non Stop</p>
-							</div>
-							<div class="head_col text-lighter policy">
-								<p class="m-b-0 x-small text-danger"><i class="fa fa-ban dis-block" aria-hidden="true"></i> out of policy</p>
-							</div>
-							<div class="head_col text-lighter price-row flex-row align-top">
-								<div class="check-separator no-rate">
-								 	<div class="flex-row justify-center">
-										<!-- <img src="{{"img/Wishlist-selected.png" | absURL}}" class="img-responsive m-r-5 cursor-pointer" width="20" data-toggle="tooltip" data-placement="top" title="Shortlist"> -->
-										
-										<p class="m-b-0 text-color flex-row"><i class="fa fa-inr" aria-hidden="true"></i> <b class="bat-color sub-title">4,995</b> <img src="{{"img/corporate.png" | absURL}}" class="img-responsive m-l-5 cursor-pointer no-opac" width="20" data-toggle="tooltip" data-placement="top" title="Corporate rate"></p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- <div class="comment-box">
-							<p class="m-b-0 text-darker p-l-15"><b class="bolder">Comments: </b> The cheapest flight option did not match my schedule</p>
-						</div> -->
-						<div class="flex-row separator align-top">
-							<div class="head_col text-lighter flex-row align-top airline">
-								<div class="p-l-10">
-									<div class="flex-row">
-										<img src="{{"img/AI.png" | absURL}}" class="img-responsive" width="28">
-										<!-- <img src="{{"img/earliest.png" | absURL}}" class="no-opac img-responsive m-l-10 cursor-pointer" width="30" data-toggle="tooltip" data-placement="top" title="Earliest Flight"> -->
-										<div class="p-l-10 text-left">
-											<p class="text-lighter lighter x-small m-b-0">Air India</p>
-											<p class="m-b-0 text-lighter lighter x-small">AI454</p>
-										</div>
-									</div>
-									
-								</div>
-							</div>
-							<div class="head_col text-lighter depart">
-								<div class="dis-inline text-left">
-									<p class="bolder text-color m-b-0 sub-title bat-color">04:30</p>
-									<p class="m-b-0 x-small text-lighter lighter">GOI - BOM</p>
-								</div>
-							</div>
-							<div class="head_col text-lighter arrive">
-								<p class="text-color m-b-5 sub-title">10:30</p>
-							</div>
-							<div class="head_col text-lighter duration">
-								<p class="text-color m-b-0 sub-title">1h 15m</p>
-								<p class="m-b-0 x-small text-lighter">Non Stop</p>
-							</div>
-							<div class="head_col text-lighter policy">
-								<!-- <p class="m-b-0 x-small text-danger"><i class="fa fa-ban" aria-hidden="true"></i> out of policy</p> -->
-								<div class="flight-label cheapest dis-inline">
-									Cheapest
-								</div>
-							</div>
-							<div class="head_col text-lighter price-row flex-row align-top">
-								<div class="check-separator no-rate">
-								 	<div class="flex-row justify-center">
-										<!-- <img src="{{"img/Wishlist-selected.png" | absURL}}" class="img-responsive m-r-5 cursor-pointer" width="20" data-toggle="tooltip" data-placement="top" title="Shortlist"> -->
-										
-										<p class="m-b-0 text-color flex-row"><i class="fa fa-inr" aria-hidden="true"></i> <b class="bat-color sub-title">4,995</b> <img src="{{"img/retail-rate.png" | absURL}}" class="img-responsive m-l-5 cursor-pointer no-opac" width="20" data-toggle="tooltip" data-placement="top" title="retail rate"></p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="flex-row separator align-top">
-							<div class="head_col text-lighter flex-row align-top airline">
-								<div class="p-l-10">
-									<div class="flex-row">
-										<img src="{{"img/SG.png" | absURL}}" class="img-responsive" width="28">
-										<!-- <img src="{{"img/earliest.png" | absURL}}" class="no-opac img-responsive m-l-10 cursor-pointer" width="30" data-toggle="tooltip" data-placement="top" title="Earliest Flight"> -->
-										<div class="p-l-10 text-left">
-											<p class="text-lighter lighter x-small m-b-0">Spice Jet</p>
-											<p class="m-b-0 text-lighter lighter x-small">SG454</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="head_col text-lighter depart">
-								<div class="dis-inline text-left">
-									<p class="bolder text-color m-b-0 label-size bat-color">04:30</p>
-									<p class="m-b-0 x-small text-lighter lighter">GOI - BOM</p>
-								</div>
-							</div>
-							<div class="head_col text-lighter arrive">
-								<p class="text-color m-b-5 label-size">10:30</p>
-							</div>
-							<div class="head_col text-lighter duration">
-								<p class="text-color m-b-0 label-size">1h 15m</p>
-								<p class="m-b-0 x-small text-lighter">Non Stop</p>
-							</div>
-							<div class="head_col text-lighter policy">
-								
-							</div>
-							<div class="head_col text-lighter price-row flex-row align-top">
-								<div class="check-separator no-rate">
-								 	<div class="flex-row justify-center">
-										<!-- <img src="{{"img/Wishlist-selected.png" | absURL}}" class="img-responsive m-r-5 cursor-pointer" width="20" data-toggle="tooltip" data-placement="top" title="Shortlist"> -->
-										
-										<p class="m-b-0 text-color flex-row"><i class="fa fa-inr" aria-hidden="true"></i> <b class="bat-color sub-title">4,995</b> <img src="{{"img/corporate.png" | absURL}}" class="img-responsive m-l-5 cursor-pointer no-opac" width="20" data-toggle="tooltip" data-placement="top" title="Corporate rate"></p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="flight-da__head no-bg-row flex-row">
-						<i class="fa fa-plane fa-rotate-180 m-t-10 m-b-10" aria-hidden="true"></i>
-						<p class="m-b-0 m-l-15 text-darker default-size bolder sub-title m-t-10 m-b-10">To</p>
-					</div>
-					<div class="search-results__head flex-row m-t-10 p-t-5 p-b-5">
-						<div class="head_col text-lighter airline">
-							<div class="dis-inline">
-								Airlines
-							</div>
-						</div>
-						<div class="head_col text-lighter depart">
-							<div class="dis-inline text-left m-l-5">
-								Depart
-							</div>
-						</div>
-						<div class="head_col text-lighter arrive">
-							<div class="dis-inline text-left m-l-20">
-								Arrive
-							</div>
-						</div>
-						<div class="head_col text-lighter duration">
-							Duration
-						</div>
-						<div class="head_col text-lighter policy">
-							
-						</div>
-						<div class="head_col text-lighter price">
-							<div class="dis-inline text-left m-l-20">
+							<div class="dis-inline text-left">
 								Price
 							</div>
 						</div>
@@ -268,17 +119,18 @@
 								<p class="text-color m-b-0 label-size">1h 15m</p>
 								<p class="m-b-0 x-small text-lighter">Non Stop</p>
 							</div>
-							<div class="head_col text-lighter policy">
+							<!-- <div class="head_col text-lighter policy">
 								<div class="flight-label cheapest dis-inline">
 									Cheapest
 								</div>
-							</div>
+							</div> -->
 							<div class="head_col text-lighter price-row flex-row align-top">
 								<div class="check-separator no-rate">
-								 	<div class="flex-row justify-center">
+								 	<div class="justify-center">
 										<!-- <img src="{{"img/Wishlist-selected.png" | absURL}}" class="img-responsive m-r-5 cursor-pointer" width="20" data-toggle="tooltip" data-placement="top" title="Shortlist"> -->
 										
-										<p class="m-b-0 text-color flex-row"><i class="fa fa-inr" aria-hidden="true"></i> <b class="bat-color sub-title">4,995</b> <img src="{{"img/corporate.png" | absURL}}" class="img-responsive m-l-5 cursor-pointer no-opac" width="20" data-toggle="tooltip" data-placement="top" title="Corporate rate"></p>
+										<p class="m-b-0 text-color flex-row justify-center"><i class="fa fa-inr" aria-hidden="true"></i> <b class="bat-color sub-title">4,995</b> </p>
+										<p class="m-b-0 lighter x-small">(Corporate Rate)</p>
 									</div>
 								</div>
 							</div>
@@ -310,18 +162,18 @@
 								<p class="text-color m-b-0 sub-title">1h 15m</p>
 								<p class="m-b-0 x-small text-lighter">Non Stop</p>
 							</div>
-							<div class="head_col text-lighter policy">
-								<!-- <p class="m-b-0 x-small text-danger"><i class="fa fa-ban" aria-hidden="true"></i> out of policy</p> -->
+							<!-- <div class="head_col text-lighter policy">
 								<div class="flight-label fastest dis-inline">
 									Fastest
 								</div>
-							</div>
+							</div> -->
 							<div class="head_col text-lighter price-row flex-row align-top">
 								<div class="check-separator no-rate">
-								 	<div class="flex-row justify-center">
+								 	<div class="justify-center">
 										<!-- <img src="{{"img/Wishlist-selected.png" | absURL}}" class="img-responsive m-r-5 cursor-pointer" width="20" data-toggle="tooltip" data-placement="top" title="Shortlist"> -->
 										
-										<p class="m-b-0 text-color flex-row"><i class="fa fa-inr" aria-hidden="true"></i> <b class="bat-color sub-title">4,995</b> <img src="{{"img/retail-rate.png" | absURL}}" class="img-responsive m-l-5 cursor-pointer no-opac" width="20" data-toggle="tooltip" data-placement="top" title="retail rate"></p>
+										<p class="m-b-0 text-color flex-row justify-center"><i class="fa fa-inr" aria-hidden="true"></i> <b class="bat-color sub-title">4,995</b></p>
+										<p class="m-b-0 lighter x-small">(Retail Rate)</p>
 									</div>
 								</div>
 							</div>
@@ -355,15 +207,17 @@
 								<p class="text-color m-b-0 label-size">1h 15m</p>
 								<p class="m-b-0 x-small text-lighter">Non Stop</p>
 							</div>
-							<div class="head_col text-lighter policy">
+							<!-- <div class="head_col text-lighter policy">
 								<p class="m-b-0 x-small text-danger"><i class="fa fa-ban dis-block" aria-hidden="true"></i> out of policy</p>
-							</div>
+							</div> -->
 							<div class="head_col text-lighter price-row flex-row align-top">
 								<div class="check-separator no-rate">
-								 	<div class="flex-row justify-center">
+								 	<div class="justify-center">
 										<!-- <img src="{{"img/Wishlist-selected.png" | absURL}}" class="img-responsive m-r-5 cursor-pointer" width="20" data-toggle="tooltip" data-placement="top" title="Shortlist"> -->
 										
-										<p class="m-b-0 text-color flex-row"><i class="fa fa-inr" aria-hidden="true"></i> <b class="bat-color sub-title">4,995</b> <img src="{{"img/corporate.png" | absURL}}" class="img-responsive m-l-5 cursor-pointer no-opac" width="20" data-toggle="tooltip" data-placement="top" title="Corporate rate"></p>
+										<p class="m-b-0 text-color flex-row justify-center"><i class="fa fa-inr" aria-hidden="true"></i> <b class="bat-color sub-title">4,995</b></p>
+										<p class="m-b-0 lighter x-small">(Corporate Rate)</p>
+										<p class="m-b-0 x-small text-danger m-t-5"><i class="fa fa-ban dis-block" aria-hidden="true"></i> out of policy</p>
 									</div>
 								</div>
 							</div>
