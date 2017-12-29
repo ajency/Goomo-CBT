@@ -10,6 +10,8 @@ flight : flight-header
 
 approveReturn: true
 
+rejectReturn: true
+
 admin: true
 
 flightContent : gray-bg
