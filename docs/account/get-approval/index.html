@@ -211,15 +211,18 @@
 		<div class="">
 			<h6 class="bolder m-b-25">Get Approval</h6>
 		</div>
+		<div class="alert alert-success alert-dismissible fade in m-t-20 hidden" role="alert"> <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button> <strong>Success !!!</strong> Your booking request has been sent for approval. You will receive a <a href="/Goomo-CBT/account/booking-approval-mail/" class="text-decor bolder primary-link">mail</a> shortly with the details of your request.</div>
 		<div class="white-box approve-detail">
-			<div class="flex-row space-between m-b-20">
+			<div class="flex-row space-between m-b-20 align-top">
 				<div>
 					<h5 class="text-darker bolder m-b-5">Goa to Mumbai  <span class="text-color x-small">(One Way)</span> </h5>
 					<p class="lighter text-darker">Wed, 20 Dec | Traveller(s) - 1 Adult</p>
 				</div>
 				<div>
 					
-					<button type="submit" class="btn primary-btn fnb-btn no-radius"><i class="fa fa-paper-plane-o m-r-5" aria-hidden="true"></i> Send for Approval</button>	
+					
+					<button type="submit" class="btn primary-btn fnb-btn no-radius send-mail" style="padding: 6px 12px;"><i class="fa fa-paper-plane-o m-r-5" aria-hidden="true"></i> Send for Approval</button>	
+					
 				</div>
 			</div>
 			<div class="flex-row space-between flex-wrap get-approve-row">
@@ -388,7 +391,9 @@
 
 		<div class="text-right m-t-20">
 			
-			<button type="submit" class="btn primary-btn fnb-btn no-radius"><i class="fa fa-paper-plane-o m-r-5" aria-hidden="true"></i> Send for Approval</button>	
+			
+			<button type="submit" class="btn primary-btn fnb-btn no-radius send-mail" style="padding: 6px 12px;"><i class="fa fa-paper-plane-o m-r-5" aria-hidden="true"></i> Send for Approval</button>	
+			
 		</div>
 
 
@@ -407,6 +412,31 @@
 	</div>
 </div>
 <br><br>
+
+
+ <div class="modal fade region-add-modal reject-modal" id="reject-reason-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <form>
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h6 class="modal-title bolder element-title">Reason for rejecting the request</h6>
+          </div>
+          <div class="modal-body">
+			<div class="m-t-15 m-b-15">
+				<p class="text-lighter fullwidth">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At pariatur atque labore blanditiis, non sunt.</p>
+			</div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn fnb-btn outline no-border s-btn" data-dismiss="modal">Close</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
 
 
 

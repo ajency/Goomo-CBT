@@ -521,6 +521,20 @@ $('.send-mail').click(function(){
 
 });
 
+$('.approveMail').click(function(){
+
+	$('.approve-alert').removeClass('hidden');
+
+});
+
+$('.rejectMail').click(function(){
+
+	$('.reject-alert').removeClass('hidden');
+
+});
+
+
+
 $('.page-sidebar').on('click', '.add-blackout', function(e) {
   var contact_group, contact_group_clone, input;
   e.preventDefault();
