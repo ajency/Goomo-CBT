@@ -153,7 +153,7 @@
 						<div class="tab-data p-t-10 p-b-10"> 
 							<ul class="tab-data__links flex-row">
 								<li class="active"><a href="#flight-detail" class="gray-darker bolder x-small" aria-controls="flight-detail" role="tab" data-toggle="tab">Flight Details</a></li>
-								<li><a href="#price-summary" class="gray-darker bolder x-small" aria-controls="price-summary" role="tab" data-toggle="tab">Price Summary</a></li>
+								<li><a href="#price-summary" class="gray-darker bolder x-small" aria-controls="price-summary" role="tab" data-toggle="tab">Fare Summary</a></li>
 								<li><a href="#cancel-fee" class="gray-darker bolder x-small" aria-controls="cancel-fee" role="tab" data-toggle="tab">Cancellation Fee</a></li>
 								<li><a href="#re-fee" class="gray-darker bolder x-small" aria-controls="re-fee" role="tab" data-toggle="tab">Rescheduling Fee</a></li>
 								<li><a href="#bag-details" class="gray-darker bolder x-small" aria-controls="bag-details" role="tab" data-toggle="tab">Baggage Details</a></li>
@@ -292,7 +292,7 @@
 						<div class="tab-data p-t-10 p-b-10"> 
 							<ul class="tab-data__links flex-row">
 								<li class="active"><a href="#flight-detail-1" class="gray-darker bolder x-small" aria-controls="flight-detail-1" role="tab" data-toggle="tab">Flight Details</a></li>
-								<li><a href="#price-summary-1" class="gray-darker bolder x-small" aria-controls="price-summary-1" role="tab" data-toggle="tab">Price Summary</a></li>
+								<li><a href="#price-summary-1" class="gray-darker bolder x-small" aria-controls="price-summary-1" role="tab" data-toggle="tab">Fare Summary</a></li>
 								<li><a href="#cancel-fee-1" class="gray-darker bolder x-small" aria-controls="cancel-fee-1" role="tab" data-toggle="tab">Cancellation Fee</a></li>
 								<li><a href="#re-fee-1" class="gray-darker bolder x-small" aria-controls="re-fee-1" role="tab" data-toggle="tab">Rescheduling Fee</a></li>
 								<li><a href="#bag-details-1" class="gray-darker bolder x-small" aria-controls="bag-details-1" role="tab" data-toggle="tab">Baggage Details</a></li>
@@ -423,7 +423,7 @@
 								    <span class="switch-selection"></span>
 								  </div>
 								</div>
-								<p class="m-b-0 m-t-10 text-danger"><i class="fa fa-ban" aria-hidden="true"></i> out of policy</p>
+								<p class="m-b-0 text-danger"><i class="fa fa-ban" aria-hidden="true"></i> Out of Policy</p>
 							</div>
 							<i class="fa fa-star shortlist-me cursor-pointer active" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Shortlist"></i>
 						</div>
@@ -475,6 +475,192 @@
 							<i class="fa fa-star shortlist-me cursor-pointer" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Shortlist"></i>
 						</div>
 					</div>
+					<div class="flex-row separator align-top relative">
+						<div class="head_col text-lighter airlines flex-row">
+							<div class="check-return"><input type="radio" class="fnb-radio" name="return-one"></div>
+							<div>
+								<div class="flex-row">
+									<img src="{{"img/SG.png" | absURL}}" class="img-responsive center-block">
+									<!-- <img src="{{"img/earliest.png" | absURL}}" class="no-opac img-responsive m-l-10 cursor-pointer" width="30" data-toggle="tooltip" data-placement="top" title="Earliest Flight"> -->
+								</div>
+								<div class="p-t-5">
+									<p class="text-lighter lighter x-small m-b-0">Spice Jet</p>
+									<p class="m-b-0 text-lighter lighter x-small">SG454</p>
+								</div>
+							</div>
+						</div>
+						<div class="head_col text-lighter depart">
+							<div class="dis-inline text-left">
+								<p class="bolder bat-color m-b-5">04:30</p>
+								<p class="m-b-0 x-small text-lighter">GOI - BOM</p>
+								<p class="m-b-0 x-small text-lighter">Spice Jet</p>
+							</div>
+						</div>
+						<div class="head_col text-lighter arrive">
+							<p class="text-color m-b-5">05:10</p>
+							<p class="text-color m-b-0">1h 10m</p>
+							<p class="m-b-0 x-small text-lighter">nonstop</p>
+						</div>
+						<!-- <div class="head_col text-lighter">
+							
+							<p class="m-b-0 x-small text-danger"><i class="fa fa-ban" aria-hidden="true"></i> out of policy</p>
+						</div> -->
+						<div class="head_col text-lighter price-row flex-row align-top">
+							<div class="check-separator">
+							 	<div class="price-toggle">
+								  <div class="switcher">
+								    <input type="radio" class="switch-input" name="view-3" value="week" id="cor-3" checked>
+								    <label for="cor-3" class="switch-label switch-label-off"><i class="fa fa-inr" aria-hidden="true"></i> <span class="sub-title">4,995</span></label>
+								    <input type="radio" class="switch-input" name="view-3" value="month" id="ret-3">
+								    <label for="ret-3" class="switch-label switch-label-on"><i class="fa fa-inr" aria-hidden="true"></i> <span class="sub-title">5,000</span></label>
+								    <span class="switch-selection"></span>
+								  </div>
+								</div>
+								<p class="m-b-0 text-danger"><i class="fa fa-ban" aria-hidden="true"></i> Out of Policy</p>
+							</div>
+							<i class="fa fa-star shortlist-me cursor-pointer active" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Shortlist"></i>
+						</div>
+					</div>
+					<div class="flex-row separator align-top relative">
+						<div class="head_col text-lighter airlines flex-row">
+							<div class="check-return"><input type="radio" class="fnb-radio" name="return-one"></div>
+							<div>
+								<div class="flex-row">
+									<img src="{{"img/AI.png" | absURL}}" class="img-responsive center-block">
+									<!-- <img src="{{"img/earliest.png" | absURL}}" class="no-opac img-responsive m-l-10 cursor-pointer" width="30" data-toggle="tooltip" data-placement="top" title="Earliest Flight"> -->
+								</div>
+								<div class="p-t-5">
+									<p class="text-lighter lighter x-small m-b-0">Air India</p>
+									<p class="m-b-0 text-lighter lighter x-small">AI655</p>
+								</div>
+							</div>
+						</div>
+						<div class="head_col text-lighter depart">
+							<div class="dis-inline text-left">
+								<p class="bolder text-color m-b-5">04:15</p>
+								<p class="m-b-0 x-small text-lighter">GOI - BOM</p>
+								<p class="m-b-0 x-small text-lighter">Air India</p>
+							</div>
+						</div>
+						<div class="head_col text-lighter arrive">
+							<p class="text-color m-b-5">05:25</p>
+							<p class="text-color m-b-0">1h 10m</p>
+							<p class="m-b-0 x-small text-lighter">nonstop</p>
+						</div>
+						<!-- <div class="head_col text-lighter">
+							
+							<div class="flight-label earliest dis-inline m-t-5">
+								Earliest
+							</div>
+						</div> -->
+						<div class="head_col text-lighter price-row flex-row">
+							<div class="check-separator no-rate">
+							 	<div class="price-toggle">
+								  <div class="switcher">
+								    <input type="radio" class="switch-input" name="view-4" value="week" id="cor-4" checked>
+								    <label for="cor-4" class="switch-label switch-label-off"><i class="fa fa-inr" aria-hidden="true"></i> <span class="sub-title">4,995</span></label>
+								    <input type="radio" class="switch-input" name="view-4" value="month" id="ret-4">
+								    <label for="ret-4" class="switch-label switch-label-on"><i class="fa fa-inr" aria-hidden="true"></i> <span class="sub-title">5,200</span></label>
+								    <span class="switch-selection"></span>
+								  </div>
+								</div>
+							</div>
+							<i class="fa fa-star shortlist-me cursor-pointer" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Shortlist"></i>
+						</div>
+					</div>
+					<div class="flex-row separator align-top relative">
+						<div class="head_col text-lighter airlines flex-row">
+							<div class="check-return"><input type="radio" class="fnb-radio" name="return-one"></div>
+							<div>
+								<div class="flex-row">
+									<img src="{{"img/SG.png" | absURL}}" class="img-responsive center-block">
+									<!-- <img src="{{"img/earliest.png" | absURL}}" class="no-opac img-responsive m-l-10 cursor-pointer" width="30" data-toggle="tooltip" data-placement="top" title="Earliest Flight"> -->
+								</div>
+								<div class="p-t-5">
+									<p class="text-lighter lighter x-small m-b-0">Spice Jet</p>
+									<p class="m-b-0 text-lighter lighter x-small">SG454</p>
+								</div>
+							</div>
+						</div>
+						<div class="head_col text-lighter depart">
+							<div class="dis-inline text-left">
+								<p class="bolder bat-color m-b-5">04:30</p>
+								<p class="m-b-0 x-small text-lighter">GOI - BOM</p>
+								<p class="m-b-0 x-small text-lighter">Spice Jet</p>
+							</div>
+						</div>
+						<div class="head_col text-lighter arrive">
+							<p class="text-color m-b-5">05:10</p>
+							<p class="text-color m-b-0">1h 10m</p>
+							<p class="m-b-0 x-small text-lighter">nonstop</p>
+						</div>
+						<!-- <div class="head_col text-lighter">
+							
+							<p class="m-b-0 x-small text-danger"><i class="fa fa-ban" aria-hidden="true"></i> out of policy</p>
+						</div> -->
+						<div class="head_col text-lighter price-row flex-row align-top">
+							<div class="check-separator">
+							 	<div class="price-toggle">
+								  <div class="switcher">
+								    <input type="radio" class="switch-input" name="view-3" value="week" id="cor-3" checked>
+								    <label for="cor-3" class="switch-label switch-label-off"><i class="fa fa-inr" aria-hidden="true"></i> <span class="sub-title">4,995</span></label>
+								    <input type="radio" class="switch-input" name="view-3" value="month" id="ret-3">
+								    <label for="ret-3" class="switch-label switch-label-on"><i class="fa fa-inr" aria-hidden="true"></i> <span class="sub-title">5,000</span></label>
+								    <span class="switch-selection"></span>
+								  </div>
+								</div>
+								<p class="m-b-0 text-danger"><i class="fa fa-ban" aria-hidden="true"></i> Out of Policy</p>
+							</div>
+							<i class="fa fa-star shortlist-me cursor-pointer active" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Shortlist"></i>
+						</div>
+					</div>
+					<div class="flex-row separator align-top relative">
+						<div class="head_col text-lighter airlines flex-row">
+							<div class="check-return"><input type="radio" class="fnb-radio" name="return-one"></div>
+							<div>
+								<div class="flex-row">
+									<img src="{{"img/AI.png" | absURL}}" class="img-responsive center-block">
+									<!-- <img src="{{"img/earliest.png" | absURL}}" class="no-opac img-responsive m-l-10 cursor-pointer" width="30" data-toggle="tooltip" data-placement="top" title="Earliest Flight"> -->
+								</div>
+								<div class="p-t-5">
+									<p class="text-lighter lighter x-small m-b-0">Air India</p>
+									<p class="m-b-0 text-lighter lighter x-small">AI655</p>
+								</div>
+							</div>
+						</div>
+						<div class="head_col text-lighter depart">
+							<div class="dis-inline text-left">
+								<p class="bolder text-color m-b-5">04:15</p>
+								<p class="m-b-0 x-small text-lighter">GOI - BOM</p>
+								<p class="m-b-0 x-small text-lighter">Air India</p>
+							</div>
+						</div>
+						<div class="head_col text-lighter arrive">
+							<p class="text-color m-b-5">05:25</p>
+							<p class="text-color m-b-0">1h 10m</p>
+							<p class="m-b-0 x-small text-lighter">nonstop</p>
+						</div>
+						<!-- <div class="head_col text-lighter">
+							
+							<div class="flight-label earliest dis-inline m-t-5">
+								Earliest
+							</div>
+						</div> -->
+						<div class="head_col text-lighter price-row flex-row">
+							<div class="check-separator no-rate">
+							 	<div class="price-toggle">
+								  <div class="switcher">
+								    <input type="radio" class="switch-input" name="view-4" value="week" id="cor-4" checked>
+								    <label for="cor-4" class="switch-label switch-label-off"><i class="fa fa-inr" aria-hidden="true"></i> <span class="sub-title">4,995</span></label>
+								    <input type="radio" class="switch-input" name="view-4" value="month" id="ret-4">
+								    <label for="ret-4" class="switch-label switch-label-on"><i class="fa fa-inr" aria-hidden="true"></i> <span class="sub-title">5,200</span></label>
+								    <span class="switch-selection"></span>
+								  </div>
+								</div>
+							</div>
+							<i class="fa fa-star shortlist-me cursor-pointer" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Shortlist"></i>
+						</div>
+					</div>										
 					
 				</div>
 			</div>
@@ -582,7 +768,7 @@
 						<div class="tab-data p-t-10 p-b-10"> 
 							<ul class="tab-data__links flex-row">
 								<li class="active"><a href="#flight-detail-return" class="gray-darker bolder x-small" aria-controls="flight-detail-return" role="tab" data-toggle="tab">Flight Details</a></li>
-								<li><a href="#price-summary-return" class="gray-darker bolder x-small" aria-controls="price-summary-return" role="tab" data-toggle="tab">Price Summary</a></li>
+								<li><a href="#price-summary-return" class="gray-darker bolder x-small" aria-controls="price-summary-return" role="tab" data-toggle="tab">Fare Summary</a></li>
 								<li><a href="#cancel-fee-return" class="gray-darker bolder x-small" aria-controls="cancel-fee-return" role="tab" data-toggle="tab">Cancellation Fee</a></li>
 								<li><a href="#re-fee-return" class="gray-darker bolder x-small" aria-controls="re-fee-return" role="tab" data-toggle="tab">Rescheduling Fee</a></li>
 								<li><a href="#bag-details-return" class="gray-darker bolder x-small" aria-controls="bag-details-return" role="tab" data-toggle="tab">Baggage Details</a></li>
@@ -724,7 +910,7 @@
 						<div class="tab-data p-t-10 p-b-10"> 
 							<ul class="tab-data__links flex-row">
 								<li class="active"><a href="#flight-detail-return-1" class="gray-darker bolder x-small" aria-controls="flight-detail-return-1" role="tab" data-toggle="tab">Flight Details</a></li>
-								<li><a href="#price-summary-return-1" class="gray-darker bolder x-small" aria-controls="price-summary-return-1" role="tab" data-toggle="tab">Price Summary</a></li>
+								<li><a href="#price-summary-return-1" class="gray-darker bolder x-small" aria-controls="price-summary-return-1" role="tab" data-toggle="tab">Fare Summary</a></li>
 								<li><a href="#cancel-fee-return-1" class="gray-darker bolder x-small" aria-controls="cancel-fee-return-1" role="tab" data-toggle="tab">Cancellation Fee</a></li>
 								<li><a href="#re-fee-return-1" class="gray-darker bolder x-small" aria-controls="re-fee-return-1" role="tab" data-toggle="tab">Rescheduling Fee</a></li>
 								<li><a href="#bag-details-return-1" class="gray-darker bolder x-small" aria-controls="bag-details-return-1" role="tab" data-toggle="tab">Baggage Details</a></li>
@@ -899,11 +1085,191 @@
 								    <span class="switch-selection"></span>
 								  </div>
 								</div>
-								<p class="m-b-0 m-t-10 text-danger"><i class="fa fa-ban" aria-hidden="true"></i> out of policy</p>
+								<p class="m-b-0 text-danger"><i class="fa fa-ban" aria-hidden="true"></i> Out of Policy</p>
 							</div>
 							<i class="fa fa-star shortlist-me cursor-pointer" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Shortlist"></i>
 						</div>
 					</div>
+					<div class="flex-row separator align-top relative">
+						<div class="head_col text-lighter airlines flex-row">
+							<div class="check-return"><input type="radio" class="fnb-radio" name="return-two"></div>
+							<div class="text-center">
+								<div class="flex-row">
+									<img src="{{"img/AI.png" | absURL}}" class="img-responsive center-block">
+									<!-- <img src="{{"img/earliest.png" | absURL}}" class="no-opac img-responsive m-l-10 cursor-pointer" width="30" data-toggle="tooltip" data-placement="top" title="Earliest Flight"> -->
+								</div>
+								<div class="p-t-5">
+									<p class="text-lighter lighter x-small m-b-0">Air India</p>
+									<p class="m-b-0 text-lighter lighter x-small">AI454</p>
+								</div>
+							</div>
+						</div>
+						<div class="head_col text-lighter depart m-t-5">
+							<div class="dis-inline text-left">
+								<p class="bolder bat-color m-b-5">04:00</p>
+								<p class="m-b-0 x-small text-lighter">BOM - GOI</p>
+								<p class="m-b-0 x-small text-lighter">Air India</p>
+							</div>
+						</div>
+						<div class="head_col text-lighter arrive m-t-5">
+							<p class="text-color m-b-5">05:10</p>
+							<p class="text-color m-b-0">1h 10m</p>
+							<p class="m-b-0 x-small text-lighter">nonstop</p>
+						</div>
+						<!-- <div class="head_col text-lighter">
+							
+							<p class="m-b-0 x-small text-danger"><i class="fa fa-ban" aria-hidden="true"></i> out of policy</p>
+						</div> -->
+						<div class="head_col text-lighter price-row flex-row">
+							<div class="check-separator">
+							 	<div class="price-toggle">
+								  <div class="switcher">
+								    <input type="radio" class="switch-input" name="view-s-3" value="week" id="cor-s-3" checked="">
+								    <label for="cor-s-3" class="switch-label switch-label-off"><i class="fa fa-inr" aria-hidden="true"></i> <span class="sub-title">4,995</span></label>
+								    <input type="radio" class="switch-input" name="view-s-3" value="month" id="ret-s-3">
+								    <label for="ret-s-3" class="switch-label switch-label-on"><i class="fa fa-inr" aria-hidden="true"></i> <span class="sub-title">5,110</span></label>
+								    <span class="switch-selection"></span>
+								  </div>
+								</div>
+							</div>
+							<i class="fa fa-star shortlist-me cursor-pointer" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Shortlist"></i>
+						</div>
+					</div>
+					<div class="flex-row separator align-top relative">
+						<div class="head_col text-lighter airlines flex-row">
+							<div class="check-return"><input type="radio" class="fnb-radio" name="return-two"></div>
+							<div class="text-center">
+								<div class="flex-row">
+									<img src="{{"img/SG.png" | absURL}}" class="img-responsive center-block">
+									<!-- <img src="{{"img/earliest.png" | absURL}}" class="no-opac img-responsive m-l-10 cursor-pointer" width="30" data-toggle="tooltip" data-placement="top" title="Earliest Flight"> -->
+								</div>
+								<div class="p-t-5">
+									<p class="text-lighter lighter x-small m-b-0">Spice Jet</p>
+									<p class="m-b-0 text-lighter lighter x-small">SG454</p>
+								</div>
+							</div>
+						</div>
+						<div class="head_col text-lighter depart">
+							<div class="dis-inline text-left">
+								<p class="bolder text-color m-b-5">04:15</p>
+								<p class="m-b-0 x-small text-lighter">BOM - GOI</p>
+								<p class="m-b-0 x-small text-lighter">Spice Jet</p>
+							</div>
+						</div>
+						<div class="head_col text-lighter arrive">
+							<p class="text-color m-b-5">05:25</p>
+							<p class="text-color m-b-0">1h 10m</p>
+							<p class="m-b-0 x-small text-lighter">nonstop</p>
+						</div>
+						<!-- <div class="head_col text-lighter">
+							
+						</div> -->
+						<div class="head_col text-lighter price-row flex-row align-top">
+							<div class="check-separator">
+							 	<div class="price-toggle">
+								  <div class="switcher">
+								    <input type="radio" class="switch-input" name="view-s-4" value="week" id="cor-s-4" checked="">
+								    <label for="cor-s-4" class="switch-label switch-label-off"><i class="fa fa-inr" aria-hidden="true"></i> <span class="sub-title">5,114</span></label>
+								    <input type="radio" class="switch-input" name="view-s-4" value="month" id="ret-s-4">
+								    <label for="ret-s-4" class="switch-label switch-label-on"><i class="fa fa-inr" aria-hidden="true"></i> <span class="sub-title">4,500</span></label>
+								    <span class="switch-selection"></span>
+								  </div>
+								</div>
+								<p class="m-b-0 text-danger"><i class="fa fa-ban" aria-hidden="true"></i> Out of Policy</p>
+							</div>
+							<i class="fa fa-star shortlist-me cursor-pointer" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Shortlist"></i>
+						</div>
+					</div>
+					<div class="flex-row separator align-top relative">
+						<div class="head_col text-lighter airlines flex-row">
+							<div class="check-return"><input type="radio" class="fnb-radio" name="return-two"></div>
+							<div class="text-center">
+								<div class="flex-row">
+									<img src="{{"img/AI.png" | absURL}}" class="img-responsive center-block">
+									<!-- <img src="{{"img/earliest.png" | absURL}}" class="no-opac img-responsive m-l-10 cursor-pointer" width="30" data-toggle="tooltip" data-placement="top" title="Earliest Flight"> -->
+								</div>
+								<div class="p-t-5">
+									<p class="text-lighter lighter x-small m-b-0">Air India</p>
+									<p class="m-b-0 text-lighter lighter x-small">AI454</p>
+								</div>
+							</div>
+						</div>
+						<div class="head_col text-lighter depart m-t-5">
+							<div class="dis-inline text-left">
+								<p class="bolder bat-color m-b-5">04:00</p>
+								<p class="m-b-0 x-small text-lighter">BOM - GOI</p>
+								<p class="m-b-0 x-small text-lighter">Air India</p>
+							</div>
+						</div>
+						<div class="head_col text-lighter arrive m-t-5">
+							<p class="text-color m-b-5">05:10</p>
+							<p class="text-color m-b-0">1h 10m</p>
+							<p class="m-b-0 x-small text-lighter">nonstop</p>
+						</div>
+						<!-- <div class="head_col text-lighter">
+							
+							<p class="m-b-0 x-small text-danger"><i class="fa fa-ban" aria-hidden="true"></i> out of policy</p>
+						</div> -->
+						<div class="head_col text-lighter price-row flex-row">
+							<div class="check-separator">
+							 	<div class="price-toggle">
+								  <div class="switcher">
+								    <input type="radio" class="switch-input" name="view-s-3" value="week" id="cor-s-3" checked="">
+								    <label for="cor-s-3" class="switch-label switch-label-off"><i class="fa fa-inr" aria-hidden="true"></i> <span class="sub-title">4,995</span></label>
+								    <input type="radio" class="switch-input" name="view-s-3" value="month" id="ret-s-3">
+								    <label for="ret-s-3" class="switch-label switch-label-on"><i class="fa fa-inr" aria-hidden="true"></i> <span class="sub-title">5,110</span></label>
+								    <span class="switch-selection"></span>
+								  </div>
+								</div>
+							</div>
+							<i class="fa fa-star shortlist-me cursor-pointer" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Shortlist"></i>
+						</div>
+					</div>
+					<div class="flex-row separator align-top relative">
+						<div class="head_col text-lighter airlines flex-row">
+							<div class="check-return"><input type="radio" class="fnb-radio" name="return-two"></div>
+							<div class="text-center">
+								<div class="flex-row">
+									<img src="{{"img/SG.png" | absURL}}" class="img-responsive center-block">
+									<!-- <img src="{{"img/earliest.png" | absURL}}" class="no-opac img-responsive m-l-10 cursor-pointer" width="30" data-toggle="tooltip" data-placement="top" title="Earliest Flight"> -->
+								</div>
+								<div class="p-t-5">
+									<p class="text-lighter lighter x-small m-b-0">Spice Jet</p>
+									<p class="m-b-0 text-lighter lighter x-small">SG454</p>
+								</div>
+							</div>
+						</div>
+						<div class="head_col text-lighter depart">
+							<div class="dis-inline text-left">
+								<p class="bolder text-color m-b-5">04:15</p>
+								<p class="m-b-0 x-small text-lighter">BOM - GOI</p>
+								<p class="m-b-0 x-small text-lighter">Spice Jet</p>
+							</div>
+						</div>
+						<div class="head_col text-lighter arrive">
+							<p class="text-color m-b-5">05:25</p>
+							<p class="text-color m-b-0">1h 10m</p>
+							<p class="m-b-0 x-small text-lighter">nonstop</p>
+						</div>
+						<!-- <div class="head_col text-lighter">
+							
+						</div> -->
+						<div class="head_col text-lighter price-row flex-row align-top">
+							<div class="check-separator">
+							 	<div class="price-toggle">
+								  <div class="switcher">
+								    <input type="radio" class="switch-input" name="view-s-4" value="week" id="cor-s-4" checked="">
+								    <label for="cor-s-4" class="switch-label switch-label-off"><i class="fa fa-inr" aria-hidden="true"></i> <span class="sub-title">5,114</span></label>
+								    <input type="radio" class="switch-input" name="view-s-4" value="month" id="ret-s-4">
+								    <label for="ret-s-4" class="switch-label switch-label-on"><i class="fa fa-inr" aria-hidden="true"></i> <span class="sub-title">4,500</span></label>
+								    <span class="switch-selection"></span>
+								  </div>
+								</div>
+								<p class="m-b-0 text-danger"><i class="fa fa-ban" aria-hidden="true"></i> Out of Policy</p>
+							</div>
+							<i class="fa fa-star shortlist-me cursor-pointer" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Shortlist"></i>
+						</div>
+					</div>										
 				</div>
 			</div>
 		</div>

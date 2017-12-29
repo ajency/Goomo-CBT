@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Booking Approval Mail</title>
+	<link rel="stylesheet" href="{{"css/bootstrap.min.css" | absURL}}">
+	<link rel="stylesheet" type="text/css" href="{{"css/font-awesome/css/font-awesome.min.css" | absURL}}">
+	<link href="{{"css/main.css" | absURL}}" rel="stylesheet">
+</head>
+<body class="mail-bg">
+
+<div class="container mail-content">
+
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="mail-section" style="overflow-x:hidden;">
+			<div class="mail-section__head m-t-40 text-center">
+				<img src="{{"img/ajency-logo.png" | absURL}}" class="img-responsive center-block" width="150">
+				<p class="flex-row default-size text-lighter justify-center m-t-10 m-b-20">Powered by <img src="{{"img/mobiz.png" | absURL}}" class="img-responsive"></p>
+			</div>
+			<div class="mail-section__body text-center">
+				
+				<h6 class="bolder m-t-30 m-b-30 label-size line-height">Your booking request has been submitted <br> successfully for approval.</h6>
+
+
+				<p class="default-size bolder">Details as follows:</p>
+
+
+				<div class="flex-row booking-row flex-wrap align-top">
+					<div class="flex-1 text-left m-b-5">
+						<p class="m-b-0 text-darker default-size">Booking Ref:</p>
+						<h6 class="bolder m-t-5 default-size text-secondary">ABC123</h6>
+					</div>
+					<div class="flex-1 text-left m-b-5">
+						<p class="m-b-0 text-darker default-size">Booking Date:</p>
+						<h6 class="bolder text-color m-t-5 default-size">21 Dec 2017</h6>
+					</div>
+					<div class="flex-1 text-left m-b-5">
+						<p class="m-b-0 text-darker default-size">Travel Date:</p>
+						<h6 class="bolder text-color m-t-5 default-size">21 Dec 2017</h6>
+					</div>
+					<div class="flex-1 text-left">
+						<p class="m-b-0 text-darker default-size">Booking Details:</p>
+						<h6 class="bolder text-color m-t-5 default-size m-b-0">Goa to Mumbai - (Return), 26 Dec 2017 - 28 Dec 2017</h6>
+					</div>
+				</div>
+
+				<p class="default-size text-color m-t-20 text-left m-b-0 bolder p-b-5" style="border-bottom: 1px solid #eee;">Traveller Details</p>
+
+
+				<div class="flex-row booking-row travel-row flex-wrap align-top">
+					<div class="flex-1 text-left m-b-5">
+						<p class="m-b-0 text-darker default-size">Traveller(s):</p>
+						<h6 class="bolder m-t-5 default-size text-secondary">1 Adult</h6>
+					</div>
+					<div class="flex-1 text-left m-b-5">
+						<p class="m-b-0 text-darker default-size">Traveller Name:</p>
+						<h6 class="bolder text-color m-t-5 default-size">Valenie Lourenco</h6>
+					</div>
+					<div class="flex-1 text-left m-b-5">
+						<p class="m-b-0 text-darker default-size">Traveller Email:</p>
+						<h6 class="bolder text-color m-t-5 default-size text-secondary">valenie@ajency.in</h6>
+					</div>
+					<div class="flex-1 text-left m-b-5">
+						<p class="m-b-0 text-darker default-size">Travel Category:</p>
+						<h6 class="bolder text-color m-t-5 default-size">Business</h6>
+					</div>
+					<div class="flex-1 text-left m-b-5">
+						<p class="m-b-0 text-darker default-size">Travel Sub Category:</p>
+						<h6 class="bolder text-color m-t-5 default-size">Business</h6>
+					</div>
+					<div class="flex-1 text-left m-b-5">
+						<p class="m-b-0 text-darker default-size">Flight:</p>
+						<h6 class="bolder text-color m-t-5 default-size line-height">Spice Jet (Non Stop) - <div class="text-success">Refundable</div></h6>
+					</div>
+					<div class="flex-1 text-left m-b-5">
+						<p class="m-b-0 text-darker default-size">Class:</p>
+						<h6 class="bolder text-color m-t-5 default-size">Economy</h6>
+					</div>
+					<div class="flex-1 text-left m-b-5">
+						<p class="m-b-0 text-darker default-size">Fare:</p>
+						<h6 class="bolder text-color m-t-5 default-size">Rs.4500 (Corporate)</h6>
+					</div>
+					<div class="flex-1 text-left m-b-5">
+						<p class="m-b-0 text-darker default-size">Status:</p>
+						<h6 class="bolder m-t-5 default-size text-warning">Pending Approval</h6>
+					</div>
+				</div>
+
+
+
+				
+				
+
+				<!-- <p class="default-size">Based on the flight search results, the following flight(s) have been shortlisted.</p> -->
+
+				
+				<div class="approve-detail" style="background-color: #eee">
+				
+					<p class="default-size">Your booking details will be approved by:</p>
+
+					<div class="credentails flex-row">
+						<div class="flex-1 text-right">
+							<label class="text-medium dis-block m-t-5 m-b-5">Name : </label>
+							<label class="text-medium dis-block m-t-5 m-b-5">Email : </label>	
+						</div>
+						<div class="flex-1 text-left m-l-10">
+							<b class="dis-block m-t-5 m-b-5">Shon Dugla</b>
+							<b class="dis-block m-t-5 m-b-5">shondug@gmail</b>
+						</div>
+					</div>
+
+				</div>
+
+				<hr>
+
+
+				<div class="search-results search-version shortlist-version m-t-30 m-b-30 mail-results">
+
+					<div class="search-results__head flex-row m-t-10 p-t-5 p-b-5">
+						<div class="head_col text-lighter airline">
+							<div class="dis-inline">
+								Airlines
+							</div>
+						</div>
+						<div class="head_col text-lighter depart">
+							<div class="dis-inline text-left m-l-">
+								Depart
+							</div>
+						</div>
+						<div class="head_col text-lighter arrive" style="flex-basis: 19%;">
+							<div class="dis-inline text-left">
+								Arrive
+							</div>
+						</div>
+						<div class="head_col text-lighter duration" style="flex-basis: 28%;">
+							Duration
+						</div>
+						<div class="head_col text-lighter policy">
+							
+						</div>
+						<div class="head_col text-lighter price">
+							<div class="dis-inline text-left">
+								Price
+							</div>
+						</div>
+					</div>
+						<div class="search-results__body">
+							<div class="flex-row separator align-top">
+								<div class="head_col text-lighter flex-row align-top airline">
+									<div class="p-l-10">
+										<div class="">
+											<img src="http://localhost:1313/Goomo-CBT/img/SG.png" class="img-responsive center-block" width="28">
+											
+											<div class="p-t-10 text-center">
+												<p class="text-lighter lighter x-small m-b-0">Spice Jet</p>
+												<p class="m-b-0 text-lighter lighter x-small">SG454</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="head_col text-lighter depart">
+									<div class="dis-inline text-left">
+										<p class="bolder text-color m-b-0 label-size bat-color">04:30</p>
+										<p class="m-b-0 x-small text-lighter lighter">GOI - BOM</p>
+									</div>
+								</div>
+								<div class="head_col text-lighter arrive">
+									<p class="text-color m-b-5 label-size">10:30</p>
+								</div>
+								<div class="head_col text-lighter duration">
+									<p class="text-color m-b-0 label-size">1h 15m</p>
+									<p class="m-b-0 x-small text-lighter">Non Stop</p>
+								</div>
+								
+								<div class="head_col text-lighter price-row flex-row align-top">
+									<div class="check-separator no-rate">
+									 	<div class="justify-center">
+											
+											
+											<p class="m-b-0 text-color flex-row justify-center"><i class="fa fa-inr" aria-hidden="true"></i> <b class="bat-color sub-title">4,995</b></p>
+											<p class="m-b-0 lighter x-small">(Corporate Rate)</p>
+											<p class="m-b-0 x-small text-danger m-t-5"><i class="fa fa-ban dis-block m-b-5" aria-hidden="true"></i> Out of Policy</p>
+										</div>
+									</div>
+									
+									
+								</div>
+							</div>
+							
+							<div class="flex-row separator align-top">
+								<div class="head_col text-lighter flex-row align-top airline">
+									<div class="p-l-10">
+										<div class="">
+											<img src="http://localhost:1313/Goomo-CBT/img/AI.png" class="img-responsive center-block" width="28">
+											
+											<div class="p-t-10 text-center">
+												<p class="text-lighter lighter x-small m-b-0">Air India</p>
+												<p class="m-b-0 text-lighter lighter x-small">AI454</p>
+											</div>
+										</div>
+										
+									</div>
+								</div>
+								<div class="head_col text-lighter depart">
+									<div class="dis-inline text-left">
+										<p class="bolder text-color m-b-0 sub-title bat-color">04:30</p>
+										<p class="m-b-0 x-small text-lighter lighter">GOI - BOM</p>
+									</div>
+								</div>
+								<div class="head_col text-lighter arrive">
+									<p class="text-color m-b-5 sub-title">10:30</p>
+								</div>
+								<div class="head_col text-lighter duration">
+									<p class="text-color m-b-0 sub-title">1h 15m</p>
+									<p class="m-b-0 x-small text-lighter">Non Stop</p>
+								</div>
+								
+								<div class="head_col text-lighter price-row flex-row align-top">
+									<div class="check-separator no-rate">
+									 	<div class=" justify-center">
+											
+											
+											<p class="m-b-0 text-color flex-row justify-center"><i class="fa fa-inr" aria-hidden="true"></i> <b class="bat-color sub-title">4,995</b></p>
+											<p class="m-b-0 lighter x-small">(Retail Rate)</p>
+										</div>
+									</div>
+									
+									
+								</div>
+							</div>
+							<div class="flex-row separator align-top">
+								<div class="head_col text-lighter flex-row align-top airline">
+									<div class="p-l-10">
+										<div class="">
+											<img src="http://localhost:1313/Goomo-CBT/img/SG.png" class="img-responsive center-block" width="28">
+											
+											<div class="p-t-10 text-center">
+												<p class="text-lighter lighter x-small m-b-0">Spice Jet</p>
+												<p class="m-b-0 text-lighter lighter x-small">SG454</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="head_col text-lighter depart">
+									<div class="dis-inline text-left">
+										<p class="bolder text-color m-b-0 label-size bat-color">04:30</p>
+										<p class="m-b-0 x-small text-lighter lighter">GOI - BOM</p>
+									</div>
+								</div>
+								<div class="head_col text-lighter arrive">
+									<p class="text-color m-b-5 label-size">10:30</p>
+								</div>
+								<div class="head_col text-lighter duration">
+									<p class="text-color m-b-0 label-size">1h 15m</p>
+									<p class="m-b-0 x-small text-lighter">Non Stop</p>
+								</div>
+							
+								<div class="head_col text-lighter price-row flex-row align-top">
+									<div class="check-separator no-rate">
+									 	<div class="justify-center">
+											<p class="m-b-0 text-color flex-row justify-center"><i class="fa fa-inr" aria-hidden="true"></i> <b class="bat-color sub-title">4,995</b></p>
+											<p class="m-b-0 lighter x-small">(Corporate Rate)</p>
+										</div>
+									</div>
+									
+									
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+
+				
+
+				<p class="default-size bolder">You can also view the shortlist by clicking on the link below.</p>
+
+				<a href="/Goomo-CBT/account/shortlist-flight/" class="btn fnb-btn no-radius btn-link text-primary p-l-0 bolder text-decor"> Shortlisted Flights</a>
+
+				<hr>
+
+				<p class="flex-row default-size text-lighter justify-center m-t-10 m-b-20"><img src="http://localhost:1313/Goomo-CBT/img/mobiz-bnw.png" class="img-responsive"> Powered by Goomo</p>
+				<p class="text-darker m-b-20">Customer support number : <a href="callto:+91-93338-93338" class="dark-link">+91-93338-93338</a></p>
+				<p class="text-color m-b-5 default-size">Copyright @ 2017 Goomo Group. All rights reserved.</p>
+				<p class="text-color default-size"><a href="#" class="text-color">Privacy Policy</a> | <a href="#" class="text-color">Terms &amp; Conditions</a></p>
+				
+			</div>
+
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
+
+	
+</div>
+
+<br><br>
+<br><br>
+<br><br>
+	
+</body>
+</html>
