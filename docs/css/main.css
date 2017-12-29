@@ -12922,8 +12922,6 @@ input[type="radio"].book-select-radio:before {
 }
 .booking-row {
   padding: 1em 0;
-  border-top: 2px dashed #ddd;
-  border-bottom: 2px dashed #ddd;
 }
 .booking-row .flex-1 {
   -webkit-box-flex: 1;
@@ -12933,6 +12931,11 @@ input[type="radio"].book-select-radio:before {
 }
 .booking-row.travel-row {
   border: 0;
+}
+.mail-tag-heading {
+  padding: 0.5em;
+  background-color: #eee;
+  margin-left: -0.5em;
 }
 .profile-stats {
   color: #fff;
