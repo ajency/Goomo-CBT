@@ -12757,12 +12757,13 @@ input[type="radio"].book-select-radio:before {
   z-index: 2;
   font-weight: 400;
   width: 58px;
-  line-height: 28px;
+  line-height: 26px;
   font-size: 0.8em;
   color: #000;
   text-align: center;
   cursor: pointer;
   margin-bottom: 0;
+  box-shadow: -1px 3px 0px -1px rgba(146, 146, 146, 0.49);
 }
 .price-toggle .switch-label:active {
   font-weight: 600;
@@ -12782,6 +12783,7 @@ input[type="radio"].book-select-radio:before {
   color: #000;
   -webkit-transition: 0.15s ease-out;
           transition: 0.15s ease-out;
+  box-shadow: none;
 }
 .price-toggle .switch-input:checked + .switch-label-on ~ .switch-selection {
   /* Note: left: 50% doesn't transition in WebKit */
