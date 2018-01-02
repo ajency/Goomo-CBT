@@ -12928,9 +12928,13 @@ input[type="radio"].book-select-radio:before {
   -webkit-flex: 1 0 33.33%;
       -ms-flex: 1 0 33.33%;
           flex: 1 0 33.33%;
+  max-width: 33.33%;
 }
 .booking-row.travel-row {
   border: 0;
+}
+.booking-row .custom-book-row {
+  max-width: 70%;
 }
 .mail-tag-heading {
   padding: 0.5em;

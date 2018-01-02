@@ -28,7 +28,7 @@
 
 				<div class="m-b-20 approve-detail" style="background-color: #eee">
 					<div>
-						<h5 class="text-darker bolder m-b-5 sub-title">Goa to Mumbai <span class="default-size text-color">(One Way)</span></h5>
+						<h5 class="text-darker bolder m-b-5 sub-title">Goa to Mumbai <span class="default-size text-color">{{ if $.Params.shortlistReturn }} (Return Way) {{ else }} (One Way) {{ end }}</span></h5>
 						<p class="lighter text-darker">Wed, 20 Dec | Traveller(s) - 1 Adult</p>
 					</div>
 				</div>
@@ -368,7 +368,7 @@
 
 				<p class="default-size bolder">Click below to view the shortlist.</p>
 
-				<a href="{{ if $.Params.shortlistReturn }} /Goomo-CBT/account/shortlist-flight-return/ {{ else }} /Goomo-CBT/account/shortlist-flight/ {{ end }}" class="btn fnb-btn no-radius btn-link text-primary p-l-0 bolder text-decor"> Shortlisted Flights</a>
+				<a href="{{ if $.Params.shortlistReturn }} /Goomo-CBT/account/shortlist-flight-return/ {{ else }} /Goomo-CBT/account/shortlist-flight/ {{ end }}" class="btn fnb-btn no-radius primary-btn text-primary"> Shortlisted Flights</a>
 
 				<hr>
 

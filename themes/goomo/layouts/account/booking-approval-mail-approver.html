@@ -30,7 +30,7 @@
 				<div class="flex-row booking-row flex-wrap align-top">
 					<div class="flex-1 text-left m-b-5">
 						<p class="m-b-0 text-darker default-size">Booking Ref:</p>
-						<h6 class="bolder m-t-5 default-size text-secondary">ABC123</h6>
+						<h6 class="bolder m-t-5 default-size text-color">ABC123</h6>
 					</div>
 					<div class="flex-1 text-left m-b-5">
 						<p class="m-b-0 text-darker default-size">Booking Date:</p>
@@ -40,7 +40,7 @@
 						<p class="m-b-0 text-darker default-size">Travel Date:</p>
 						<h6 class="bolder text-color m-t-5 default-size">21 Dec 2017</h6>
 					</div>
-					<div class="flex-1 text-left">
+					<div class="flex-1 text-left custom-book-row">
 						<p class="m-b-0 text-darker default-size">Booking Details:</p>
 						<h6 class="bolder text-color m-t-5 default-size m-b-0">Goa to Mumbai - {{ if $.Params.oneway }} (One Way), 26 Dec 2017 {{ else }} (Return), 26 Dec 2017 - 28 Dec 2017 {{ end }}</h6>
 					</div>
@@ -56,7 +56,7 @@
 				<div class="flex-row booking-row travel-row flex-wrap align-top">
 					<div class="flex-1 text-left m-b-5">
 						<p class="m-b-0 text-darker default-size">Traveller(s):</p>
-						<h6 class="bolder m-t-5 default-size text-secondary">1 Adult</h6>
+						<h6 class="bolder m-t-5 default-size text-color">1 Adult</h6>
 					</div>
 					<div class="flex-1 text-left m-b-5">
 						<p class="m-b-0 text-darker default-size">Traveller Name:</p>
@@ -83,20 +83,21 @@
 						<p class="m-b-0 text-darker default-size">Class:</p>
 						<h6 class="bolder text-color m-t-5 default-size">Economy</h6>
 					</div> -->
-					<div class="flex-1 text-left m-b-5">
+					<div class="text-left m-b-5">
 						<p class="m-b-0 text-darker default-size">Flight:</p>
-						<h6 class="bolder text-color m-t-5 default-size line-height">Spice Jet (Non Stop)<br> - 26 Dec 2017 - (Economy) - <div class="text-success">Refundable</div></h6>
+						<h6 class="bolder text-color m-t-5 m-b-5 default-size line-height">Spice Jet (Non Stop) - 26 Dec 2017 - (Economy) - <div class="text-success dis-inline">Refundable</div></h6>
 						{{ if $.Params.oneway }}
 						{{ else }}
-						<h6 class="bolder text-color m-t-5 default-size line-height">Air India (Non Stop) - 28 Dec 2017 - (Economy) </h6>
+						<h6 class="bolder text-lighter m-t-5 m-b-5 line-height x-small">TO</h6>
+						<h6 class="bolder text-color m-t-5 default-size line-height m-b-5">Air India (Non Stop) - 28 Dec 2017 - (Economy) </h6>
 						{{ end }}
 					</div>
-					<div class="flex-1 text-left m-b-5">
+					<div class="text-left m-b-5">
 						<p class="m-b-0 text-darker default-size">Fare:</p>
 						<h6 class="bolder text-color m-t-5 default-size">Rs.4500 (Corporate)</h6>
 					</div>
 					<div class="text-left m-b-30">
-						<p class="default-size text-color m-b-10 text-left bolder p-b-5" style="border-bottom: 1px solid #eee;">Fare Rules</p>
+						<p class="default-size text-color m-b-10 text-left p-b-5" style="border-bottom: 1px solid #eee;">Fare Rules</p>
 						<p class="m-b-0 text-color default-size"><b class="heavier text-warning">Cancellation Fee:</b> No Penalties on Cancellation for Corporate Fares</p>
 						<p class="m-b-0 text-color default-size"><b class="heavier text-warning">Rescheduling Fee:</b> No Penalties on Rescheduling for Corporate Fares</p>
 						<p class="m-b-0 text-color default-size"><b class="heavier text-warning">Baggage Details:</b> Hand Baggage: 7kg | Check in Baggage: 15kg</p>
@@ -119,11 +120,11 @@
 					<p class="default-size">Your booking details will be approved by:</p>
 
 					<div class="credentails flex-row">
-						<div class="flex-1 text-right">
+						<div class="flex-1 text-right" style="flex-basis: 45%;">
 							<label class="text-medium dis-block m-t-5 m-b-5">Name : </label>
 							<label class="text-medium dis-block m-t-5 m-b-5">Email : </label>	
 						</div>
-						<div class="flex-1 text-left m-l-10">
+						<div class="flex-1 text-left m-l-10" style="flex-basis: 55%;">
 							<b class="dis-block m-t-5 m-b-5">Shon Dugla</b>
 							<b class="dis-block m-t-5 m-b-5">shondug@gmail</b>
 						</div>
@@ -136,12 +137,12 @@
 
 				
 
-				<p class="default-size bolder"><a href="#" class="primary-link">Click here</a> to view the booking request</p>
+				<p class="default-size bolder">To view the booking request <br> <a href="#" class="btn fnb-btn primary-btn no-radius dis-inline m-t-10">Click here</a></p>
 
 
 				<hr>
 
-				<p class="flex-row default-size text-lighter justify-center m-t-10 m-b-20"><img src="http://localhost:1313/Goomo-CBT/img/mobiz-bnw.png" class="img-responsive"> Powered by Goomo</p>
+				<p class="flex-row default-size text-lighter justify-center m-t-10 m-b-20"><img src="{{"img/mobiz-bnw.png" | absURL}}" class="img-responsive"> Powered by Goomo</p>
 				<p class="text-darker m-b-20">Customer support number : <a href="callto:+91-93338-93338" class="dark-link">+91-93338-93338</a></p>
 				<p class="text-color m-b-5 default-size">Copyright @ 2017 Goomo Group. All rights reserved.</p>
 				<p class="text-color default-size"><a href="#" class="text-color">Privacy Policy</a> | <a href="#" class="text-color">Terms &amp; Conditions</a></p>

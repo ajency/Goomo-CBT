@@ -649,6 +649,12 @@ if($('.sticky-book').length){
 		     minLength: 0,
 		     noResultsText : '<span>No record found. Please complete the name and add as a guest</span>'
 		});
+	  	highlight_group_clone.find('.from-date').daterangepicker({
+			singleDatePicker: true,
+			locale: {
+	      		format: 'DD/MM/YYYY'
+	    	}
+		});
 	  highlight_group_clone.find('.main-name').on('change:flexdatalist', function () {
 	        value = $(this).val();
 	        // console.log(value);
