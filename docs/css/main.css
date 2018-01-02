@@ -12936,6 +12936,10 @@ input[type="radio"].book-select-radio:before {
 .booking-row .custom-book-row {
   max-width: 70%;
 }
+.delete-btn {
+  background-color: #ddd;
+  padding: 4px 10px;
+}
 .mail-tag-heading {
   padding: 0.5em;
   background-color: #eee;

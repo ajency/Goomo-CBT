@@ -564,7 +564,11 @@ $('.shortlist-me:not(.shortlist-added).active').attr('data-original-title','Remo
 
 $('.shortlist-me:not(.no-click)').click(function(){
 	$(this).toggleClass('active');
-	$('.notify-block').toggleClass('bounceIn');
+	$('.notify-block').addClass('bounceIn');
+	setTimeout(function(){
+    	$('.notify-block').removeClass('bounceIn');
+    }, 500);
+	
 	if($(this).hasClass('active')){
 		$(this).attr('data-original-title','Remove Shortlist');
 		// $('[data-toggle="tooltip"]').tooltip();
