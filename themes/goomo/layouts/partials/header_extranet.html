@@ -42,32 +42,46 @@
 				{{ if $.Params.logged }}
 
 				{{ else }}
-		
-				<ul class="nav navbar-nav navbar-right side-section p-t-0">
+					<ul class="nav navbar-nav navbar-right side-section p-t-0">
+
+					{{ if $.Params.nocustomheader }}
+					
 					<li><a href="#" class="text-uppercase x-small">Home</a></li>
-					<li><a href="#" class="text-uppercase x-small">Approve</a></li>
-					<li><a href="#" class="text-uppercase x-small">Bookings</a></li>
-					<li><a href="#" class="text-uppercase x-small">Flights</a></li>
-					<li><a href="#" class="text-uppercase x-small">Hotels</a></li>
 					<li class="mobile-hide">
 						<div class="dropdown login user-logged align-top m-t-5">
 							<i class="fa fa-user-circle user-icon" aria-hidden="true"></i>
-							<!-- <img src="{{"img/user-logged.png" | absURL}}" class="img-responsive"> -->
-							
-							<button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="drop-trigger">
-								<span class="ellipsis userName">Krish Dsouza<br>
-								    <span class="text-lighter">UI Designer</span>
-								</span>
-								<i class="fa fa-angle-down" aria-hidden="true"></i>
-							</button>
-							<ul class="dropdown-menu" aria-labelledby="dLabel">
-								<li>Sign Out</li>
-							</ul>
 						</div>
 
 					</li>
+					{{ else }}
+					
+					
+						<li><a href="#" class="text-uppercase x-small">Home</a></li>
+						<li><a href="#" class="text-uppercase x-small">Approve</a></li>
+						<li><a href="#" class="text-uppercase x-small">Bookings</a></li>
+						<li><a href="#" class="text-uppercase x-small">Flights</a></li>
+						<li><a href="#" class="text-uppercase x-small">Hotels</a></li>
+						<li class="mobile-hide">
+							<div class="dropdown login user-logged align-top m-t-5">
+								<i class="fa fa-user-circle user-icon" aria-hidden="true"></i>
+								<!-- <img src="{{"img/user-logged.png" | absURL}}" class="img-responsive"> -->
+								
+								<button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="drop-trigger">
+									<span class="ellipsis userName">Krish Dsouza<br>
+									    <span class="text-lighter">UI Designer</span>
+									</span>
+									<i class="fa fa-angle-down" aria-hidden="true"></i>
+								</button>
+								<ul class="dropdown-menu" aria-labelledby="dLabel">
+									<li>Sign Out</li>
+								</ul>
+							</div>
 
-				</ul>
+						</li>
+
+					{{ end }}
+
+					</ul>
 
 				{{ end }}
 
