@@ -560,6 +560,7 @@ $(function () {
 
 
 $('.shortlist-me:not(.shortlist-added).active').attr('data-original-title','Remove Shortlist');
+$('.shortlist-me:not(.shortlist-added)').attr('data-original-title','Add to Shortlist');
 
 
 $('.shortlist-me:not(.no-click)').click(function(){
