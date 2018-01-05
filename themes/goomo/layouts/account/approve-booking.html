@@ -11,15 +11,15 @@
 			<h6 class="bolder m-b-25">Approve Booking</h6>
 		</div>
 
-		<div class="alert alert-success alert-dismissible fade in m-t-20 hidden approve-alert" role="alert"> <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button> <strong>Success !!!</strong> You have successfully approved the booking request. The requester will be <a href="{{ if $.Params.approveReturn }} /Goomo-CBT/account/request-approved-return/ {{ else }} /Goomo-CBT/account/request-approved/ {{ end }}" class="text-decor bolder primary-link">notified</a> shortly. </div>
+		<div class="alert alert-success alert-dismissible fade in m-t-20 hidden approve-alert" role="alert"> <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button> You have successfully approved the booking <a href="{{ if $.Params.approveReturn }} /Goomo-CBT/account/approval-submitted-return/ {{ else }} /Goomo-CBT/account/approval-submitted/ {{ end }}" class="text-decor bolder primary-link" target="_blank">request</a>. The requester will be <a href="{{ if $.Params.approveReturn }} /Goomo-CBT/account/request-approved-return/ {{ else }} /Goomo-CBT/account/request-approved/ {{ end }}" class="text-decor bolder primary-link">notified</a> shortly. </div>
 
 
-		<div class="alert alert-success alert-dismissible fade in m-t-20 hidden reject-alert" role="alert"> <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button> You have rejected the booking request. The requester will be <a href="{{ if $.Params.rejectReturn }} /Goomo-CBT/account/request-rejected-return/ {{ else }} /Goomo-CBT/account/request-rejected/ {{ end }}" class="text-decor bolder primary-link">notified</a> shortly with the reason for denial.</div>
+		<div class="alert alert-success alert-dismissible fade in m-t-20 hidden reject-alert" role="alert"> <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button> You have rejected the booking <a href="{{ if $.Params.approveReturn }} /Goomo-CBT/account/approval-rejected-return/ {{ else }} /Goomo-CBT/account/approval-rejected/ {{ end }}" class="text-decor bolder primary-link" target="_blank">request</a>. The requester will be <a href="{{ if $.Params.rejectReturn }} /Goomo-CBT/account/request-rejected-return/ {{ else }} /Goomo-CBT/account/request-rejected/ {{ end }}" class="text-decor bolder primary-link">notified</a> shortly with the reason for denial.</div>
 		<div class="white-box approve-detail">
 			<div class="flex-row space-between m-b-20">
 				<div>
 					<h5 class="text-darker bolder m-b-5">Goa to Mumbai <span class="default-size text-color">{{ if $.Params.approveReturn }} (Return Way) {{ else }} (One Way) {{ end }}</span></h5>
-					<p class="lighter text-darker">Wed, 20 Dec | Traveller(s) - 1 Adult</p>
+					<p class="lighter text-darker">Wed, 20 Dec | {{ if $.Params.approveReturn }} Fri, 22 Dec -{{ end }} Traveller(s) - 1 Adult</p>
 				</div>
 				<div>
 					<button type="submit" class="btn outline fnb-btn no-radius s-btn" data-toggle="modal" data-target="#reject-modal">Reject</button>	
