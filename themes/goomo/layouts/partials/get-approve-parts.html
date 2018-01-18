@@ -33,7 +33,7 @@
 							</p>
 						</div>
 					{{ else }}
-					<!-- <button type="submit" class="btn outline fnb-btn no-radius s-btn">Reject</button>	 -->
+					<button type="submit" class="btn outline fnb-btn no-radius s-btn">Save for later </button>	
 					<button type="submit" class="btn primary-btn fnb-btn no-radius send-mail" style="padding: 6px 12px;"><i class="fa fa-paper-plane-o m-r-5" aria-hidden="true"></i> Send for Approval</button>	
 					{{ end }}
 				</div>
@@ -71,13 +71,14 @@
 		{{ partial "approve-content.html" .}}
 
 
-		<div class="text-right m-t-20">
+		<div class="text-right m-t-20 approve-detail">
 			<!-- <button type="submit" class="btn outline fnb-btn no-radius s-btn">Reject</button>	 -->
 			{{ if $.Params.approvalRejected }}
 			
 			{{ else if $.Params.approvalSubmitted }}
 
 			{{ else }}
+			<button type="submit" class="btn outline fnb-btn no-radius s-btn">Save for later </button>	
 			<button type="submit" class="btn primary-btn fnb-btn no-radius send-mail" style="padding: 6px 12px;"><i class="fa fa-paper-plane-o m-r-5" aria-hidden="true"></i> Send for Approval</button>	
 			{{ end }}
 		</div>
