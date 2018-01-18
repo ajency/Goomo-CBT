@@ -91,6 +91,8 @@
 		</div>
 		<!-- /.container-fluid -->
 	</nav>
+
+
 	{{ if $.Params.flightheader }}
 	<div class="flight-detail-header {{ $.Params.returnpage }}">
 		<div class="container flex-row space-between align-reset {{ if $.Params.returnway }} return-bar {{ end }}">
@@ -122,11 +124,143 @@
 					<p class="text-lighter m-t-5">2 Travellers, Economy</p>
 				</div>
 				<div>
-					<button type="submit" class="btn outline fnb-btn no-radius">Modify Search</button>
+					<button type="submit" class="btn outline fnb-btn no-radius" data-toggle="collapse" data-target="#modify-search" aria-expanded="false" aria-controls="modify-search">Modify Search</button>
 				</div>
 			</div>
 		</div>
 	</div>
+
+	<div class="modify-header collapse {{ if $.Params.modify }} in {{ end }}" id="modify-search">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<p class="m-b-0 text-right text-darker sub-title cursor-pointer close-modify" data-toggle="collapse" data-target="#modify-search" aria-expanded="false" aria-controls="modify-search"><i class="fa fa-times" aria-hidden="true"></i></p>
+					<div class="m-b-20">
+						<!-- tabs -->
+						<ul class="nav nav-tabs custom-tabs m-t-30" id="myTab">
+							<li class="active"><a class="get-tab-val" data-target="#one-way" data-toggle="tab" data-link="/Goomo-CBT/account/flight-one-way/">ONE-WAY</a></li>
+						  	<li><a class="get-tab-val" data-target="#return" data-toggle="tab" data-link="/Goomo-CBT/account/flight-return-way/">RETURN</a></li>
+						  	<li><a data-target="#multi-city" data-toggle="tab">MULTI-CITY</a></li>
+						</ul>
+
+						<div class="tab-content">
+							<div class="tab-pane active" id="one-way">
+								<div class="m-t-30">
+									<div class="row">
+										<div class="col-sm-5">
+											<div class="flex-1">
+												<p class="m-b-5 text-darker default-size bolder">From</p>
+												<div class="plane-icon_wrapper">
+													<select class="fnb-select select-variant default-size plane-icon">
+														<option> --select--</option>
+														<option value="" selected="">Goa, India (GOI)</option>
+								                        
+								                    </select>
+							                    </div>
+											</div>
+
+											<div class="flex-1 m-t-30">
+												<p class="m-b-5 text-darker default-size bolder">Depart on</p>
+												<div class="input-group custom-input-group">
+													<input type="text" class="from-date form-control fnb-input sub-dates" placeholder="From Date">
+													<span class="input-group-addon from-date cursor-pointer" id=""><i class="fa fa-calendar"></i></span>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-2 text-center">
+											<!-- <img src="../../static/img/from-to.jpg" alt=""> -->
+											<img src="{{"img/one-way.png" | absURL}}">
+										</div>
+										<div class="col-sm-5">
+											<div class="flex-1">
+												<p class="m-b-5 text-darker default-size bolder">To</p>
+												<div class="plane-icon_wrapper rotate-90">
+													<select class="fnb-select select-variant default-size plane-icon">
+														<option> --select--</option>
+														<option value="" selected="">New Delhi, India (DEL)</option>
+								                        
+								                    </select>
+							                    </div>
+											</div>
+
+
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane" id="return">
+								<div class="m-t-30">
+									<div class="row">
+										<div class="col-sm-5">
+											<div class="flex-1">
+												<p class="m-b-5 text-darker default-size bolder">From</p>
+												<div class="plane-icon_wrapper">
+													<select class="fnb-select select-variant default-size plane-icon">
+														<option> --select--</option>
+														<option value="" selected="">Goa, India (GOI)</option>
+								                        
+								                    </select>
+							                    </div>
+											</div>
+
+											<div class="flex-1 m-t-30">
+												<p class="m-b-5 text-darker default-size bolder">Depart on</p>
+												<div class="input-group custom-input-group">
+													<input type="text" class="from-date form-control fnb-input sub-dates" placeholder="From Date">
+													<span class="input-group-addon from-date cursor-pointer" id=""><i class="fa fa-calendar"></i></span>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-2 text-center">
+											<!-- <img src="../../static/img/from-to.jpg" alt=""> -->
+											<img src="{{"img/from-to.jpg" | absURL}}">
+										</div>
+										<div class="col-sm-5">
+											<div class="flex-1">
+												<p class="m-b-5 text-darker default-size bolder">To</p>
+												<div class="plane-icon_wrapper rotate-90">
+													<select class="fnb-select select-variant default-size plane-icon">
+														<option> --select--</option>
+														<option value="" selected="">New Delhi, India (DEL)</option>
+								                        
+								                    </select>
+							                    </div>
+											</div>
+
+											
+
+											<div class="flex-1 m-t-30">
+												<p class="m-b-5 text-darker default-size bolder">Return on</p>
+												<div class="input-group custom-input-group">
+													<input type="text" class="from-date form-control fnb-input sub-dates" placeholder="Return Date">
+													<span class="input-group-addon from-date cursor-pointer" id=""><i class="fa fa-calendar"></i></span>
+												</div>
+											</div>
+
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<div class="tab-pane" id="multi-city">
+								<div class="m-t-30">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil dicta repellat iusto, facilis deserunt iste non? Quam non, assumenda, ullam, illum provident delectus molestiae quae ipsam obcaecati inventore, hic repellendus.
+								</div>
+							</div>
+						</div>
+						<!-- /tabs -->
+
+						<hr>
+						<div class="text-right">
+							<a href="#" class="btn fnb-btn primary-btn bold-btn full search-flight"><span>Search Flights</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>		
 	{{ end }}
+
 </header>
 <!-- header ends -->

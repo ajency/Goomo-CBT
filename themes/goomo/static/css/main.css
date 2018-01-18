@@ -2676,6 +2676,13 @@ footer {
 .text-decor {
   text-decoration: underline;
 }
+.no-decor {
+  text-decoration: none;
+}
+.no-decor:hover,
+.no-decor:focus {
+  text-decoration: none;
+}
 .gray-darker {
   color: #686565;
 }
@@ -12949,6 +12956,12 @@ input[type="radio"].book-select-radio:before {
   min-width: 60%;
   padding: 10px 12px;
   font-size: 1.05em;
+}
+.close-modify {
+  position: absolute;
+  right: 1em;
+  top: 0.5em;
+  font-size: 1.3em;
 }
 .profile-stats {
   color: #fff;
