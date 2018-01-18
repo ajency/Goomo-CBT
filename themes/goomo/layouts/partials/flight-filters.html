@@ -6,6 +6,53 @@
 	<div class="flight-filter__body">
 
 
+     <div class="p-t-15 p-b-15 border">
+      <h6 class="flex-row space-between bolder label-size cursor-pointer m-t-0" data-toggle="collapse" data-target="#class" aria-expanded="false" aria-controls="class">Class <p class="m-b-0 text-lighter">+</p></h6>
+      <div class="radio-check collapse in" id="class">
+              <div class="p-t-10">
+                <label class="checkbox-inline dis-block m-b-10">
+                <input type="checkbox" name="expressChecke" id="class-one" value="yes" class="fnb-checkbox"> <span class="p-l-5">Economy </span>
+              </label>
+              <label class="checkbox-inline dis-block m-b-10">
+                <input type="checkbox" name="expressChecke" id="class-two" value="no" class="fnb-checkbox"> <span class="p-l-5">Business </span>
+              </label>
+              <label class="checkbox-inline dis-block m-b-10">
+                <input type="checkbox" name="expressChecke" id="class-three" value="no" class="fnb-checkbox"> <span class="p-l-5">First </span>
+              </label>
+              </div>
+            </div>
+        </div>
+
+    <div class="p-t-15 p-b-15 border">
+      <h6 class="flex-row space-between bolder label-size cursor-pointer m-t-0" data-toggle="collapse" data-target="#policy" aria-expanded="false" aria-controls="policy">Policy <p class="m-b-0 text-lighter">+</p></h6>
+      <div class="radio-check collapse in" id="policy">
+              <div class="p-t-10">
+                <label class="checkbox-inline dis-block m-b-10">
+                <input type="checkbox" name="expressChecke" id="policy-one" value="yes" class="fnb-checkbox"> <span class="p-l-5">In policy </span>
+              </label>
+              <label class="checkbox-inline dis-block m-b-10">
+                <input type="checkbox" name="expressChecke" id="policy-two" value="no" class="fnb-checkbox"> <span class="p-l-5">Ouf of Policy </span>
+              </label>
+              </div>
+            </div>
+        </div>
+
+    <div class="p-t-15 p-b-15 border">
+      <h6 class="flex-row space-between bolder label-size cursor-pointer m-t-0" data-toggle="collapse" data-target="#faree" aria-expanded="false" aria-controls="faree">Fare Category <p class="m-b-0 text-lighter">+</p></h6>
+      <div class="radio-check collapse in" id="faree">
+              <div class="p-t-10">
+                <label class="checkbox-inline dis-block m-b-10">
+                <input type="checkbox" name="expressChecke" id="faree-one" value="yes" class="fnb-checkbox"> <span class="p-l-5">Corporate </span>
+              </label>
+              <label class="checkbox-inline dis-block m-b-10">
+                <input type="checkbox" name="expressChecke" id="faree-two" value="no" class="fnb-checkbox"> <span class="p-l-5">Retail </span>
+              </label>
+              </div>
+            </div>
+        </div>
+
+
+
 		<div class="p-t-15 p-b-10">
   			<h6 class="flex-row space-between bolder label-size cursor-pointer" data-toggle="collapse" data-target="#rates" aria-expanded="false" aria-controls="rates">Currency 
           <select class="fnb-select select-variant filter-select-box">
@@ -41,7 +88,7 @@
 
 
 
-        <div class="p-t-15 m-b-15 p-b-15 border">
+        <div class="p-t-15 p-b-15 border">
 			<h6 class="flex-row space-between bolder label-size cursor-pointer m-t-0" data-toggle="collapse" data-target="#arrival" aria-expanded="false" aria-controls="arrival">Departure Time <p class="m-b-0 text-lighter">+</p></h6>
 			<div class="radio-check collapse in" id="arrival">
               <div class="p-t-10 p-b-10">
@@ -64,7 +111,7 @@
 
     {{ if $.Params.returnway }}
 
-        <div class="p-t-15 m-b-15 p-b-15 border">
+        <div class="p-t-15 p-b-15 border">
       <h6 class="flex-row space-between bolder label-size cursor-pointer m-t-0" data-toggle="collapse" data-target="#arrival" aria-expanded="false" aria-controls="arrival">Return Time <p class="m-b-0 text-lighter">+</p></h6>
       <div class="radio-check collapse in" id="arrival">
               <div class="p-t-10 p-b-10">
@@ -86,7 +133,7 @@
 
 {{ end }}
 
-        <div class="p-t-15 p-b-15 m-b-15 border">
+        <div class="p-t-15 p-b-15 border">
       <h6 class="flex-row space-between bolder label-size cursor-pointer" data-toggle="collapse" data-target="#airline" aria-expanded="false" aria-controls="airline">Airlines <p class="m-b-0 text-lighter">+</p></h6>
       <div class="radio-check collapse in" id="airline">
               <label class="checkbox-inline dis-block m-b-10">
@@ -119,7 +166,7 @@
         </div> -->
 
 
-        <div class="p-t-15 m-b-15 p-b-15 border">
+        <div class="p-t-15 p-b-15 border">
 			<h6 class="flex-row space-between bolder label-size cursor-pointer m-t-0" data-toggle="collapse" data-target="#price" aria-expanded="false" aria-controls="price">Layover Duration <p class="m-b-0 text-lighter">+</p></h6>
 			<div class="radio-check collapse in" id="price">
               <div class="p-t-10 p-b-10">
