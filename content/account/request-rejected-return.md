@@ -5,4 +5,6 @@ draft: false
 layout: request-rejected
 url: /account/request-rejected-return/
 
+shortlistReturn: true
+
 ---

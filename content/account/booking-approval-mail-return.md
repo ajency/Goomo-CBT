@@ -6,4 +6,6 @@ layout: booking-approval-mail
 url: /account/booking-approval-mail-return
 
 
+shortlistReturn: true
+
 ---

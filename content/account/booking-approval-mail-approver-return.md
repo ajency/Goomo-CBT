@@ -7,5 +7,6 @@ url: '/account/booking-approval-mail-approver-return'
 
 returnway: true
 
+shortlistReturn: true
 
 ---
