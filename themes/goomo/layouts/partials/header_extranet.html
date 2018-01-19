@@ -166,13 +166,13 @@
 						<div class="m-b-20">
 							<!-- tabs -->
 							<ul class="nav nav-tabs custom-tabs m-t-10" id="myTab">
-								<li class="active"><a class="get-tab-val" data-target="#one-way" data-toggle="tab" data-link="/Goomo-CBT/account/flight-one-way/">ONE-WAY</a></li>
+								<li class="{{ if $.Params.onemodify }} active {{ end }}"><a class="get-tab-val" data-target="#one-way" data-toggle="tab" data-link="/Goomo-CBT/account/flight-one-way/">ONE-WAY</a></li>
 							  	<li class="{{ if $.Params.returnpage }} active {{ end }}"><a class="get-tab-val" data-target="#return" data-toggle="tab" data-link="/Goomo-CBT/account/flight-return-way/">RETURN</a></li>
 							  	<li><a data-target="#multi-city" data-toggle="tab">MULTI-CITY</a></li>
 							</ul>
 
 							<div class="tab-content">
-								<div class="tab-pane active" id="one-way">
+								<div class="tab-pane {{ if $.Params.onemodify }} active {{ end }}" id="one-way">
 									<div class="m-t-30">
 										<div class="row">
 											<div class="col-sm-5">
@@ -216,7 +216,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="tab-pane" id="return">
+								<div class="tab-pane {{ if $.Params.returnpage }} active {{ end }}" id="return">
 									<div class="m-t-30">
 										<div class="row">
 											<div class="col-sm-5">
@@ -413,7 +413,7 @@
 
 						<hr>
 						<div class="text-right m-b-15">
-							<a href="/Goomo-CBT/account/flight-one-way/" class="btn fnb-btn primary-btn bold-btn full search-flight"><span>Search</span></a>
+							<a href="{{ if $.Params.returnpage }} /Goomo-CBT/account/flight-return-way/ {{ else }} /Goomo-CBT/account/flight-one-way/ {{ end }}" class="btn fnb-btn primary-btn bold-btn full search-flight"><span>Search</span></a>
 						</div>
 
 					</div>

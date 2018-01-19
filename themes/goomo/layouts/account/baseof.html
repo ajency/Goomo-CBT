@@ -26,7 +26,7 @@
 
 		<!-- content -->
 		<div class="{{ $.Params.flightContent }}">
-			<div class="container min-height {{ $.Params.overlayre }}">
+			<div class="container {{ if $.Params.modify }} {{ else }} min-height {{ end }} {{ $.Params.overlayre }}">
 					
 					{{ block "main" . }}
 						<!-- The part of the page that begins to differ between templates -->
