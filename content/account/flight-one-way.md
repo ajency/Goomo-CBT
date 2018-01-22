@@ -12,4 +12,6 @@ flightContent : gray-bg
 
 showdata : true
 
+onemodify: true
+
 ---
