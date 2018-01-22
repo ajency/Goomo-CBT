@@ -12423,6 +12423,16 @@ input[type="radio"].book-select-radio:before {
   background-color: #fff;
   color: #024c64;
 }
+.approve-detail .fnb-btn.reject-btn {
+  background-color: #fff;
+  border-color: #d0021b;
+  color: #d0021b;
+}
+.approve-detail .fnb-btn.reject-btn:hover,
+.approve-detail .fnb-btn.reject-btn:active {
+  background-color: #d0021b;
+  color: #fff;
+}
 .reject-modal .fnb-btn.s-btn {
   color: #024c64;
 }
