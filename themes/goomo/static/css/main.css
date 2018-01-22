@@ -408,7 +408,7 @@ span {
 }
 .side-section.navbar-nav li a {
   padding: 10px 15px;
-  font-weight: 500;
+  font-weight: 600;
 }
 @media screen and (max-width: 768px) {
   .mobile-head__left,
@@ -12965,14 +12965,22 @@ input[type="radio"].book-select-radio:before {
 }
 .secondary-nav {
   border-top: 1px solid #ffffff2b;
-  background-color: #000;
+  background-color: #fff;
   padding-bottom: 0.8em;
   padding-top: 0.3em;
   margin: 0.5em -15px -8px -15px;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.38);
 }
 .secondary-nav .navbar-nav {
   margin-top: 0 !important;
   margin-bottom: -8px;
+}
+.secondary-nav .navbar-nav li a {
+  color: #024c64 !important;
+}
+.secondary-nav .navbar-nav li .bookmark {
+  color: #ff8400;
+  border: 1px solid;
 }
 .custom-fieldset {
   padding: .35em .625em .75em;
@@ -13026,8 +13034,8 @@ input[type="radio"].book-select-radio:before {
   padding: 0;
   line-height: 13px;
   font-weight: 800;
-  background-color: #ff353b;
-  text-shadow: 0px 1px 0px #000;
+  background-color: #ff8400;
+  text-shadow: none;
 }
 .search-label {
   padding: 3px 5px;
