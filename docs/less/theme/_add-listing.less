@@ -5747,10 +5747,11 @@ input[type="radio"].book-select-radio{
 	padding: 1.5em;
 	.fnb-btn{
 		&.s-btn{
-			color: @accent-secondary;
+			background-color: @accent-secondary;
+			color: #fff;
 			&:hover,&:active{
-				background-color: @accent-secondary;
-				color: #fff;
+				background-color: #fff;
+				color: @accent-secondary;
 			}
 		}
 	}
@@ -6314,13 +6315,23 @@ input[type="radio"].book-select-radio{
 
 .secondary-nav{
 	border-top: 1px solid #ffffff2b;
-    background-color: #000;
+    background-color: #fff;
     padding-bottom: 0.8em;
     padding-top: 0.3em;
     margin: 0.5em -15px -8px -15px;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.38);
     .navbar-nav{
     	margin-top: 0 !important;
     	margin-bottom: -8px;
+    	li{
+    		a{
+    			color: @accent-secondary !important;
+    		}
+    		.bookmark{
+    			color: @accent-primary;
+    			border: 1px solid;
+    		}
+    	}
     }
 }
 
@@ -6341,7 +6352,7 @@ input[type="radio"].book-select-radio{
 
 
 .bar-head{
-	background-color: #ddd;
+	background-color: #eee;
     padding: 0.3em;
     margin: 0.5em 0;
 }
@@ -6384,8 +6395,8 @@ input[type="radio"].book-select-radio{
 	    padding: 0;
 	    line-height: 13px;
 	    font-weight: 800;
-	    background-color: #ff353b;
-	    text-shadow: 0px 1px 0px #000;
+	    background-color: @accent-primary;
+	    text-shadow: none;
 	}
 }
 
@@ -6401,4 +6412,26 @@ input[type="radio"].book-select-radio{
     	background-color: @accent-primary;
     }
 }
+
+
+
+.travel-details{
+	border-top: 2px dashed #ddd;
+    padding-top: 1em;
+    &__col{
+    	flex: 1;
+    	padding-left: 2em;
+    	&:first-child{
+    		border-right: 1px solid #ddd;	
+    		padding-right: 2em;
+    		padding-left: 0;
+    	}
+    }
+    .t-name{
+    	padding: 1px 0;
+    	// background-color: #eee;
+    }
+}
+
+
 

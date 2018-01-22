@@ -209,8 +209,8 @@
 					<li><a href="#" class="text-uppercase x-small">Bookings</a></li>
 					<li class="notification">
 						<a href="#">
-							<i class="fa fa-bookmark" aria-hidden="true">
-								<span class="badge">3</span>
+							<i class="fa fa-tag bookmark" aria-hidden="true">
+								
 							</i>
 						</a>
 					</li>
@@ -263,7 +263,111 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12">
-						<p class="m-b-0 text-right text-darker sub-title cursor-pointer close-modify" data-toggle="collapse" data-target="#modify-search" aria-expanded="false" aria-controls="modify-search"><i class="fa fa-times" aria-hidden="true"></i></p>
+						
+
+						<div class="tab-content m-t-20 m-b-20">
+	          				<div class="tab-pane active" id="myself">
+								<div class="m-t-15 traveller">
+									<div class="flex-row">
+										<div class="traveller__name">
+											<p class="m-b-5 text-darker default-size bolder">Traveller Name</p>
+											<div class="relative flex-row traveller__row">
+												<div class="append-row"></div>
+												<input type="text" class="fnb-input flex-1 main-name flexdatalist" value="Amar Singh" id="" list='languages' name='language'>
+												<datalist id="languages" class="dataList">
+													<option value="Amar Singh">Amar Singh</option>
+												    <option value="Amit Adav">Amit Adav</option>
+												    <option value="Ajaj Rajguru">Ajaj Rajguru</option>
+												    <option value="Valenie Lourenco">Valenie Lourenco</option>
+												    <option value="Anuj Khurana">Anuj Khurana</option>
+												</datalist>
+												
+												<label class="guest-check flex-1 flex-row m-b-0 m-l-10 text-medium text-color flex-end" data-toggle="collapse" data-target="#comment-collapse" aria-expanded="false" aria-controls="comment-collapse" style="visibility:hidden;">
+													<input type="checkbox" class="fnb-checkbox">
+													<span>Add as a Guest</span>
+												</label>
+											</div>
+										</div>
+										
+										<div class="traveller__guest">
+											<a href="#" class="primary-link add-traveller">+ Add Co-Traveller(s)</a>
+											<div class="flex-row traveller-action hidden">
+												<a href="#" class="text-darker m-r-10 edit-traveller"><i class="fa fa-pencil" aria-hidden="true"></i> Edit</a>
+												<a href="#" class="text-danger remove-traveller"><i class="fa fa-times p-r-5 " aria-hidden="true"></i> Remove</a>
+											</div>
+										</div>
+									</div>
+									<div class="collapse guest-details m-t-15" id="comment-collapse">
+										<div class="flex-row guest-holder">
+											<div class="comments p-r-20">
+												<p class="m-b-5 text-darker default-size bolder">Comments</p>
+												<textarea class="fnb-input outline fullwidth p-t-15" rows="1"></textarea>
+											</div>
+											<div class="birthdate">
+												<p class="m-b-5 text-darker default-size bolder">Birthdate</p>
+												<div class="input-group custom-input-group">
+													<input type="text" class="from-date form-control fnb-input">
+													<span class="input-group-addon from-date cursor-pointer" id=""><i class="fa fa-calendar"></i></span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+	          				</div>
+	          				<div class="tab-pane" id="t-member">
+	          					<div class="m-t-15">
+	          						<div class="flex-row m-t-15">
+										<div class="flex-1">
+											<p class="m-b-5 text-darker default-size bolder">Traveller Name</p>
+											<input type="text" class="fnb-input fullwidth" value="Amar Singh" disabled="">
+										</div>
+										<div class="flex-1 m-l-15 m-r-15">
+											<p class="m-b-5 text-darker default-size bolder">Travel Category</p>
+											<select class="fnb-select select-variant default-size">
+												<option> --select--</option>
+						                        <option value="trip" selected="">Business Trip</option>
+						                    </select>
+										</div>
+										<div class="flex-1">
+											<p class="m-b-5 text-darker default-size bolder">Sub Category</p>
+											<select class="fnb-select select-variant default-size">
+												<option>--select--</option>
+						                        <option value="meeting" selected="">Meeting</option>
+						                    </select>
+										</div>
+									</div>
+	          					</div>
+	          				</div>
+	          				<div class="tab-pane" id="guest">
+	          					<div class="m-t-15">
+	          						lorem ipsum
+	          					</div>
+	          				</div> 
+							
+							<div class="travel-cat flex-row m-t-20">
+								<div class="flex-row travel-cat__name">
+									<div class="flex-1 m-r-10">
+										<p class="m-b-5 text-darker default-size bolder">Travel Category</p>
+										<select class="fnb-select select-variant default-size">
+											<option> --select--</option>
+					                        <option value="trip" selected="">Business Trip</option>
+					                    </select>
+									</div>
+									<div class="flex-1">
+										<p class="m-b-5 text-darker default-size bolder">Sub Category</p>
+										<select class="fnb-select select-variant default-size">
+											<option>--select--</option>
+					                        <option value="meeting" selected="">Meeting</option>
+					                    </select>
+									</div>
+								</div>
+								<div class="travel-cat__guest"></div>
+							</div>
+					
+	              		</div>	
+
+
 						<div class="m-b-20">
 							
 							<ul class="nav nav-tabs custom-tabs m-t-10" id="myTab">
@@ -271,6 +375,9 @@
 							  	<li class=" active "><a class="get-tab-val" data-target="#return" data-toggle="tab" data-link="/Goomo-CBT/account/flight-return-way/">RETURN</a></li>
 							  	<li><a data-target="#multi-city" data-toggle="tab">MULTI-CITY</a></li>
 							</ul>
+
+
+
 
 							<div class="tab-content">
 								<div class="tab-pane " id="one-way">
@@ -380,108 +487,7 @@
 							
 						</div>
 						<hr>
-						<div class="tab-content m-t-10">
-          				<div class="tab-pane active" id="myself">
-							<div class="m-t-15 traveller">
-								<div class="flex-row">
-									<div class="traveller__name">
-										<p class="m-b-5 text-darker default-size bolder">Traveller Name</p>
-										<div class="relative flex-row traveller__row">
-											<div class="append-row"></div>
-											<input type="text" class="fnb-input flex-1 main-name flexdatalist" value="Amar Singh" id="" list='languages' name='language'>
-											<datalist id="languages" class="dataList">
-												<option value="Amar Singh">Amar Singh</option>
-											    <option value="Amit Adav">Amit Adav</option>
-											    <option value="Ajaj Rajguru">Ajaj Rajguru</option>
-											    <option value="Valenie Lourenco">Valenie Lourenco</option>
-											    <option value="Anuj Khurana">Anuj Khurana</option>
-											</datalist>
-											
-											<label class="guest-check flex-1 flex-row m-b-0 m-l-10 text-medium text-color flex-end" data-toggle="collapse" data-target="#comment-collapse" aria-expanded="false" aria-controls="comment-collapse" style="visibility:hidden;">
-												<input type="checkbox" class="fnb-checkbox">
-												<span>Add as a Guest</span>
-											</label>
-										</div>
-									</div>
-									
-									<div class="traveller__guest">
-										<a href="#" class="primary-link add-traveller">+ Add Co-Traveller(s)</a>
-										<div class="flex-row traveller-action hidden">
-											<a href="#" class="text-darker m-r-10 edit-traveller"><i class="fa fa-pencil" aria-hidden="true"></i> Edit</a>
-											<a href="#" class="text-danger remove-traveller"><i class="fa fa-times p-r-5 " aria-hidden="true"></i> Remove</a>
-										</div>
-									</div>
-								</div>
-								<div class="collapse guest-details m-t-15" id="comment-collapse">
-									<div class="flex-row guest-holder">
-										<div class="comments p-r-20">
-											<p class="m-b-5 text-darker default-size bolder">Comments</p>
-											<textarea class="fnb-input outline fullwidth p-t-15" rows="1"></textarea>
-										</div>
-										<div class="birthdate">
-											<p class="m-b-5 text-darker default-size bolder">Birthdate</p>
-											<div class="input-group custom-input-group">
-												<input type="text" class="from-date form-control fnb-input">
-												<span class="input-group-addon from-date cursor-pointer" id=""><i class="fa fa-calendar"></i></span>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							
-          				</div>
-          				<div class="tab-pane" id="t-member">
-          					<div class="m-t-15">
-          						<div class="flex-row m-t-15">
-									<div class="flex-1">
-										<p class="m-b-5 text-darker default-size bolder">Traveller Name</p>
-										<input type="text" class="fnb-input fullwidth" value="Amar Singh" disabled="">
-									</div>
-									<div class="flex-1 m-l-15 m-r-15">
-										<p class="m-b-5 text-darker default-size bolder">Travel Category</p>
-										<select class="fnb-select select-variant default-size">
-											<option> --select--</option>
-					                        <option value="trip" selected="">Business Trip</option>
-					                    </select>
-									</div>
-									<div class="flex-1">
-										<p class="m-b-5 text-darker default-size bolder">Sub Category</p>
-										<select class="fnb-select select-variant default-size">
-											<option>--select--</option>
-					                        <option value="meeting" selected="">Meeting</option>
-					                    </select>
-									</div>
-								</div>
-          					</div>
-          				</div>
-          				<div class="tab-pane" id="guest">
-          					<div class="m-t-15">
-          						lorem ipsum
-          					</div>
-          				</div> 
-						
-						<div class="travel-cat flex-row m-t-20">
-							<div class="flex-row travel-cat__name">
-								<div class="flex-1 m-r-10">
-									<p class="m-b-5 text-darker default-size bolder">Travel Category</p>
-									<select class="fnb-select select-variant default-size">
-										<option> --select--</option>
-				                        <option value="trip" selected="">Business Trip</option>
-				                    </select>
-								</div>
-								<div class="flex-1">
-									<p class="m-b-5 text-darker default-size bolder">Sub Category</p>
-									<select class="fnb-select select-variant default-size">
-										<option>--select--</option>
-				                        <option value="meeting" selected="">Meeting</option>
-				                    </select>
-								</div>
-							</div>
-							<div class="travel-cat__guest"></div>
-						</div>
-					
-          			
-	              	</div>
+
 		            
 
 
