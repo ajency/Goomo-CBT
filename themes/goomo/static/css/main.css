@@ -12415,12 +12415,13 @@ input[type="radio"].book-select-radio:before {
   padding: 1.5em;
 }
 .approve-detail .fnb-btn.s-btn {
-  color: #024c64;
+  background-color: #024c64;
+  color: #fff;
 }
 .approve-detail .fnb-btn.s-btn:hover,
 .approve-detail .fnb-btn.s-btn:active {
-  background-color: #024c64;
-  color: #fff;
+  background-color: #fff;
+  color: #024c64;
 }
 .reject-modal .fnb-btn.s-btn {
   color: #024c64;
@@ -12996,7 +12997,7 @@ input[type="radio"].book-select-radio:before {
   font-weight: 600;
 }
 .bar-head {
-  background-color: #ddd;
+  background-color: #eee;
   padding: 0.3em;
   margin: 0.5em 0;
 }
@@ -13047,6 +13048,25 @@ input[type="radio"].book-select-radio:before {
 }
 .search-label.recent {
   background-color: #ff8400;
+}
+.travel-details {
+  border-top: 2px dashed #ddd;
+  padding-top: 1em;
+}
+.travel-details__col {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-left: 2em;
+}
+.travel-details__col:first-child {
+  border-right: 1px solid #ddd;
+  padding-right: 2em;
+  padding-left: 0;
+}
+.travel-details .t-name {
+  padding: 1px 0;
 }
 .profile-stats {
   color: #fff;

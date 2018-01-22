@@ -162,18 +162,9 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12">
-						<p class="m-b-0 text-right text-darker sub-title cursor-pointer close-modify" data-toggle="collapse" data-target="#modify-search" aria-expanded="false" aria-controls="modify-search"><i class="fa fa-times" aria-hidden="true"></i></p>
+						<!-- <p class="m-b-0 text-right text-darker sub-title cursor-pointer close-modify" data-toggle="collapse" data-target="#modify-search" aria-expanded="false" aria-controls="modify-search"><i class="fa fa-times" aria-hidden="true"></i></p> -->
 
-						<div class="m-b-20">
-							<!-- tabs -->
-							<ul class="nav nav-tabs custom-tabs m-t-10" id="myTab">
-								<li class="{{ if $.Params.onemodify }} active {{ end }}"><a class="get-tab-val" data-target="#one-way" data-toggle="tab" data-link="/Goomo-CBT/account/flight-one-way/">ONE-WAY</a></li>
-							  	<li class="{{ if $.Params.returnpage }} active {{ end }}"><a class="get-tab-val" data-target="#return" data-toggle="tab" data-link="/Goomo-CBT/account/flight-return-way/">RETURN</a></li>
-							  	<li><a data-target="#multi-city" data-toggle="tab">MULTI-CITY</a></li>
-							</ul>
-
-
-						<div class="tab-content m-t-10">
+						<div class="tab-content m-t-20 m-b-20">
 	          				<div class="tab-pane active" id="myself">
 								<div class="m-t-15 traveller">
 									<div class="flex-row">
@@ -300,7 +291,19 @@
 								<div class="travel-cat__guest"></div>
 							</div>
 					
-	              		</div>							
+	              		</div>	
+
+
+						<div class="m-b-20">
+							<!-- tabs -->
+							<ul class="nav nav-tabs custom-tabs m-t-10" id="myTab">
+								<li class="{{ if $.Params.onemodify }} active {{ end }}"><a class="get-tab-val" data-target="#one-way" data-toggle="tab" data-link="/Goomo-CBT/account/flight-one-way/">ONE-WAY</a></li>
+							  	<li class="{{ if $.Params.returnpage }} active {{ end }}"><a class="get-tab-val" data-target="#return" data-toggle="tab" data-link="/Goomo-CBT/account/flight-return-way/">RETURN</a></li>
+							  	<li><a data-target="#multi-city" data-toggle="tab">MULTI-CITY</a></li>
+							</ul>
+
+
+
 
 							<div class="tab-content">
 								<div class="tab-pane {{ if $.Params.onemodify }} active {{ end }}" id="one-way">
