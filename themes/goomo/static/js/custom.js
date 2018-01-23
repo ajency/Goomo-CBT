@@ -559,9 +559,9 @@ $(function () {
 
 
 
-$('.shortlist-me:not(.shortlist-added).active').attr('data-original-title','Remove Shortlist');
-$('.shortlist-me:not(.shortlist-added)').attr('data-original-title','Add to Shortlist');
-
+$('.search-results .shortlist-me').attr('data-original-title','Add to Shortlist');
+$('.search-results .shortlist-me.active').attr('data-original-title','Remove from Shortlist');
+// $('.shortlist-me:not(.shortlist-added)').attr('data-original-title','Add to Shortlist');
 
 $('.shortlist-me:not(.no-click)').click(function(){
 	$(this).toggleClass('active');
@@ -571,7 +571,7 @@ $('.shortlist-me:not(.no-click)').click(function(){
     }, 500);
 	
 	if($(this).hasClass('active')){
-		$(this).attr('data-original-title','Remove Shortlist');
+		$(this).attr('data-original-title','Remove from Shortlist');
 		// $('[data-toggle="tooltip"]').tooltip();
 	}
 	else{
@@ -702,8 +702,7 @@ if($('.sticky-book').length){
 
 	autoflex();
 
-
-})
+});
 
 
 

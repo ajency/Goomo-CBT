@@ -16,7 +16,7 @@
 			<div class="flex-row space-between m-b-20 align-top">
 				<div>
 					<h5 class="text-darker bolder m-b-5">Goa to Mumbai {{ if $.Params.returnway }} <span class="text-color x-small"> (Return Way)</span> {{ else }} <span class="text-color x-small">(One Way)</span> {{ end }}</h5>
-					<p class="lighter text-darker">Wed, 20 Dec {{ if $.Params.returnway }}- Fri, 22 Dec {{ end }} | Traveller(s) - 2 Adult</p>
+					<p class="lighter text-darker">Wed, 20 Dec {{ if $.Params.returnway }}- Fri, 22 Dec {{ end }} | Traveller(s) - 2 Adults</p>
 				</div>
 				<div>
 					{{ if $.Params.approvalRejected }}
@@ -33,7 +33,7 @@
 							</p>
 						</div>
 					{{ else }}
-					<button type="submit" class="btn outline fnb-btn no-radius s-btn">Save for later </button>	
+					<button type="submit" class="btn outline fnb-btn no-radius s-btn">Save for Later </button>	
 					<button type="submit" class="btn primary-btn fnb-btn no-radius send-mail" style="padding: 6px 12px;"><i class="fa fa-paper-plane-o m-r-5" aria-hidden="true"></i> Send for Approval</button>	
 					{{ end }}
 				</div>
@@ -82,7 +82,7 @@
 			{{ else if $.Params.approvalSubmitted }}
 
 			{{ else }}
-			<button type="submit" class="btn outline fnb-btn no-radius s-btn">Save for later </button>	
+			<button type="submit" class="btn outline fnb-btn no-radius s-btn">Save for Later </button>	
 			<button type="submit" class="btn primary-btn fnb-btn no-radius send-mail" style="padding: 6px 12px;"><i class="fa fa-paper-plane-o m-r-5" aria-hidden="true"></i> Send for Approval</button>	
 			{{ end }}
 		</div>
