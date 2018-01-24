@@ -7,5 +7,6 @@ layout: shortlist-mail
 
 shortlistReturn: true
 
+shortlist: true
 
 ---
