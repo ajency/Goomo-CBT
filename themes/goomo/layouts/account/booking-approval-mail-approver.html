@@ -97,13 +97,13 @@
 			</div>
 			<div class="flex-row space-between flex-wrap travel-details align-reset m-b-20">
 				<div class="travel-details__col">
-					<p class="m-b-5 text-color default-size">Name of the Traveller(s)</p>
+					<p class="m-b-5 text-color default-size">Traveller Name(s)</p>
 					<div class="m-b-5 text-darker m-t-0 heavier default-size t-name"><i class="fa fa-user" aria-hidden="true"></i> Valenie Lourenco (<span><a href="#" class="secondary-link bolder x-small">valenie@ajency</a></span>)</div>
 				</div>
 				<div class="travel-details__col">
 					<p class="m-b-0 text-color default-size">Requester Name &amp; Email</p>
 					<div class="flex-row">
-						<img src="{{"img/approver.png" | absURL}" class="img-responsive">
+						<img src="{{"img/approver.png" | absURL}}" class="img-responsive">
 						<div class="p-l-5">
 							<p class="default-size text-center m-t-0 m-b-0 heavier">Shon Duglas</p>
 							<a href="#" class="secondary-link heavier p-l-5">shondug@gmail</a>
@@ -111,7 +111,7 @@
 					</div>
 				</div>
 			</div>
-				
+
 
 				<p class="default-size text-darker text-left m-b-0 bolder p-b-5 m-t-20 mail-tag-heading">Flight Details</p>
 
@@ -140,8 +140,109 @@
 						<p class="m-b-0 text-color default-size"><b class="heavier text-warning">Baggage Details:</b> Hand Baggage: 7kg | Check in Baggage: 15kg</p>
 					</div>
 				</div>
-				<p class="default-size"><b>Note :</b> This is not the cheapest flight available.</p>
-				<p class="default-size m-b-0">Your reason for not selecting the cheapest available flight.</p>
+
+
+				
+
+
+			<p class="default-size text-darker m-b-15 bolder">Cheaper flight(s) at similar departure time</p>
+
+			<p class="bolder default-size" style="background-color: #fbfad5;padding: 5px;">GOI - BOM</p>
+
+			<div class="row m-b-20">
+				<div class="col-sm-3 text-left">
+					<label class="heavier text-color fullwidth m-b-10 bolder">Departure</label>
+					<div class="x-small m-b-5">26-Dec-18 04:45</div>
+					<div class="x-small m-b-5">26-Dec-18 04:45</div>
+					<div class="x-small">26-Dec-18 04:45</div>
+				</div>
+				<div class="col-sm-3 text-left">
+					<label class="heavier text-color fullwidth m-b-10 bolder">Arrival</label>
+					<div class="x-small m-b-5">26-Dec-18 06:00</div>
+					<div class="x-small m-b-5">26-Dec-18 06:00</div>
+					<div class="x-small">26-Dec-18 06:00</div>
+				</div>
+				<div class="col-sm-3 text-left">
+					<label class="heavier text-color fullwidth m-b-10 bolder">Flight</label>
+					<div class="x-small m-b-5">Indigo</div>
+					<div class="x-small m-b-5">Spice Jet</div>
+					<div class="x-small">Air India</div>
+				</div>
+				<div class="col-sm-3 text-left">
+					<label class="heavier text-color fullwidth m-b-10 bolder">Amount</label>
+					<div class="x-small m-b-5 bolder">Rs. 2,500</div>
+					<div class="x-small m-b-5 bolder">Rs. 2,500</div>
+					<div class="x-small bolder">Rs. 2,500</div>
+				</div>
+			</div>
+
+			<div class="flex-row justify-center fareStatus m-t-10">
+				<div class="booked-fare fareStatus__col">
+					<p class="m-b-0 default-size bolder">Booked Fare:</p>
+					2500.00 INR (AI)
+				</div>
+				<div class="lost-saving fareStatus__col">
+					<p class="m-b-0 default-size bolder">Lost Saving:</p>
+					0.00 INR (AI)
+				</div>	
+			</div>
+
+		{{ if $.Params.oneway }}
+
+		{{ else }}
+		
+
+		<br>		
+
+			<p class="bolder default-size" style="background-color: #fbfad5;padding: 5px;">BOM - GOI</p>
+
+			<div class="row m-b-20">
+				<div class="col-sm-3 text-left">
+					<label class="heavier text-color fullwidth m-b-10 bolder">Departure</label>
+					<div class="x-small m-b-5">26-Dec-18 04:45</div>
+					<div class="x-small m-b-5">26-Dec-18 04:45</div>
+					<div class="x-small">26-Dec-18 04:45</div>
+				</div>
+				<div class="col-sm-3 text-left">
+					<label class="heavier text-color fullwidth m-b-10 bolder">Arrival</label>
+					<div class="x-small m-b-5">26-Dec-18 06:00</div>
+					<div class="x-small m-b-5">26-Dec-18 06:00</div>
+					<div class="x-small">26-Dec-18 06:00</div>
+				</div>
+				<div class="col-sm-3 text-left">
+					<label class="heavier text-color fullwidth m-b-10 bolder">Flight</label>
+					<div class="x-small m-b-5">Indigo</div>
+					<div class="x-small m-b-5">Spice Jet</div>
+					<div class="x-small">Air India</div>
+				</div>
+				<div class="col-sm-3 text-left">
+					<label class="heavier text-color fullwidth m-b-10 bolder">Amount</label>
+					<div class="x-small m-b-5 bolder">Rs. 2,500</div>
+					<div class="x-small m-b-5 bolder">Rs. 2,500</div>
+					<div class="x-small bolder">Rs. 2,500</div>
+				</div>
+			</div>
+
+			<div class="flex-row justify-center fareStatus m-t-10">
+				<div class="booked-fare fareStatus__col">
+					<p class="m-b-0 default-size bolder">Booked Fare:</p>
+					2500.00 INR (AI)
+				</div>
+				<div class="lost-saving fareStatus__col">
+					<p class="m-b-0 default-size bolder">Lost Saving:</p>
+					0.00 INR (AI)
+				</div>	
+			</div>
+		
+		{{ end }}
+
+
+			<br>
+
+
+
+				<!-- <p class="default-size"><b>Note :</b> This is not the cheapest flight available.</p> -->
+				<p class="default-size m-b-0">Reason for not selecting the cheapest available flight.</p>
 				<div class="text-lighter">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, repudiandae cupiditate. A ut quae, totam!</div>
 
 
@@ -174,7 +275,7 @@
 
 				
 
-				<p class="default-size bolder">To view the booking request <br> <a href="{{ if $.Params.oneway }} /Goomo-CBT/account/approve-booking/ {{ else }} /Goomo-CBT/account/approve-booking-return/ {{ end }}" class="btn fnb-btn primary-btn no-radius dis-inline m-t-10 btn-md">Click here</a></p>
+				<p class="default-size bolder">To view the booking request <br> <a href="{{ if $.Params.oneway }} /Goomo-CBT/account/approve-booking/ {{ else }} /Goomo-CBT/account/approve-booking-return/ {{ end }}" class="btn fnb-btn primary-btn no-radius dis-inline m-t-10 btn-md">Click Here</a></p>
 
 
 				<hr>

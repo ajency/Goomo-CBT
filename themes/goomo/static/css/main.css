@@ -13078,6 +13078,10 @@ input[type="radio"].book-select-radio:before {
 .travel-details .t-name {
   padding: 1px 0;
 }
+.cheap-list {
+  background-color: #eeeeee94;
+  padding: 0.8em;
+}
 .profile-stats {
   color: #fff;
   background: #ff8400;
