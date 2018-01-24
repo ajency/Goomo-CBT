@@ -1719,13 +1719,19 @@ input[type=radio].fnb-radio.bg-aqua:checked:before {
   border-radius: 0;
 }
 .fnb-header .user-logged .dropdown-menu li {
-  padding: 0.5em;
+  padding: 0.5em 1em;
   margin: 0.2em 0;
   border-bottom: 1px solid #eee;
-  font-size: 0.95em;
+  font-size: 1em;
 }
 .fnb-header .user-logged .dropdown-menu li:last-child {
   margin-bottom: 0;
+}
+.fnb-header .user-logged .dropdown-menu li a {
+  color: #000 !important;
+  padding: 0;
+  font-weight: 400;
+  background-color: transparent;
 }
 .fnb-header .fnb-breadcrums {
   margin-top: 5px;

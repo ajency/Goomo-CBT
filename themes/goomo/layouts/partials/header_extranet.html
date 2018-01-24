@@ -37,6 +37,21 @@
 					<li>
 						<p class="flex-row default-size text-lighter powered-by">Powered by <img src="{{"img/mobiz-logo.png" | absURL}}" class="img-responsive m-l-5" width="80"></p>
 					</li>
+					{{ if $.Params.logged }}
+
+					{{ else }}
+
+					{{ if $.Params.nocustomheader }}
+
+					{{ else }}
+
+					<li><a href="#" class="text-uppercase x-small" style="color: #fff;">Home</a></li>
+					<li><a href="#" class="text-uppercase x-small" style="color: #fff;">Flights</a></li>
+					<li><a href="#" class="text-uppercase x-small" style="color: #fff;">Hotels</a></li>
+
+					{{ end }}
+
+					{{ end }}
 				</ul>
 
 				{{ if $.Params.logged }}
@@ -52,14 +67,15 @@
 					{{ else }}
 					
 					
-						<li><a href="#" class="text-uppercase x-small">Home</a></li>
-						<!-- <li><a href="#" class="text-uppercase x-small">Approve</a></li> -->
-						<!-- <li><a href="#" class="text-uppercase x-small">Bookings</a></li> -->
+						<!-- <li><a href="#" class="text-uppercase x-small">Home</a></li>
 						<li><a href="#" class="text-uppercase x-small">Flights</a></li>
-						<li><a href="#" class="text-uppercase x-small">Hotels</a></li>
+						<li><a href="#" class="text-uppercase x-small">Hotels</a></li> -->
+						<li><a href="#" class="text-uppercase x-small">Pending Approval</a></li>
+						<li><a href="#" class="text-uppercase x-small">My Bookings</a></li>
+						<li><a href="#" class="text-uppercase x-small"><i class="fa fa-tag bookmark m-r-5" aria-hidden="true" style="color: #ff8400;padding: 5px;border: 1px solid;"></i> Open Bookings</a></li>
 						<li class="notification">
 							<a href="#">
-								<i class="fa fa-bell" aria-hidden="true">
+								<i class="fa fa-bell m-t-5" aria-hidden="true">
 									<span class="badge">3</span>
 								</i>
 							</a>
@@ -76,7 +92,8 @@
 									<i class="fa fa-angle-down" aria-hidden="true"></i>
 								</button>
 								<ul class="dropdown-menu" aria-labelledby="dLabel">
-									<li>Sign Out</li>
+									<li><a href="#">My Profile</a></li>
+									<li><a href="#">Sign Out</a></li>
 								</ul>
 							</div>
 
@@ -99,7 +116,7 @@
 			{{ else}}
 			{{ if $.Params.nocustomheader }}
 			{{ else }}
-			<div class="secondary-nav flex-row">
+			<!-- <div class="secondary-nav flex-row">
 				<ul class="nav navbar-nav side-section p-t-0 text-right fullwidth flex-row flex-end">
 					<li><a href="#" class="text-uppercase x-small">My Profile</a></li>
 					<li><a href="#" class="text-uppercase x-small">Approve</a></li>
@@ -107,12 +124,11 @@
 					<li class="notification">
 						<a href="#">
 							<i class="fa fa-tag bookmark" aria-hidden="true">
-								<!-- <span class="badge">3</span> -->
 							</i>
 						</a>
 					</li>
 				</ul>
-			</div>
+			</div> -->
 			{{ end }}
 			{{ end }}
 		</div>
