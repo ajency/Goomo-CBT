@@ -437,16 +437,16 @@
 			<h6 class="bolder text-darker default-size line-height m-b-15 m-t-25">My Summary</h6>
 
 			<div class="approver-name boxshadow5 m-b-20 white-box x-small">
-				<p class="m-b-0 text-darker x-small text-uppercase text-lighter">Traveller Name</p>
+				<p class="m-b-0 text-darker default-size text-capitalize text-lighter">Traveller Name</p>
 				<h6 class="bolder m-t-5 m-b-5 sub-title">Amar Singh</h6>
-				<a href="#" class="secondary-link text-decor">View Applicable Policy</a>
-				<p class="m-b-0 m-t-15 text-darker x-small text-uppercase text-lighter">Guest Name</p>
+				<a href="#" class="secondary-link text-decor" data-toggle="modal" data-target="#policy-modal">View Applicable Policy</a>
+				<p class="m-b-0 m-t-15 text-darker default-size text-capitalize text-lighter">Guest Name</p>
 				<h6 class="bolder m-t-5 m-b-5 sub-title">Summer Patekar</h6>
-				<a href="#" class="secondary-link text-decor">View Applicable Policy</a>
+				<a href="#" class="secondary-link text-decor" data-toggle="modal" data-target="#policy-modal">View Applicable Policy</a>
 				<hr>
-				<p class="m-b-0 text-darker x-small text-uppercase text-lighter">Travel Category</p>
+				<p class="m-b-0 text-darker default-size text-capitalize text-lighter">Travel Category</p>
 				<h6 class="bolder m-t-5 m-b-10 sub-title">Business Trip</h6>
-				<p class="m-b-0 text-darker x-small text-uppercase text-lighter m-t-20">Sub Category</p>
+				<p class="m-b-0 text-darker default-size text-capitalize text-lighter m-t-20">Sub Category</p>
 				<h6 class="bolder m-t-5 m-b-10 sub-title">Meeting</h6>
 			</div>
 	
@@ -496,5 +496,66 @@
 	</div>
 </div>
 <br><br>
+
+
+
+ <div class="modal fade region-add-modal reject-modal" id="policy-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <form>
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h6 class="modal-title bolder element-title"><img src="{{"img/policy-check.png" | absURL}}"> Flight Policy for Amar Singh</h6>
+          </div>
+          <div class="modal-body">
+			<div class="m-t-10">
+				<div class="flex-row m-b-20">
+					<div class="flex-1" style="flex: 0.7;">
+						<p class="m-b-5 text-color default-size">Policy ID</p>
+						<h6 class="bolder label-size">1001</h6>
+					</div>
+					<div class="flex-1">
+						<p class="m-b-5 text-color default-size">Class of Travel</p>
+						<h6 class="bolder label-size">Economy</h6>
+					</div>
+					<div class="flex-1">
+						<p class="m-b-5 text-color default-size">Flight Budget</p>
+						<h6 class="bolder label-size"><i class="fa fa-inr" aria-hidden="true"></i> 0 - <i class="fa fa-inr" aria-hidden="true"></i> 8,000</h6>
+					</div>
+					<div class="flex-1" style="flex: 1.2;">
+						<p class="m-b-5 text-color default-size">Flight Budget Currency</p>
+						<h6 class="bolder label-size">INR</h6>
+					</div>
+				</div>
+				<div class="row m-b-20" style="border-top: 2px dashed #eee;padding-top: 20px;">
+					<div class="col-sm-7">
+						<p class="m-b-5 text-color default-size">Associated Suppliers</p>
+						<h6 class="label-size">Galileo, SpiceJet, Indigo, GoAir, AxisRooms</h6>
+					</div>
+					<div class="col-sm-5">
+						<p class="m-b-5 text-color default-size">Associated Regions</p>
+						<h6 class="label-size">Within India-Outside India</h6>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-7">
+						<p class="m-b-5 text-color default-size">Is Policy Overridden allowed with with reason code</p>
+						<h6 class="label-size">No</h6>
+					</div>
+				</div>
+			</div>
+
+          </div>
+          <!-- <div class="modal-footer">
+          </div> -->
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
 
 {{ end }}
