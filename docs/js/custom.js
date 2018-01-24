@@ -328,6 +328,7 @@ $(document).ready(function() {
 
 	$('.from-date,.to-date').daterangepicker({
 		singleDatePicker: true,
+		showDropdowns: true,
 		locale: {
       		format: 'DD/MM/YYYY'
     	}
@@ -656,6 +657,7 @@ if($('.sticky-book').length){
 		});
 	  	highlight_group_clone.find('.from-date').daterangepicker({
 			singleDatePicker: true,
+			showDropdowns: true,
 			locale: {
 	      		format: 'DD/MM/YYYY'
 	    	}
