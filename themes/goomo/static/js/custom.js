@@ -559,6 +559,16 @@ $(function () {
   });
 
 
+$(document).on('click', '.summer-click', function(){
+	$('.summer').removeClass('hidden');
+	$('.amar').addClass('hidden');
+})
+
+$(document).on('click', '.amar-click', function(){
+	$('.amar').removeClass('hidden');
+	$('.summer').addClass('hidden');
+})
+
 
 $('.search-results .shortlist-me').attr('data-original-title','Add to Shortlist');
 $('.search-results .shortlist-me.active').attr('data-original-title','Remove from Shortlist');

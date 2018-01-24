@@ -7,6 +7,5 @@ url: /account/request-rejected-return/
 
 shortlistReturn: true
 
-approved: true
 
 ---
