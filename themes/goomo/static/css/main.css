@@ -12538,12 +12538,18 @@ input[type="radio"].book-select-radio:before {
 .no-bg-row {
   background-color: #f5f5f5;
 }
-.recent-searches .indv-search {
+.recent-searches {
   border-bottom: 1px dashed #ccc;
+}
+.recent-searches .indv-search {
   margin-bottom: 10px;
+  padding: 10px;
 }
 .recent-searches .indv-search:last-of-type {
   border-bottom: none;
+}
+.recent-searches .indv-search:hover {
+  background-color: #eeeeee80;
 }
 .collapsible a {
   color: #024c64;

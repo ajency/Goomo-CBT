@@ -570,6 +570,11 @@ $(document).on('click', '.amar-click', function(){
 })
 
 
+$(document).on('click', '.clearSearch', function(){
+	$('.recentSearch').remove();
+});
+
+
 $('.search-results .shortlist-me').attr('data-original-title','Add to Shortlist');
 $('.search-results .shortlist-me.active').attr('data-original-title','Remove from Shortlist');
 // $('.shortlist-me:not(.shortlist-added)').attr('data-original-title','Add to Shortlist');
