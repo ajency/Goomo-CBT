@@ -7,4 +7,6 @@ url: /account/request-approved-return/
 
 shortlistReturn: true
 
+approved: true
+
 ---
