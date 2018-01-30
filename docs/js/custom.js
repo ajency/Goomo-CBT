@@ -728,6 +728,9 @@ if($('.sticky-book').length){
 
 
 $(document).on('click', '.redirect-show', function() {
+	$("html, body").animate({
+    	scrollTop: 0
+    }, 600);
 	setTimeout(function(){
 		$('#redirect-modal').modal('show');
 	}, 1600);
