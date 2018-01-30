@@ -231,9 +231,10 @@ span {
   border: 1px solid;
 }
 .fnb-btn.grey {
-  background-color: rgba(173, 167, 167, 0.52);
-  color: rgba(0, 0, 0, 0.74);
+  background-color: rgba(12, 12, 12, 0.52);
+  color: #fff;
   border-color: #ada7a7;
+  font-weight: 500;
 }
 .fnb-btn.grey:hover,
 .fnb-btn.grey:active {

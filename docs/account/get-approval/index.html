@@ -247,6 +247,10 @@
 		<div class="alert alert-success alert-dismissible fade in m-t-20 hidden" role="alert"> <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button> A  <a href=" /Goomo-CBT/account/booking-approval-mail-approver/ " class="text-decor bolder primary-link">mail</a> with your booking request has been sent to the approver. Copy of the email is sent to you.
 		</div>
 
+		<div class="alert alert-success alert-dismissible fade in save-later-alert m-t-20 hidden" role="alert"> <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button> 
+			Your booking request has been saved and added to your Open Bookings.
+		</div>
+
 
 		<div class="white-box approve-detail">
 			<div class="flex-row space-between m-b-20 align-top">
@@ -256,8 +260,8 @@
 				</div>
 				<div>
 					
-					<button type="submit" class="btn outline fnb-btn no-radius s-btn">Save for Later </button>	
-					<button type="submit" class="btn primary-btn fnb-btn no-radius send-mail" style="padding: 6px 12px;"><i class="fa fa-paper-plane-o m-r-5" aria-hidden="true"></i> Send for Approval</button>	
+					<button type="submit" class="btn outline fnb-btn no-radius s-btn save-later-btn redirect-show">Save for Later </button>	
+					<button type="submit" class="btn primary-btn fnb-btn no-radius send-mail redirect-show" style="padding: 6px 12px;"><i class="fa fa-paper-plane-o m-r-5" aria-hidden="true"></i> Send for Approval</button>	
 					
 				</div>
 			</div>
@@ -464,8 +468,8 @@
 		<div class="text-right m-t-20 approve-detail">
 			
 			
-			<button type="submit" class="btn outline fnb-btn no-radius s-btn">Save for Later </button>	
-			<button type="submit" class="btn primary-btn fnb-btn no-radius send-mail" style="padding: 6px 12px;"><i class="fa fa-paper-plane-o m-r-5" aria-hidden="true"></i> Send for Approval</button>	
+			<button type="submit" class="btn outline fnb-btn no-radius s-btn save-later-btn redirect-show">Save for Later </button>	
+			<button type="submit" class="btn primary-btn fnb-btn no-radius send-mail redirect-show" style="padding: 6px 12px;"><i class="fa fa-paper-plane-o m-r-5" aria-hidden="true"></i> Send for Approval</button>	
 			
 		</div>
 
@@ -509,6 +513,31 @@
     </div>
   </div>
 
+
+
+
+
+
+
+ <div class="modal fade region-add-modal reject-modal" id="redirect-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+     
+
+          <div class="modal-body">
+			<div class="m-t-25 m-b-25">
+				<img src="https://ajency.github.io/Goomo-CBT/img/more-details.png" class="img-responsive center-block">
+				<h5 class="text-center element-title bolder m-t-20">Would you like to search for another flight?</h5>
+			</div>
+          </div>
+          <div class="modal-footer text-center" style="text-align: center;">
+          	<a href="/Goomo-CBT/account/flight-search/" class="btn fnb-btn secondary-btn no-radius"><i class="fa fa-plane" aria-hidden="true"></i> Flight Search</a>
+            <button type="button" class="btn fnb-btn grey no-radius" data-dismiss="modal">Close</button>
+          </div>
+   
+      </div>
+    </div>
+  </div>
 
 
 
@@ -574,6 +603,9 @@
 		<script type="text/javascript" src="/Goomo-CBT/js/jquery.min.js"></script>
 
 
+		<script type="text/javascript" src="/Goomo-CBT/js/jquery-cookie.js"></script>
+
+
 		
 		<script type="text/javascript" src="/Goomo-CBT/js/bootstrap.min.js"></script>
 
@@ -592,7 +624,6 @@
 		
 		
 		<script type="text/javascript" src="/Goomo-CBT/js/flex-datalist/jquery.flexdatalist.min.js"></script>
-
 
 
 		<script type="text/javascript" src="/Goomo-CBT/js/custom.js"></script>
