@@ -249,9 +249,12 @@
 
 @media screen and (max-width: @mobile){
 	.fnb-header{
-		position: sticky;
-	    top: 0;
-	    z-index: 3;
+		.navbar{
+			position: fixed;
+			width: 100%;
+	    	top: 0;
+	    	z-index: 3;	
+		}
 		&.trans-header{
 			position: relative;
 			z-index: initial;

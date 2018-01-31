@@ -16,15 +16,8 @@
 			</div>
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse m-side-bar" id="bs-example-navbar-collapse-1">
-				<ul class="mobile-top mobile-flex">
-					<li>
-						<p class="mobile-top__text">Sign in to get a personalised feed!</p>
-					</li>
-					<li>
-						<button type="button" class="fnb-btn outline">Login</button>
-					</li>
-				</ul>
-				<ul class="nav navbar-nav ">
+		
+				<ul class="nav navbar-nav mobile-s-bar">
 					<li>
 						<h5 class="dash-title">
 
@@ -34,7 +27,7 @@
 
 						</h5>
 					</li>
-					<li>
+					<li class="mobile-hide">
 						<p class="flex-row default-size text-lighter powered-by">Powered by <img src="{{"img/mobiz-logo.png" | absURL}}" class="img-responsive m-l-5" width="80"></p>
 					</li>
 					{{ if $.Params.logged }}
@@ -57,7 +50,7 @@
 				{{ if $.Params.logged }}
 
 				{{ else }}
-					<ul class="nav navbar-nav navbar-right side-section p-t-0">
+					<ul class="nav navbar-nav navbar-right side-section p-t-0 mobile-s-bar">
 
 					{{ if $.Params.nocustomheader }}
 					
@@ -106,9 +99,7 @@
 
 				{{ end }}
 
-				<div class="desk-hide">
-					{{ partial "sidebar_extranet.html" .}}
-				</div>
+			
 
 
 			</div>
@@ -139,7 +130,7 @@
 
 	{{ if $.Params.flightheader }}
 	<div class="flight-detail-header {{ $.Params.returnpage }}">
-		<div class="container flex-row space-between align-reset {{ if $.Params.returnway }} return-bar {{ end }}">
+		<div class="container flex-row space-between align-reset m-col-direction searched-header {{ if $.Params.returnway }} return-bar {{ end }}">
 			<div class="flight-col city flex-row space-between">
 				<p class="gray-darker bolder sub-title">GOI <br><span class="x-small lighter text-lighter">Goa, IN Dabolim</span></p>
 				{{ if $.Params.returnway }}

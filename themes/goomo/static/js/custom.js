@@ -794,7 +794,9 @@ if ($(window).width() < 768){
 	$('.return-way').find('.depart-row').after(returnn);
 }
 			
-
+$('.floating-filter').click(function(){
+	$('.filter-card').addClass('active');
+});
 
 
 

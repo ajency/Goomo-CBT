@@ -1741,9 +1741,9 @@ input[type=radio].fnb-radio.bg-aqua:checked:before {
   font-weight: 400;
 }
 @media screen and (max-width: 768px) {
-  .fnb-header {
-    position: -webkit-sticky;
-    position: sticky;
+  .fnb-header .navbar {
+    position: fixed;
+    width: 100%;
     top: 0;
     z-index: 3;
   }
@@ -13158,6 +13158,82 @@ input[type="radio"].book-select-radio:before {
   }
   .footerText {
     font-size: 0.9em;
+  }
+  .nav.mobile-s-bar {
+    margin: 0 -15px !important;
+  }
+  .nav.mobile-s-bar li {
+    padding: 10px 15px;
+    border-bottom: 1px solid #eee;
+    margin: 0;
+  }
+  .nav.mobile-s-bar li a {
+    color: #024c64 !important;
+    font-weight: 600 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0;
+    padding: 0;
+    text-transform: capitalize;
+    font-size: 1.05em;
+  }
+  .nav.mobile-s-bar li i {
+    display: none;
+  }
+  .nav.mobile-s-bar li.notification .fa {
+    display: block;
+    color: #024c64;
+    padding: 0;
+  }
+  .nav.mobile-s-bar li.notification .fa .badge {
+    left: 10px;
+    top: -6px;
+  }
+  .flight-detail-header {
+    margin-top: 4em;
+  }
+  .searched-header {
+    padding: 0;
+  }
+  .searched-header .flight-col {
+    border: 0;
+    padding: 0.8em 0;
+  }
+  .searched-header .flight-col:nth-child(2n) {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+  }
+  .flight-filter {
+    margin-top: 1em;
+    padding: 0 15px;
+  }
+  .floating-filter {
+    position: fixed;
+    bottom: 4em;
+    right: 1.5em;
+    z-index: 8;
+  }
+  .goomo-success {
+    margin-top: 5em;
+  }
+  .mobiz-intro {
+    font-size: 1.05em;
+    font-weight: 500;
+    text-align: center;
+  }
+  .login-screen .points li {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 100%;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+    padding: 0.5em 0;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mobiz-caption {
+    padding: 1em 0;
+    text-align: center;
   }
 }
 .profile-stats {
