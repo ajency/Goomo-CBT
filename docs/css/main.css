@@ -2617,6 +2617,13 @@ footer {
             align-items: center;
     float: none;
   }
+  .m-col-direction {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 .text-primary {
   color: #ff8400;
@@ -13094,6 +13101,64 @@ input[type="radio"].book-select-radio:before {
 .cheap-list {
   background-color: #eeeeee94;
   padding: 0.8em;
+}
+@media screen and (max-width: 768px) {
+  .mobile-header .mobile-head {
+    margin: 5px 0 0 0;
+  }
+  .booking-title {
+    font-size: 1.1em;
+  }
+  .traveller__name {
+    width: 100%;
+  }
+  .traveller__guest {
+    -webkit-align-self: flex-end;
+        -ms-flex-item-align: end;
+            align-self: flex-end;
+    margin-top: 10px;
+    font-size: 0.9em;
+  }
+  .traveller .guest-check {
+    -webkit-flex-basis: 36%;
+        -ms-flex-preferred-size: 36%;
+            flex-basis: 36%;
+    font-size: 0.9em;
+    margin-left: 0;
+  }
+  .guest-holder > div {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 8px;
+  }
+  .travel-cat__name {
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+  }
+  .travel-cat__name .flex-1 {
+    width: 100%;
+    margin-bottom: 15px;
+    margin-right: 0;
+  }
+  .to-row {
+    margin-top: 1.5em;
+  }
+  .search-action {
+    margin-top: 1.5em;
+  }
+  .footer__links {
+    margin: 0;
+  }
+  .footer__links li {
+    margin: 0.2em 0;
+  }
+  .call-row {
+    margin: 1em 0;
+  }
+  .footerText {
+    font-size: 0.9em;
+  }
 }
 .profile-stats {
   color: #fff;

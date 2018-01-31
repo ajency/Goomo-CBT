@@ -13,7 +13,7 @@
 		<div class="white-box approve-detail">
 			<div class="m-b-20 m-b-20 book-head">
 				<div>
-					<h5 class="text-darker bolder m-b-5 text-uppercase">I am Booking for</h5>
+					<h5 class="text-darker bolder m-b-5 text-uppercase booking-title">I am Booking for</h5>
 					<!-- <div class="radio-check" id="stops">
 		              <div class="stops-row m-t-15">
 		              	<label><input type="radio" name="stops" class="radio" checked> <span>Myself</span></label>
@@ -32,7 +32,7 @@
 	              	<div class="tab-content m-t-10">
           				<div class="tab-pane active" id="myself">
 							<div class="m-t-15 traveller">
-								<div class="flex-row">
+								<div class="flex-row m-col-direction">
 									<div class="traveller__name">
 										<p class="m-b-5 text-darker default-size bolder">Traveller Name</p>
 										<div class="relative flex-row traveller__row">
@@ -75,7 +75,7 @@
 									</div>
 								</div>
 								<div class="collapse guest-details m-t-15" id="comment-collapse">
-									<div class="flex-row guest-holder">
+									<div class="flex-row guest-holder m-col-direction">
 										<div class="comments p-r-20">
 											<p class="m-b-5 text-darker default-size bolder">Comments</p>
 											<textarea class="fnb-input outline fullwidth p-t-15" rows="1"></textarea>
@@ -137,7 +137,7 @@
           				</div> 
 						
 						<div class="travel-cat flex-row m-t-20">
-							<div class="flex-row travel-cat__name">
+							<div class="flex-row travel-cat__name m-col-direction">
 								<div class="flex-1 m-r-10">
 									<p class="m-b-5 text-darker default-size bolder">Travel Category</p>
 									<select class="fnb-select select-variant default-size">
@@ -172,7 +172,7 @@
 
 				<p class="m-t-40 p-t-20 p-b-5 bolder flex-row space-between label-size">Frequent / Recent Searches <!-- <a href="#" class="primary-link text-decor clearSearch">Clear</a> --></p>
 				
-				<div class="recent-searches flex-row space-between">
+				<div class="recent-searches flex-row space-between m-col-direction">
 					<div class="indv-search">
 						<a href="/Goomo-CBT/account/flight-one-way-modify" target="_blank" class="dark-link no-decor">
 							<div class="flex-row space-between">
@@ -219,9 +219,9 @@
 				<div class="tab-content">
 					<div class="tab-pane active" id="one-way">
 						<div class="m-t-30">
-							<div class="row">
+							<div class="row one-way">
 								<div class="col-sm-5">
-									<div class="flex-1">
+									<div class="flex-1 from-row">
 										<p class="m-b-5 text-darker default-size bolder">From</p>
 										<div class="plane-icon_wrapper">
 											<select class="fnb-select select-variant default-size plane-icon">
@@ -240,18 +240,17 @@
 										</div>
 									</div>
 								</div>
-								<div class="col-sm-2 text-center">
+								<div class="col-sm-2 text-center mobile-hide">
 									<!-- <img src="../../static/img/from-to.jpg" alt=""> -->
 									<img src="{{"img/one-way.png" | absURL}}">
 								</div>
 								<div class="col-sm-5">
-									<div class="flex-1">
+									<div class="flex-1 to-row">
 										<p class="m-b-5 text-darker default-size bolder">To</p>
 										<div class="plane-icon_wrapper rotate-90">
 											<select class="fnb-select select-variant default-size plane-icon">
 												<option> --select--</option>
 												<option value="" selected="">New Delhi, India (DEL)</option>
-						                        
 						                    </select>
 					                    </div>
 									</div>
@@ -313,9 +312,9 @@
 					</div>
 					<div class="tab-pane" id="return">
 						<div class="m-t-30">
-							<div class="row">
+							<div class="row return-way">
 								<div class="col-sm-5">
-									<div class="flex-1">
+									<div class="flex-1 from-row">
 										<p class="m-b-5 text-darker default-size bolder">From</p>
 										<div class="plane-icon_wrapper">
 											<select class="fnb-select select-variant default-size plane-icon">
@@ -326,7 +325,7 @@
 					                    </div>
 									</div>
 
-									<div class="flex-1 m-t-30">
+									<div class="flex-1 m-t-30 depart-row">
 										<p class="m-b-5 text-darker default-size bolder">Depart on</p>
 										<div class="input-group custom-input-group">
 											<input type="text" class="from-date form-control fnb-input sub-dates" placeholder="From Date">
@@ -334,12 +333,12 @@
 										</div>
 									</div>
 								</div>
-								<div class="col-sm-2 text-center">
+								<div class="col-sm-2 text-center mobile-hide">
 									<!-- <img src="../../static/img/from-to.jpg" alt=""> -->
 									<img src="{{"img/from-to.jpg" | absURL}}">
 								</div>
 								<div class="col-sm-5">
-									<div class="flex-1">
+									<div class="flex-1 to-row">
 										<p class="m-b-5 text-darker default-size bolder">To</p>
 										<div class="plane-icon_wrapper rotate-90">
 											<select class="fnb-select select-variant default-size plane-icon">
@@ -352,7 +351,7 @@
 
 									
 
-									<div class="flex-1 m-t-30">
+									<div class="flex-1 m-t-30 return-row">
 										<p class="m-b-5 text-darker default-size bolder">Return on</p>
 										<div class="input-group custom-input-group">
 											<input type="text" class="from-date form-control fnb-input sub-dates" placeholder="Return Date">
@@ -457,8 +456,9 @@
  -->
 				
 
-				<hr>
-				<div class="text-right">
+				<hr class="mobile-hide">
+
+				<div class="text-right search-action">
 					<a href="/Goomo-CBT/account/flight-one-way/" class="btn fnb-btn primary-btn bold-btn full search-flight"><span>Search Flights</span></a>
 				</div>
 			</div>

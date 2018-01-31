@@ -782,9 +782,17 @@ $( "#info-modal" ).modal('show');
 	        // 	else 
 	        // 		$.cookie("isshow", 1, { expires: 365 });	
 
-	        	
-	        
 
+if ($(window).width() < 768){
+	var torow = $('.one-way .to-row').detach();
+	$('.one-way').find('.from-row').after(torow);
+
+	var toroww = $('.return-way .to-row').detach();
+	$('.return-way').find('.from-row').after(toroww);
+
+	var returnn = $('.return-row').detach();
+	$('.return-way').find('.depart-row').after(returnn);
+}
 			
 
 
