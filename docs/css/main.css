@@ -1567,7 +1567,7 @@ input[type=radio].fnb-radio.bg-aqua:checked:before {
   margin-top: 10px;
 }
 .fnb-header .navbar.flight-header .powered-by {
-  margin-top: 5px;
+  margin-top: 8px;
   color: #fff;
 }
 .fnb-header .navbar.flight-header .dash-title {
@@ -13237,7 +13237,8 @@ input[type="radio"].book-select-radio:before {
 .multi-drop button {
   background-color: transparent;
   border: 0;
-  padding: 10px;
+  padding: 15px 10px;
+  font-size: 0.95em;
 }
 .multi-drop button:focus,
 .multi-drop button:active {
@@ -13275,6 +13276,8 @@ input[type="radio"].book-select-radio:before {
   font-weight: 600;
   font-size: 1.25em;
   vertical-align: middle;
+  position: relative;
+  top: -2px;
 }
 .multi-drop .notify {
   background-color: #ff8400;
