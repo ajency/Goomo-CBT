@@ -1708,6 +1708,7 @@ input[type=radio].fnb-radio.bg-aqua:checked:before {
 .fnb-header .user-logged .drop-trigger .fa {
   font-size: 1.3em;
   vertical-align: top;
+  font-weight: 600;
 }
 .fnb-header .user-logged .userName {
   width: 80px;
@@ -13290,7 +13291,9 @@ input[type="radio"].book-select-radio:before {
   padding: 0 10px;
 }
 .multi-drop.profile-drop .power {
-  tranform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 .multi-drop.profile-drop .dropdown-menu {
   top: 125%;
