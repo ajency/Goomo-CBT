@@ -58,7 +58,7 @@
 
 					
 
-					<li><a href="#" class="text-uppercase x-small" style="color: #fff;padding-top: 13px;"><i class="fa fa-home element-title" aria-hidden="true"></i> Home</a></li>
+					<li><a href="#" class="text-uppercase x-small" style="color: #fff;padding-top: 13px;"> Home</a></li>
 					<li><a href="#" class="text-uppercase x-small" style="color: #fff;padding-top: 13px;">Flights</a></li>
 					<li><a href="#" class="text-uppercase x-small" style="color: #fff;padding-top: 13px;">Hotels</a></li>
 
@@ -74,18 +74,32 @@
 					
 					
 						
-						<li class="m-l-10"><a href="#" class="text-capitalize" style="font-weight: 500;">Pending Approvals</a></li>
-						<li class="m-l-10"><a href="#" class="text-capitalize" style="padding-top: 8px;font-weight: 500;"><i class="fa fa-tag bookmark m-r-5" aria-hidden="true" style="color: #ff8400;padding: 5px;border: 1px solid;"></i> Open Bookings</a></li>
-						<li class="m-l-10"><a href="#" class="text-capitalize" style="font-weight: 500;padding-top: 12px;">My Bookings</a></li>
+						<li class="m-l-10 multi-drop">
+							
+								<div class="dropdown">
+										<button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											Manage
+											<i class="fa fa-angle-down a-down" aria-hidden="true"></i>
+										</button>
+									<ul class="dropdown-menu" aria-labelledby="dLabel">
+										<li><a href="">Saved Searches</a></li>
+										<li><a href="" class="flex-row space-between">My Requests <span class="notify">4</span></a></li>
+										<li><a href="" class="flex-row space-between">My Bookings <span class="notify">4</span></a></li>
+										<li><a href="" class="flex-row space-between">Requests to approve <span class="notify">4</span></a></li>
+									</ul>
+								</div>
+							</a>
+						</li>
 						
-						<li class="notification">
+						
+						<li class="notification m-l-15 m-r-15">
 							<a href="#">
 								<i class="fa fa-bell m-t-5" aria-hidden="true">
 									<span class="badge">3</span>
 								</i>
 							</a>
 						</li>
-						<li class="mobile-hide">
+						<li class="mobile-hide multi-drop profile-drop">
 							<div class="dropdown login user-logged align-top m-t-5">
 								<i class="fa fa-user-circle user-icon" aria-hidden="true"></i>
 								
@@ -97,8 +111,8 @@
 									<i class="fa fa-angle-down" aria-hidden="true"></i>
 								</button>
 								<ul class="dropdown-menu" aria-labelledby="dLabel">
-									<li><a href="#">My Profile</a></li>
-									<li><a href="#">Sign Out</a></li>
+									<li><a href="#"><i class="fa fa-user-circle m-r-5" aria-hidden="true"></i> Travel Profile</a></li>
+									<li><a href="#"><i class="fa fa-power-off m-r-5 power" data-fa-transform="rotate-90" aria-hidden="true"></i>Sign Out</a></li>
 								</ul>
 							</div>
 

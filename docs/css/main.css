@@ -1729,9 +1729,6 @@ input[type=radio].fnb-radio.bg-aqua:checked:before {
   margin-bottom: 0;
 }
 .fnb-header .user-logged .dropdown-menu li a {
-  color: #000 !important;
-  padding: 0;
-  font-weight: 400;
   background-color: transparent;
 }
 .fnb-header .fnb-breadcrums {
@@ -13235,6 +13232,85 @@ input[type="radio"].book-select-radio:before {
     padding: 1em 0;
     text-align: center;
   }
+}
+.multi-drop button {
+  background-color: transparent;
+  border: 0;
+  padding: 10px;
+}
+.multi-drop button:focus,
+.multi-drop button:active {
+  outline: 0;
+}
+.multi-drop .dropdown.open .a-down {
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+.multi-drop .dropdown-menu {
+  width: 250px;
+  right: -6em;
+  border: 0;
+  padding-bottom: 0;
+  border-radius: 3px;
+  border-bottom: 3px solid #024c64;
+}
+.multi-drop .dropdown-menu li {
+  padding: 0;
+}
+.multi-drop .dropdown-menu li a {
+  color: #024c64 !important;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  font-weight: 600 !important;
+}
+.multi-drop .a-down {
+  -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+  font-weight: 600;
+  font-size: 1.25em;
+  vertical-align: middle;
+}
+.multi-drop .notify {
+  background-color: #ff8400;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 0.85em;
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+}
+.multi-drop.profile-drop button {
+  padding: 0 10px;
+}
+.multi-drop.profile-drop .power {
+  tranform: rotate(90deg);
+}
+.multi-drop.profile-drop .dropdown-menu {
+  top: 125%;
+  right: 0;
+  width: 200px;
+}
+.multi-drop.profile-drop .dropdown-menu li {
+  border: 0;
+  padding: 0.8em;
+}
+.multi-drop.profile-drop .dropdown-menu li a {
+  padding: 0;
+}
+.multi-drop.profile-drop .dropdown-menu li .fa {
+  vertical-align: middle;
+  font-size: 1.5em;
+  margin-right: 8px;
+}
+.multi-drop.profile-drop .dropdown-menu li:hover {
+  background-color: #f5f5f5;
 }
 .profile-stats {
   color: #fff;
