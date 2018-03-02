@@ -6592,7 +6592,84 @@ input[type="radio"].book-select-radio{
 }
 
 
-
+.multi-drop{
+	button{
+		background-color: transparent;
+    	border: 0;
+    	padding: 10px;
+    	&:focus,&:active{
+    		outline: 0;
+    	}
+	}
+	.dropdown.open{
+    	.a-down{
+    		transform: rotate(-180deg);
+    	}
+    }
+	.dropdown-menu{
+		width: 250px;
+	    right: -6em;
+	    border: 0;
+	    padding-bottom: 0;
+	    border-radius: 3px;
+	    border-bottom: 3px solid @accent-secondary;
+	    li{
+	    	padding: 0;
+	    	a{
+	    		color: @accent-secondary !important;
+	    		display: flex;
+	    		font-size: 0.9em;
+    			text-transform: uppercase;
+    			font-weight: 600 !important;
+	    	}
+	    }
+	}
+	.a-down{
+		transition: all 0.5s ease;
+		font-weight: 600;
+		font-size: 1.25em;
+		vertical-align: middle;
+	}
+	.notify{
+		background-color: @accent-primary;
+	    border-radius: 50%;
+	    width: 20px;
+	    height: 20px;
+	    line-height: 20px;
+	    font-size: 0.85em;
+	    color: #fff;
+	    text-align: center;
+	    font-weight: 400;
+	}
+	&.profile-drop{
+		button{
+			padding: 0 10px;	
+		}
+		.power{
+			tranform: rotate(90deg);
+		}
+		.dropdown-menu{
+			top: 125%;
+			right: 0;
+    		width: 200px;
+    		li{
+    			border: 0;
+    			padding: 0.8em;
+    			a{
+    				padding: 0;
+    			}
+    			.fa{
+    				vertical-align: middle;
+    				font-size: 1.5em;
+    				margin-right: 8px;
+    			}
+    			&:hover{
+    				background-color: #f5f5f5;
+    			}
+    		}
+		}
+	}
+}
 
 
 
